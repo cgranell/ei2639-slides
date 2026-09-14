@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Presentaciones",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nei1026\n\n\nConcepto y principios de los patrones de diseño y de los patrones arquitectura de datos\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#section",
+    "href": "materials/01-course-content/index.html#section",
+    "title": "Diseño de Sofware",
+    "section": "",
+    "text": "Los patrones de diseño son…"
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#section-1",
+    "href": "materials/01-course-content/index.html#section-1",
+    "title": "Diseño de Sofware",
+    "section": "",
+    "text": "…soluciones habituales y bien testeadas a problemas recurrentes en diseño de software"
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#gang-of-four",
+    "href": "materials/01-course-content/index.html#gang-of-four",
+    "title": "Diseño de Sofware",
+    "section": "Gang of Four",
+    "text": "Gang of Four\nLos cuatro autores del libro Design Patterns: Elements of Reusable Object-Oriented Software (Gamma et al. 1994)\n\nTodos eran desarrolladores de aplicaciones e interfaces gráficas.\nDescubrieron patrones que surgían en sus soluciones de diseño.\nFormalizaron esos patrones en este libro clásico."
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#patrones-creacionales",
+    "href": "materials/01-course-content/index.html#patrones-creacionales",
+    "title": "Diseño de Sofware",
+    "section": "Patrones creacionales",
+    "text": "Patrones creacionales\nProporcionan mecanismos de creación de objetos\n\nFactory Method\nAbstract Factory\nBuilder\nPrototype\nSingleton"
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#patrones-estructurales",
+    "href": "materials/01-course-content/index.html#patrones-estructurales",
+    "title": "Diseño de Sofware",
+    "section": "Patrones estructurales",
+    "text": "Patrones estructurales\nExplican cómo ensamblar (o como están conectados) objetos y clases en estructuras más grandes (como maridaje culinario).\n\n\n\nAdapter\nBridge\nComposite\nDecorator\n\n\n\nFacade\nFlyweight\nProxy\n\n\n\nAnalogía para los estructural es el maridaje culinario: juntamos ingrediantes de distintas formas para formar nuevas relacionas, ya sea combinando ingredientes físicalmente (ensalada) o sin combinación (queso y vino)"
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#patrones-de-comportamiento",
+    "href": "materials/01-course-content/index.html#patrones-de-comportamiento",
+    "title": "Diseño de Sofware",
+    "section": "Patrones de comportamiento",
+    "text": "Patrones de comportamiento\nSe encargan de una comunicación efectiva y la asignación de responsabilidades entre objetos (como equipo F1).\n\n\n\nChain of responsability\nCommand\nIterator\nMediator\nMemento\n\n\n\nObserver\nState\nStrategy\nTemplate Method\nVisitor\n\n\n\nUna analogía para los patrones de comportamiento es el pit/box en una carrera de F1: cada miembro del equipo tiene un rol asignado, pero juntos consiguen un objetivo común"
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#encapsula",
+    "href": "materials/01-course-content/index.html#encapsula",
+    "title": "Diseño de Sofware",
+    "section": "",
+    "text": "⭐Encapsula lo que varía y sepáralo de lo que no cambia\n\n\n➡️Minimiza/aisla el efecto provocado por los cambios\n\n\nStones Wooden Table Group of Objects Concept Image credits: Rawpixel.com"
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#interfaz",
+    "href": "materials/01-course-content/index.html#interfaz",
+    "title": "Diseño de Sofware",
+    "section": "",
+    "text": "⭐Programa a una interfaz, no a una implementación\n\n\n➡️Diseño flexible depende de abstracciones, no de clases concretas"
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#composicion",
+    "href": "materials/01-course-content/index.html#composicion",
+    "title": "Diseño de Sofware",
+    "section": "",
+    "text": "⭐Favorece la composición sobre la herencia\n\n\n➡️HAS-A puede ser mejor que IS-A\n\n\nLa herencia es probablemente la forma más obvia de reutilizar código entre clases. Tienes dos clases con el mismo código. Creas una clase base común para estas dos clases y colocas dentro el código similar. Fet!\nSin embargo, la herencia establece despendencias fuertes entre clases. Puedes hacer más débil una dependencia haciendo que tu código dependa de interfaces o clases abstractas en lugar de clases concretas.\nEn vez de heredar un comportamiento, un objeto obtiene un comportamiento cuando se compone con un objeto de ese comportamiento."
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#puedo-trabajar-como-programador-sin-conocer-un-solo-patrón-de-diseño",
+    "href": "materials/01-course-content/index.html#puedo-trabajar-como-programador-sin-conocer-un-solo-patrón-de-diseño",
+    "title": "Diseño de Sofware",
+    "section": "¿Puedo trabajar como programador sin conocer un solo patrón de diseño?",
+    "text": "¿Puedo trabajar como programador sin conocer un solo patrón de diseño?\n\nSí, puedes. A lo mejor los has utilizado sin saberlo."
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#por-qué-tengo-que-dedicar-tiempo-a-aprenderlos",
+    "href": "materials/01-course-content/index.html#por-qué-tengo-que-dedicar-tiempo-a-aprenderlos",
+    "title": "Diseño de Sofware",
+    "section": "¿Por qué tengo que dedicar tiempo a aprenderlos?",
+    "text": "¿Por qué tengo que dedicar tiempo a aprenderlos?\n\nComo ingenieros/as, proporcionamos soluciones a problemas. Cuanto mayor sea tu juego de herramientas para resolver problemas, mejor ingeniero/a serás."
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#si-aplico-un-patrón-copio-su-código-y-listo",
+    "href": "materials/01-course-content/index.html#si-aplico-un-patrón-copio-su-código-y-listo",
+    "title": "Diseño de Sofware",
+    "section": "Si aplico un patrón, ¿copio su código y listo?",
+    "text": "Si aplico un patrón, ¿copio su código y listo?\n\nLos patrones no son código ya preparado como funciones o algoritmos. Son soluciones conceptuales para resolver un problema frecuente de diseño en tu código.\n\n\n\n\n\n\nRecuerda\n\n\npatrón ≌ plano\n\n\n\n\nUn algoritmo == una receta de cocina: ambos cuentan con pasos claros para alcanzar una meta.\nUn patrón == un plano, ya que puedes observar el resultado y sus funciones, pero el orden exacto de la implementación depende de ti."
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#y-entonces-cómo-implemento-un-patrón-en-mi-código",
+    "href": "materials/01-course-content/index.html#y-entonces-cómo-implemento-un-patrón-en-mi-código",
+    "title": "Diseño de Sofware",
+    "section": "Y entonces, ¿cómo implemento un patrón en mi código?",
+    "text": "Y entonces, ¿cómo implemento un patrón en mi código?\n\nSigue los detalles de la solución conceptual del patrón pero la implementación depende de ti, para que encaje con las restricciones y objetivo de tu código."
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#lo-más-difícil-entonces-es-implementar-una-versión-personalizada-del-patrón",
+    "href": "materials/01-course-content/index.html#lo-más-difícil-entonces-es-implementar-una-versión-personalizada-del-patrón",
+    "title": "Diseño de Sofware",
+    "section": "¿Lo más difícil entonces es implementar una versión personalizada del patrón?",
+    "text": "¿Lo más difícil entonces es implementar una versión personalizada del patrón?\n\nNo, esa es la parte “mecánica” (sin despreciar la dificultad que atañe escribir código)."
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#qué-es-lo-más-difícil",
+    "href": "materials/01-course-content/index.html#qué-es-lo-más-difícil",
+    "title": "Diseño de Sofware",
+    "section": "¿Qué es lo más difícil? 😨",
+    "text": "¿Qué es lo más difícil? 😨\n\nReconocer si un patrón en particular es o no es la solución a tu problema particular"
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#y-además-los-patrones-definen-un-vocabulario-común-para-comunicarte-con-tu-equipo",
+    "href": "materials/01-course-content/index.html#y-además-los-patrones-definen-un-vocabulario-común-para-comunicarte-con-tu-equipo",
+    "title": "Diseño de Sofware",
+    "section": "Y además los patrones definen un vocabulario común para comunicarte con tu equipo",
+    "text": "Y además los patrones definen un vocabulario común para comunicarte con tu equipo\n\n“Sí, claro, utiliza un singleton para eso que quieres hacer”."
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#resumen",
+    "href": "materials/01-course-content/index.html#resumen",
+    "title": "Diseño de Sofware",
+    "section": "Resumen",
+    "text": "Resumen\n\nSoluciones conceptuales muy probadas y testeadas\nProporcionan un vocabulario común\nNo es siempre obvio qué patrón utilizar\nNo abuses de los patrones si existe una solución más sencilla"
+  }
+]
