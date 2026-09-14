@@ -46,7 +46,7 @@
     "href": "materials/02-architecture-concepts/index.html#estructura",
     "title": "Fundamentos de arquitectura",
     "section": "Estructura",
-    "text": "Estructura\n➡️ Estilo(s) de la arquitectura, i.e., organización lógica de las partes (por capas, microservicios, etc.)"
+    "text": "Estructura\n Estilo(s) de la arquitectura, i.e., organización lógica de las partes (por capas, microservicios, etc.)"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#estructura---ejemplos",
@@ -60,7 +60,7 @@
     "href": "materials/02-architecture-concepts/index.html#características-de-la-arquitectura",
     "title": "Fundamentos de arquitectura",
     "section": "Características de la arquitectura",
-    "text": "Características de la arquitectura\n➡️ Criterios y/o requisitos para el funcionamiento correcto del sistema (ortogonal a la funcionalidad)"
+    "text": "Características de la arquitectura\n Criterios y/o requisitos para el funcionamiento correcto del sistema (ortogonal a la funcionalidad)"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#características---ejemplos",
@@ -74,7 +74,7 @@
     "href": "materials/02-architecture-concepts/index.html#decisiones-de-la-arquitectura",
     "title": "Fundamentos de arquitectura",
     "section": "Decisiones de la arquitectura",
-    "text": "Decisiones de la arquitectura\n➡️ Reglas y/o restricciones (tajantes) del sistema, i.e. qué se puede y no se puede hacer"
+    "text": "Decisiones de la arquitectura\n Reglas y/o restricciones (tajantes) del sistema, i.e. qué se puede y no se puede hacer"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#decisiones---ejemplos",
@@ -88,7 +88,7 @@
     "href": "materials/02-architecture-concepts/index.html#principios-de-diseño",
     "title": "Fundamentos de arquitectura",
     "section": "Principios de diseño",
-    "text": "Principios de diseño\n➡️ Guías, recomendaciones o preferencias (en contraposición a las reglas tajantes como las decisiones)"
+    "text": "Principios de diseño\n Guías, recomendaciones o preferencias (en contraposición a las reglas tajantes como las decisiones)"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#principios-de-diseño---ejemplos",
@@ -158,7 +158,7 @@
     "href": "materials/02-architecture-concepts/index.html#the-second-law-of-software-architecture",
     "title": "Fundamentos de arquitectura",
     "section": "The Second Law of Software Architecture",
-    "text": "The Second Law of Software Architecture\n\nWhy is more important than how.\n\n\nMark Richards & Neal Ford (Richards and Ford 2020)\n\n\n\n➡️ Essential for well-informed decisions.\n➡️ Understanding the rationale behind our choices allows us to reevaluate them when needed and retain valuable knowledge."
+    "text": "The Second Law of Software Architecture\n\nWhy is more important than how.\n\n\nMark Richards & Neal Ford (Richards and Ford 2020)\n\n\n\n Essential for well-informed decisions.\n Understanding the rationale behind our choices allows us to reevaluate them when needed and retain valuable knowledge."
   },
   {
     "objectID": "materials/01-course-content/index.html#section",
