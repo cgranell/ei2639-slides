@@ -123,7 +123,7 @@
     "href": "materials/01-course-content/index.html#qué-es-lo-más-difícil",
     "title": "Diseño de Sofware",
     "section": "¿Qué es lo más difícil? 😨",
-    "text": "¿Qué es lo más difícil? 😨\n\nReconocer si un patrón en particular es o no es la solución a tu problema particular"
+    "text": "¿Qué es lo más difícil? 😨\n\nReconocer si un patrón en particular ES o NO ES la solución a tu problema particular"
   },
   {
     "objectID": "materials/01-course-content/index.html#y-además-los-patrones-definen-un-vocabulario-común-para-comunicarte-con-tu-equipo",
@@ -138,19 +138,5 @@
     "title": "Diseño de Sofware",
     "section": "Resumen",
     "text": "Resumen\n\nSoluciones conceptuales muy probadas y testeadas\nProporcionan un vocabulario común\nNo es siempre obvio qué patrón utilizar\nNo abuses de los patrones si existe una solución más sencilla"
-  },
-  {
-    "objectID": "materials/01-course-content/index.html#planificación",
-    "href": "materials/01-course-content/index.html#planificación",
-    "title": "Diseño de Sofware",
-    "section": "Planificación",
-    "text": "Planificación\n\nSesión 1: Intro asignatura + contenido\nSesión 2: Arquitectura software + role arquitecto/a\nSesión 3: Principios SOLID + patrones creacionales\nSesión 4 y 5: Patrones estructurales\nSesión 6 y 7: Patrones de comportamiento\nSesión 8: Patrones de arquitectura de datos"
-  },
-  {
-    "objectID": "materials/01-course-content/index.html#referencias",
-    "href": "materials/01-course-content/index.html#referencias",
-    "title": "Diseño de Sofware",
-    "section": "Referencias",
-    "text": "Referencias\n\n\n\n\nGamma, Erich, Richard Helm, Ralph Johnson, and John Vlissides. 1994. Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley."
   }
 ]
