@@ -4,7 +4,161 @@
     "href": "index.html",
     "title": "Presentaciones",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nei1026\n\n\nConcepto y principios de los patrones de diseño y de arquitectura de datos\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nei1026\n\n\nConcepto y principios de los patrones de diseño y de arquitectura de datos\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nei1026, software-architecture\n\n\nConceptos y componentes de la arquitectura de sofware\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#section",
+    "href": "materials/02-architecture-concepts/index.html#section",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "Architecture is about the important stuff. Whatever that is.\n\n\nRalph Johnson, citado en (Fowler 2003)\n\n\n\nArchitecture is a social construct, a shared understanding of the system. It doesn’t just depend on the software, but on what part of the software is considered important by group consensus.\n\n\nRalph Johnson, citado en (Fowler 2003)"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#section-1",
+    "href": "materials/02-architecture-concepts/index.html#section-1",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "Software architecture can be seen as the centrepiece sitting between the business goals and the software system that supports the business to meet these goals.\n\n\n(Tai 2022)\n\n\n\n\n\n\n\n\nAn architect would create just enough design for implementation to satisfy business needs. The idea here is that as the world changes, so do the business requirements. This should be an iterative process. he software architecture should support the business to adopt changes by evolving with the requirements.\nImage credits: (Tai 2022)"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#section-2",
+    "href": "materials/02-architecture-concepts/index.html#section-2",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "Arquitectura de software es algo difícil de definir, depende del escenario/proyecto, y de todo lo que se considera importante para el éxito del proyecto.\n\n\n(Richards and Ford 2020)"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#libro-de-referencia",
+    "href": "materials/02-architecture-concepts/index.html#libro-de-referencia",
+    "title": "Fundamentos de arquitectura",
+    "section": "Libro de referencia",
+    "text": "Libro de referencia\n\n\n\n\nBy Mark Richards and Neal Ford\nJanuary 2020\nCapítulos 1 y 2 (Richards and Ford 2020)"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#dimensiones-de-la-arquitectura-richards2020",
+    "href": "materials/02-architecture-concepts/index.html#dimensiones-de-la-arquitectura-richards2020",
+    "title": "Fundamentos de arquitectura",
+    "section": "Dimensiones de la arquitectura (Richards and Ford 2020)",
+    "text": "Dimensiones de la arquitectura (Richards and Ford 2020)\n\n\nImage credits: (Richards and Ford 2020)"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#estructura",
+    "href": "materials/02-architecture-concepts/index.html#estructura",
+    "title": "Fundamentos de arquitectura",
+    "section": "Estructura",
+    "text": "Estructura\n➡️ Estilo(s) de la arquitectura, i.e., por capas, microservicios, etc."
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#estructura---ejemplos",
+    "href": "materials/02-architecture-concepts/index.html#estructura---ejemplos",
+    "title": "Fundamentos de arquitectura",
+    "section": "Estructura - ejemplos",
+    "text": "Estructura - ejemplos\n\n\nImage credits: (Richards and Ford 2020)"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#características-de-la-arquitectura",
+    "href": "materials/02-architecture-concepts/index.html#características-de-la-arquitectura",
+    "title": "Fundamentos de arquitectura",
+    "section": "Características de la arquitectura",
+    "text": "Características de la arquitectura\n➡️ Criterios/requisitos para el funcionamiento correcto del sistema (ortogonal a la funcionalidad)"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#características---ejemplos",
+    "href": "materials/02-architecture-concepts/index.html#características---ejemplos",
+    "title": "Fundamentos de arquitectura",
+    "section": "Características - ejemplos",
+    "text": "Características - ejemplos\n\n\nImage credits: (Richards and Ford 2020)"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#decisiones-de-la-arquitectura",
+    "href": "materials/02-architecture-concepts/index.html#decisiones-de-la-arquitectura",
+    "title": "Fundamentos de arquitectura",
+    "section": "Decisiones de la arquitectura",
+    "text": "Decisiones de la arquitectura\n➡️ Reglas/restricciones (tajantes) del sistema, i.e. qué se puede y no se puede hacer"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#decisiones---ejemplos",
+    "href": "materials/02-architecture-concepts/index.html#decisiones---ejemplos",
+    "title": "Fundamentos de arquitectura",
+    "section": "Decisiones - ejemplos",
+    "text": "Decisiones - ejemplos\n\n\nImage credits: (Richards and Ford 2020)"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#principios-de-diseño",
+    "href": "materials/02-architecture-concepts/index.html#principios-de-diseño",
+    "title": "Fundamentos de arquitectura",
+    "section": "Principios de diseño",
+    "text": "Principios de diseño\n➡️ Guías, recomendaciones o preferencias (en vez de reglas tajantes como las decisiones)"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#principios-de-diseño---ejemplos",
+    "href": "materials/02-architecture-concepts/index.html#principios-de-diseño---ejemplos",
+    "title": "Fundamentos de arquitectura",
+    "section": "Principios de diseño - ejemplos",
+    "text": "Principios de diseño - ejemplos\n\n\nImage credits: (Richards and Ford 2020)"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#section-3",
+    "href": "materials/02-architecture-concepts/index.html#section-3",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "Analogy: The building architect creates the blueprint of the building. The engineers build it physically and make it work according to the blueprint. Yet, this is a poor analogy to define what Software Architecture is because the building analogy makes people focus too much on the static aspects of the system. Source: (Tai 2022)\nSimilar analogy: One of the differences between building architecture and software architecture is that a lot of decisions about a building are hard to change. It is hard to go back and change your basement, though it is possible. Source: (Fowler 2003)\nHome Decor Renovation Style Architecture Building Image by rawpixel.com"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#section-4",
+    "href": "materials/02-architecture-concepts/index.html#section-4",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "Analogy (continue): The creation of a city is a better analogy since it involves both static elements like roads, buildings and bridges, and dynamic elements like traffic flows and people living in the city. The architect is the person who comes up with the design of the city, the plan of how it should be built, and how everything is going to fit together. The city architect has a vision of how the city would evolve. Source: (Tai 2022)\nNew York city Image by rawpixel.com"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#arquitecto-vs.-desarrollador",
+    "href": "materials/02-architecture-concepts/index.html#arquitecto-vs.-desarrollador",
+    "title": "Fundamentos de arquitectura",
+    "section": "Arquitecto vs. Desarrollador",
+    "text": "Arquitecto vs. Desarrollador\n\n\nPirámide del conocimiento. Un desarrollador, al principio de su carrera, se centra en la parte alta de la pirámide, para adquirir experiencia y conocimiento técnico, y también para manternerse actualizado sobre lo que sabe.\nImage credits: (Richards and Ford 2020)"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#arquitecto-vs.-desarrollador-ii",
+    "href": "materials/02-architecture-concepts/index.html#arquitecto-vs.-desarrollador-ii",
+    "title": "Fundamentos de arquitectura",
+    "section": "Arquitecto vs. Desarrollador (II)",
+    "text": "Arquitecto vs. Desarrollador (II)\n\n\nPirámide del conocimiento: profundidad vs. amplitud técnica. Lo que uno sabe es technical depth, y lo mucho que uno abarca o sabe es technical breadth.\nImage credits: (Richards and Ford 2020)"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#arquitecto-vs.-desarrollador-iii",
+    "href": "materials/02-architecture-concepts/index.html#arquitecto-vs.-desarrollador-iii",
+    "title": "Fundamentos de arquitectura",
+    "section": "Arquitecto vs. Desarrollador (III)",
+    "text": "Arquitecto vs. Desarrollador (III)\n\n\nArquitecto\nbreadth {{&lt; fa equals &gt;}} depth\nArchitect should know what should be done to create a platform/product in the right way (Francis 2022)\n\nDesarrollador\ndepth {{&lt; fa greater-than &gt;}}{{&lt; fa greater-than &gt;}} breadth\nDeveloper knows what can be done to create a platform/product (Francis 2022)\n\n\n\n\n\n\n\n\nRecuerda\n\n\nA Software Architect needs a broad and deep knowledge of almost everything in order to accomplish the business goals (Tai 2022)\n\n\n\n\nSource: What it takes to become a software architect"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#arquitecto-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d6172726f772d7269676874203e7d7d-breadth-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120657175616c73203e7d7d-depth",
+    "href": "materials/02-architecture-concepts/index.html#arquitecto-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d6172726f772d7269676874203e7d7d-breadth-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120657175616c73203e7d7d-depth",
+    "title": "Fundamentos de arquitectura",
+    "section": "Arquitecto {{< fa circle-arrow-right >}} breadth {{< fa equals >}} depth",
+    "text": "Arquitecto {{&lt; fa circle-arrow-right &gt;}} breadth {{&lt; fa equals &gt;}} depth\n\n\nPirámide del conocimiento: El arquitecto se especializa en algunas áreas de interés del proyecto. Sacrifica profundidad técnica en aras de tener una visión más amplia. Image credits: (Richards and Ford 2020)"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#qué-roles-desempeña-una-arquitectoa",
+    "href": "materials/02-architecture-concepts/index.html#qué-roles-desempeña-una-arquitectoa",
+    "title": "Fundamentos de arquitectura",
+    "section": "¿Qué roles desempeña un/a arquitecto/a",
+    "text": "¿Qué roles desempeña un/a arquitecto/a\n\nGUÍA decisiones de arquitectura, principios de diseño, estructura…\nCAMBIO: Analiza continuamente y recomienda mejoras\nVISIÓN: Esta al día con (y expuesto a) las últimas tendencias\nLIDERAZGO: Se asegura que la implementación sigue las decisiones/principios\nSÍNTESIS: Integra conocimiento de dominio de negocio y técnico\nMENTORING: Posee habilidades de comunicación, trabajo en equipo, soft skills"
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#the-first-law-of-software-architecture",
+    "href": "materials/02-architecture-concepts/index.html#the-first-law-of-software-architecture",
+    "title": "Fundamentos de arquitectura",
+    "section": "The First Law of Software Architecture",
+    "text": "The First Law of Software Architecture\n\nEverything in software architecture is a trade-off.\n\n\nMark Richards & Neal Ford (Richards and Ford 2020)\n\n\n\n➡️ There’s no perfect solution — only choices with consequences. The only constant in software is change.\n➡️ Evaluate trade-offs consciously. Every architectural decision affects the system’s behavior, flexibility, and cost.\n➡️ The only constant in software is change."
+  },
+  {
+    "objectID": "materials/02-architecture-concepts/index.html#the-second-law-of-software-architecture",
+    "href": "materials/02-architecture-concepts/index.html#the-second-law-of-software-architecture",
+    "title": "Fundamentos de arquitectura",
+    "section": "The Second Law of Software Architecture",
+    "text": "The Second Law of Software Architecture\n\nWhy is more important than how.\n\n\nMark Richards & Neal Ford (Richards and Ford 2020)\n\n\n\n➡️ Essential for well-informed decisions.\n➡️ Understanding the rationale behind our choices allows us to reevaluate them when needed and retain valuable knowledge."
   },
   {
     "objectID": "materials/01-course-content/index.html#section",

@@ -2,7 +2,8 @@
   {
     "listing": "/index.html",
     "items": [
-      "/materials/01-course-content/index.html"
+      "/materials/01-course-content/index.html",
+      "/materials/02-architecture-concepts/index.html"
     ]
   }
 ]
