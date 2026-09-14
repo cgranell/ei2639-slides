@@ -1,6 +1,11 @@
 ---
-title: "index"
-format: html
+title: "Presentaciones"
+listing:
+  contents: "materials/*/index.qmd"
+  sort: "title asc"
+  type: table
+  categories: true
+  fields: [title,  categories, description]
+page-layout: full
+title-block-banner: true
 ---
-
-## Hola

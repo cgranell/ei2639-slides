@@ -1,0 +1,240 @@
+---
+title: "Diseño de Sofware"
+subtitle: "Contenido curso y recursos"
+description: "Concepto y principios de los patrones de diseño y de los patrones arquitectura de datos"
+author: "Carlos Granell"
+institute: "[GEOTEC](https://geotec.uji.es/), Universitat Jaume I"
+date: last-modified
+date-format: "MMM D, YYYY"
+categories: [ei1026]
+
+format: 
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+    progress: true
+    logo: ../../images/marca-uji-negre.png
+    footer: "[https://cgranell.github.io/ei2639/](https://cgranell.github.io/ei2639/)"
+    theme: [default]
+    transition: fade
+    preview-links: true
+    author-meta: "Carlos Granell"
+    date-meta: "14/09/2026"
+    chalkboard: 
+      theme: whiteboard
+      buttons: false
+      boardmarker-width: 3
+from: markdown+emoji
+execute:
+  echo: true
+bibliography: ../../references.bib
+---
+
+# Recuerda
+
+##  {.center data-menu-title="Concepto"}
+
+### Los patrones de diseño son...
+
+##  {.center data-menu-title="Concepto (II)"}
+
+### ...soluciones habituales y bien testeadas a problemas recurrentes en diseño de software
+
+# Catálogo de patrones de diseño
+
+## Gang of Four
+
+Los cuatro autores del libro **Design Patterns: Elements of Reusable Object-Oriented Software** [@gamma1994]
+
+::: incremental
+-   Todos eran desarrolladores de aplicaciones e interfaces gráficas.
+-   Descubrieron patrones que surgían en sus soluciones de diseño.
+-   Formalizaron esos patrones en este libro clásico.
+:::
+
+## Patrones creacionales
+
+Proporcionan mecanismos de creación de objetos
+
+::: incremental
+-   Factory Method
+-   Abstract Factory
+-   Builder
+-   Prototype
+-   Singleton
+:::
+
+## Patrones estructurales
+
+Explican cómo ensamblar (o como están conectados) objetos y clases en estructuras más grandes (como maridaje culinario).
+
+::: columns
+::: column
+::: incremental
+-   Adapter
+-   Bridge
+-   Composite
+-   Decorator
+:::
+:::
+
+::: column
+::: incremental
+-   Facade
+-   Flyweight
+-   Proxy
+:::
+:::
+:::
+
+::: notes
+Analogía para los estructural es el maridaje culinario: juntamos ingrediantes de distintas formas para formar nuevas relacionas, ya sea combinando ingredientes físicalmente (ensalada) o sin combinación (queso y vino)
+:::
+
+## Patrones de comportamiento
+
+Se encargan de una comunicación efectiva y la asignación de responsabilidades entre objetos (como equipo F1).
+
+::: columns
+::: column
+::: incremental
+-   Chain of responsability
+-   Command
+-   Iterator
+-   Mediator
+-   Memento
+:::
+:::
+
+::: column
+::: incremental
+-   Observer
+-   State
+-   Strategy
+-   Template Method
+-   Visitor
+:::
+:::
+:::
+
+::: notes
+Una analogía para los patrones de comportamiento es el pit/box en una carrera de F1: cada miembro del equipo tiene un rol asignado, pero juntos consiguen un objetivo común
+:::
+
+# Principios básicos de diseño de software
+
+(presentes en casi todos los patrones de diseño)
+
+##  {#encapsula background-image="../images/rawpixel/balance.jpg" background-size="cover"}
+
+:star:Encapsula lo que varía y sepáralo de lo que no cambia
+
+. . .
+
+::: {style="text-align: right"}
+:arrow_right:Minimiza/aisla el efecto provocado por los cambios
+:::
+
+::: notes
+Stones Wooden Table Group of Objects Concept Image credits: [Rawpixel.com](https://www.rawpixel.com/image/69379/)
+:::
+
+##  {#interfaz background-image="../images/rawpixel/balance.jpg" background-size="cover"}
+
+:star:Programa a una interfaz, no a una implementación
+
+. . .
+
+::: {style="text-align: right"}
+:arrow_right:Diseño flexible depende de abstracciones, no de clases concretas
+:::
+
+##  {#composicion background-image="../images/rawpixel/balance.jpg" background-size="cover"}
+
+:star:Favorece la composición sobre la herencia
+
+. . .
+
+::: {style="text-align: right"}
+:arrow_right:HAS-A puede ser mejor que IS-A
+:::
+
+::: notes
+La herencia es probablemente la forma más obvia de reutilizar código entre clases. Tienes dos clases con el mismo código. Creas una clase base común para estas dos clases y colocas dentro el código similar. Fet!
+
+Sin embargo, la herencia establece despendencias fuertes entre clases. Puedes hacer más débil una dependencia haciendo que tu código dependa de interfaces o clases abstractas en lugar de clases concretas.
+
+En vez de *heredar* un comportamiento, un objeto obtiene un comportamiento cuando *se compone* con un objeto de ese comportamiento.
+:::
+
+# Y supongo que os preguntaréis....
+
+## ¿Puedo trabajar como programador sin conocer un solo patrón de diseño?
+
+. . .
+
+Sí, puedes. A lo mejor los has utilizado sin saberlo.
+
+## ¿Por qué tengo que dedicar tiempo a aprenderlos?
+
+. . .
+
+Como ingenieros/as, proporcionamos soluciones a problemas. Cuanto mayor sea tu **juego de herramientas** para resolver problemas, mejor ingeniero/a serás.
+
+## Si aplico un patrón, ¿copio su código y listo?
+
+. . .
+
+Los patrones no son código ya preparado como funciones o algoritmos. Son **soluciones conceptuales** para resolver un problema frecuente de diseño en tu código.
+
+::: {.callout-important}
+## **Recuerda** 
+
+patrón **≌** plano
+
+:::
+
+
+::: notes
+Un algoritmo == una receta de cocina: ambos cuentan con pasos claros para alcanzar una meta.
+
+Un patrón == un plano, ya que puedes observar el resultado y sus funciones, pero el orden exacto de la implementación depende de ti.
+:::
+
+## Y entonces, ¿cómo implemento un patrón en mi código?
+
+. . .
+
+Sigue los detalles de la solución conceptual del patrón pero la implementación depende de ti, para que encaje con las **restricciones** y **objetivo** de tu código.
+
+## ¿Lo más difícil entonces es implementar una versión personalizada del patrón?
+
+. . .
+
+No, esa es la parte "mecánica" (sin despreciar la dificultad que atañe escribir código).
+
+## ¿Qué es lo más difícil? :fearful:
+
+. . .
+
+Reconocer si un patrón en particular *es o no es* la **solución** a tu **problema** particular
+
+## Y además los patrones definen un vocabulario común para comunicarte con tu equipo
+
+. . .
+
+"Sí, claro, utiliza un *singleton* para eso que quieres hacer".
+
+## Resumen
+
+::: incremental
+-   Soluciones conceptuales muy probadas y testeadas
+
+-   Proporcionan un vocabulario común
+
+-   No es siempre obvio qué patrón utilizar
+
+-   No abuses de los patrones si existe una solución más sencilla
+:::
+
+# Referencias {.scrollable}
