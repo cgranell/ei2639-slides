@@ -58,7 +58,7 @@ Todo lo que el software a desarrollar debe hacer o garantizar
 ::: column
 ### Requisitos no funcionales 
 
-{{< fa circle-arrow-right >}} **características de la arquitectura**
+{{< fa circle-arrow-right >}} Características de la arquitectura software
 
 :::
 :::
@@ -93,7 +93,7 @@ Capítulos 4 y 5 [@richards2020]
 :::
 :::
 
-# Categorías de características
+# Categorías de las Características
 
 ## {data-menu-title="-ilities" background-image="images/SoftwareArchitecture02-Tai.png" background-size="cover"}
 
@@ -190,7 +190,7 @@ Image credits: [Rawpixel.com](https://www.rawpixel.com/image/1033876)
 ## {background-image="../images/rawpixel/tips.jpg" background-size="cover"}
 
 ### #3 Nunca busques la *mejor* arquitectura, 
-{{< fa circle-arrow-right >}} sino la *menos mala*. 
+{{< fa circle-arrow-right >}} sino la *menos mala*
 
 :::notes
 ¿Sabes? la architectura, como el software, cambiará en el futuro. Diseña para que esos cambios sean fáciles en el futuro. 
