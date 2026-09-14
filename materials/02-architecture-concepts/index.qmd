@@ -5,7 +5,7 @@ title-slide-attributes:
   data-background-size: cover
   data-background-opacity: "0.5"
 subtitle: "Conceptos y roles"
-description: "Conceptos y componentes de la arquitectura de sofware"
+description: "Conceptos, caracterización y dimensiones de una arquitectura de sofware"
 author: "Carlos Granell"
 institute: "[GEOTEC](https://geotec.uji.es/), Universitat Jaume I"
 date: last-modified
