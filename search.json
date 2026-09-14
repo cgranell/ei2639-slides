@@ -144,14 +144,14 @@
     "href": "materials/02-architecture-concepts/index.html#qué-roles-desempeña-una-arquitectoa",
     "title": "Fundamentos de arquitectura",
     "section": "¿Qué roles desempeña un/a arquitecto/a",
-    "text": "¿Qué roles desempeña un/a arquitecto/a\n\nGUÍA decisiones de arquitectura, principios de diseño, estructura…\nCAMBIO: Analiza continuamente y recomienda mejoras\nVISIÓN: Esta al día con (y expuesto a) las últimas tendencias\nLIDERAZGO: Se asegura que la implementación sigue las decisiones/principios\nSÍNTESIS: Integra conocimiento de dominio de negocio y técnico\nMENTORING: Posee habilidades de comunicación, trabajo en equipo, soft skills"
+    "text": "¿Qué roles desempeña un/a arquitecto/a\n\nGUÍA: decisiones de arquitectura, principios de diseño, estructura…\nCAMBIO: Analiza continuamente y recomienda mejoras\nVISIÓN: Esta al día con (y expuesto a) las últimas tendencias\nLIDERAZGO: Se asegura que la implementación sigue las decisiones/principios\nSÍNTESIS: Integra conocimiento de dominio de negocio y técnico\nMENTORING: Posee habilidades de comunicación, trabajo en equipo, soft skills"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#the-first-law-of-software-architecture",
     "href": "materials/02-architecture-concepts/index.html#the-first-law-of-software-architecture",
     "title": "Fundamentos de arquitectura",
-    "section": "The First Law of software architecture",
-    "text": "The First Law of software architecture\n\nEverything in software architecture is a trade-off.\n\n\nMark Richards & Neal Ford (Richards and Ford 2020)\n\n\n\n There’s no perfect solution — only choices with consequences. The only constant in software is change.\n Evaluate trade-offs consciously. Every architectural decision affects the system’s behavior, flexibility, and cost.\n The only constant in software is change."
+    "section": "The First Law of Software Architecture",
+    "text": "The First Law of Software Architecture\n\nEverything in software architecture is a trade-off.\n\n\nMark Richards & Neal Ford (Richards and Ford 2020)\n\n\n\n There’s no perfect solution — only choices with consequences. The only constant in software is change.\n Evaluate trade-offs consciously. Every architectural decision affects the system’s behavior, flexibility, and cost.\n The only constant in software is change."
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#the-second-law-of-software-architecture",
