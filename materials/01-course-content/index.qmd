@@ -241,7 +241,7 @@ No, esa es la parte "mecánica" (sin despreciar la dificultad que atañe escribi
 
 . . .
 
-Reconocer si un patrón en particular *es o no es* la **solución** a tu **problema** particular
+Reconocer si un patrón en particular *ES o NO ES* la **solución** a tu **problema** particular
 
 ## Y además los patrones definen un vocabulario común para comunicarte con tu equipo
 
@@ -262,7 +262,7 @@ Reconocer si un patrón en particular *es o no es* la **solución** a tu **probl
 :::
 
 
-## Planificación
+# Planificación
 
 
 ::: incremental
@@ -276,4 +276,4 @@ Reconocer si un patrón en particular *es o no es* la **solución** a tu **probl
 
 
 
-## Referencias {.scrollable}
+# Referencias {.scrollable}
