@@ -1,7 +1,7 @@
 ---
 title: "Diseño de Sofware"
-subtitle: "Contenido curso y recursos"
-description: "Concepto y principios de los patrones de diseño y de los patrones arquitectura de datos"
+subtitle: "Contenido curso y planificación"
+description: "Concepto y principios de los patrones de diseño y de arquitectura de datos"
 author: "Carlos Granell"
 institute: "[GEOTEC](https://geotec.uji.es/), Universitat Jaume I"
 date: last-modified
@@ -38,9 +38,9 @@ bibliography: ../../references.bib
 
 ##  {.center data-menu-title="Concepto (II)"}
 
-### ...soluciones habituales y bien testeadas a problemas recurrentes en diseño de software
+### ...soluciones reutilizables y bien testeadas a problemas recurrentes en diseño de software
 
-# Catálogo de patrones de diseño
+# Patrones de Diseño de Software
 
 ## Gang of Four
 
@@ -54,7 +54,7 @@ Los cuatro autores del libro **Design Patterns: Elements of Reusable Object-Orie
 
 ## Patrones creacionales
 
-Proporcionan mecanismos de creación de objetos
+Proporcionan mecanismos de creación de objetos.
 
 ::: incremental
 -   Factory Method
@@ -88,12 +88,12 @@ Explican cómo ensamblar (o como están conectados) objetos y clases en estructu
 :::
 
 ::: notes
-Analogía para los estructural es el maridaje culinario: juntamos ingrediantes de distintas formas para formar nuevas relacionas, ya sea combinando ingredientes físicalmente (ensalada) o sin combinación (queso y vino)
+Analogía para los estructurales es el maridaje culinario: juntamos ingredientes de distintas formas para formar nuevas relacioness, ya sea combinando ingredientes físicamente (ensalada) o sin combinación (queso y vino)
 :::
 
 ## Patrones de comportamiento
 
-Se encargan de una comunicación efectiva y la asignación de responsabilidades entre objetos (como equipo F1).
+Se encargan de una comunicación efectiva y la asignación de responsabilidades entre objetos (como un equipo F1).
 
 ::: columns
 ::: column
@@ -118,14 +118,14 @@ Se encargan de una comunicación efectiva y la asignación de responsabilidades 
 :::
 
 ::: notes
-Una analogía para los patrones de comportamiento es el pit/box en una carrera de F1: cada miembro del equipo tiene un rol asignado, pero juntos consiguen un objetivo común
+Una analogía para los patrones de comportamiento es el pit/box en una carrera de F1: cada miembro del equipo tiene un rol asignado, pero juntos consiguen un objetivo común.
 :::
 
-# Principios básicos de diseño de software
+# Principios Básicos de POO
 
 (presentes en casi todos los patrones de diseño)
 
-##  {#encapsula background-image="../images/rawpixel/balance.jpg" background-size="cover"}
+##  {#encapsula background-image="images/balance.jpg" background-size="cover"}
 
 :star:Encapsula lo que varía y sepáralo de lo que no cambia
 
@@ -139,7 +139,7 @@ Una analogía para los patrones de comportamiento es el pit/box en una carrera d
 Stones Wooden Table Group of Objects Concept Image credits: [Rawpixel.com](https://www.rawpixel.com/image/69379/)
 :::
 
-##  {#interfaz background-image="../images/rawpixel/balance.jpg" background-size="cover"}
+##  {#interfaz background-image="images/balance.jpg" background-size="cover"}
 
 :star:Programa a una interfaz, no a una implementación
 
@@ -149,7 +149,7 @@ Stones Wooden Table Group of Objects Concept Image credits: [Rawpixel.com](https
 :arrow_right:Diseño flexible depende de abstracciones, no de clases concretas
 :::
 
-##  {#composicion background-image="../images/rawpixel/balance.jpg" background-size="cover"}
+##  {#composicion background-image="images/balance.jpg" background-size="cover"}
 
 :star:Favorece la composición sobre la herencia
 
@@ -160,20 +160,44 @@ Stones Wooden Table Group of Objects Concept Image credits: [Rawpixel.com](https
 :::
 
 ::: notes
-La herencia es probablemente la forma más obvia de reutilizar código entre clases. Tienes dos clases con el mismo código. Creas una clase base común para estas dos clases y colocas dentro el código similar. Fet!
+La herencia es probablemente la forma más obvia de reutilizar código entre clases. Tienes dos clases con el mismo código. Creas una clase base común para esas dos clases y encapsulas dentro el código similar. 
 
-Sin embargo, la herencia establece despendencias fuertes entre clases. Puedes hacer más débil una dependencia haciendo que tu código dependa de interfaces o clases abstractas en lugar de clases concretas.
+Sin embargo, la herencia establece despendencias fuertes entre clases *de forma estática*. Puedes hacer más débil una dependencia haciendo que tu código depende *de forma dinámica* de interfaces o clases abstractas en lugar de clases concretas o implementaciones.
 
 En vez de *heredar* un comportamiento, un objeto obtiene un comportamiento cuando *se compone* con un objeto de ese comportamiento.
 :::
 
+
+# Patrones de Arquitectura de Datos
+
+## Ingeniería de datos
+
+No se trata de trasladar datos de un sistema a otro...
+
+. . .
+
+sino de diseñar arquitecturas escalables, fiables, seguras, rentables y preparadas para la analítica en tiempo real y la IA.
+
+
+## Patrones de datos
+
+::: incremental
+-   ETL Architecture
+-   Data Lake Architecture
+-   Lambda Architecture
+-   Kappa Architecture
+-   Medallion Architecture
+-   Data Product Architecture
+:::
+
 # Y supongo que os preguntaréis....
 
-## ¿Puedo trabajar como programador sin conocer un solo patrón de diseño?
+## ¿Puedo trabajar como programador sin conocer los patrones de diseño (y/o arquitectura de datos)?
 
 . . .
 
 Sí, puedes. A lo mejor los has utilizado sin saberlo.
+
 
 ## ¿Por qué tengo que dedicar tiempo a aprenderlos?
 
@@ -237,4 +261,19 @@ Reconocer si un patrón en particular *es o no es* la **solución** a tu **probl
 -   No abuses de los patrones si existe una solución más sencilla
 :::
 
-# Referencias {.scrollable}
+
+## Planificación
+
+
+::: incremental
+-   Sesión 1: Intro asignatura + contenido
+-   Sesión 2: Arquitectura software + role arquitecto/a
+-   Sesión 3: Principios SOLID + patrones creacionales
+-   Sesión 4 y 5: Patrones estructurales
+-   Sesión 6 y 7: Patrones de comportamiento
+-   Sesión 8: Patrones de arquitectura de datos
+:::
+
+
+
+## Referencias {.scrollable}
