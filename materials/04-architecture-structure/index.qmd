@@ -4,7 +4,7 @@ title-slide-attributes:
   data-background-image: images/florence-cathedral.jpg
   data-background-size: cover
   data-background-opacity: "0.5"
-subtitle: "Estilos de arquitectura"
+subtitle: "Estructura/estilos de una arquitectura"
 description: "Dimensión de la estructura o estilo de una arquitectura de software"
 author: "Carlos Granell"
 institute: "[GEOTEC](https://geotec.uji.es/), Universitat Jaume I"
@@ -76,7 +76,7 @@ Capítulos 9 -18 [@richards2020]
 :::
 :::
 
-# Tipos de estilos de arquitectura
+# Tipos de Estilos de Arquitectura
 
 
 ## Monolíticos *vs* Distribuidos
@@ -251,7 +251,7 @@ Image credits: [@richards2020]
 ## Distribuidos - Event-driven (ejemplos)
 
 
-- [NativeScript Task Dispatcher](https://github.com/GeoTecINIT/nativescript-task-dispatcher)], desarrollado por Alberto González y Miguel Matey [@gonzalez2021], [@gonzalez2022]
+- [NativeScript Task Dispatcher](https://github.com/GeoTecINIT/nativescript-task-dispatcher), desarrollado por Alberto González y Miguel Matey [@gonzalez2021], [@gonzalez2022]
 
 - Grafo de tareas cuyas dependencias se gestionan mediante eventos (smartphone) - [Ejemplo](https://github.com/GeoTecINIT/nativescript-task-dispatcher#quick-start)
 
@@ -286,4 +286,4 @@ Microservicios en [Akka](https://akka.io/) para computación de métricas basada
 
 ![](images/TesisLuis_architectureMetricComputation.png){fig-align="center" width="75%"}
 
-# Referencias {.scrollable}
+# Referencias {.smaller .scrollable}
