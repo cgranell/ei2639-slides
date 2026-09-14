@@ -106,7 +106,7 @@ Capítulos 1 y 2 [@richards2020]
 :::
 
 
-# ¿Cómo caracterizamos o especificamos una arquitectura software?
+# ¿Cómo caracterizamos una Arquitectura Software?
 
 ##  Dimensiones de la arquitectura [@richards2020]
 
@@ -119,7 +119,7 @@ Image credits: [@richards2020]
 
 ## Estructura
 
-### :arrow_right: Estilo(s) de la arquitectura, i.e., por capas, microservicios, etc.
+:arrow_right: Estilo(s) de la arquitectura, i.e., organización lógica de las partes (por capas, microservicios, etc.)
 
 
 ## Estructura - ejemplos
@@ -134,7 +134,8 @@ Image credits: [@richards2020]
 
 ## Características de la arquitectura 
 
-### :arrow_right: Criterios/requisitos para el funcionamiento correcto del sistema (ortogonal a la funcionalidad)
+:arrow_right: Criterios y/o requisitos para el funcionamiento correcto del sistema (ortogonal a la funcionalidad)
+
 
 ## Características - ejemplos 
 
@@ -149,7 +150,7 @@ Image credits: [@richards2020]
 
 ## Decisiones de la arquitectura 
 
-### :arrow_right: Reglas/restricciones (tajantes) del sistema, i.e. qué se puede y no se puede hacer
+:arrow_right: Reglas y/o restricciones (tajantes) del sistema, i.e. qué se puede y no se puede hacer
 
 ## Decisiones - ejemplos
 
@@ -163,7 +164,7 @@ Image credits: [@richards2020]
 
 ## Principios de diseño 
 
-### :arrow_right: Guías, recomendaciones o preferencias (en vez de *reglas tajantes* como las decisiones)
+:arrow_right: Guías, recomendaciones o preferencias (en contraposición a las *reglas tajantes* como las decisiones)
 
 ## Principios de diseño - ejemplos
 
@@ -179,7 +180,7 @@ Image credits: [@richards2020]
 
 :::notes
 
-Las tareas de un programador o analista son más conocidas. Incluso, hay especializaciones de programador, como programador back-end, front-end, of full-stack. ¿Qué tareas desempeña una persona con el rol de *Software Architect*?
+Las tareas de un persona programadora o analista son más conocidas. Incluso, hay especializaciones, como programador *back-end*, *front-end*, of *full-stack*. ¿Qué tareas desempeña una persona con el rol de *Software Architect*?
 :::
 
 ## {data-menu-title="Analogía" background-image="images/architect.jpg" background-size="cover"}
@@ -203,7 +204,7 @@ Analogy (continue): The creation of a city is a better analogy since it involves
 New York city Image by [rawpixel.com](https://www.rawpixel.com/image/5959681)
 :::
 
-## Arquitecto vs. Desarrollador
+## Arquitecto vs. Desarrollador {.center}
 
 ![](images/FundamentalsSoftwareArquitecture06.png){fig-align="center" width="60%"}
 
@@ -214,7 +215,7 @@ Pirámide del conocimiento. Un desarrollador, al principio de su carrera, se cen
 Image credits: [@richards2020]
 :::
 
-## Arquitecto vs. Desarrollador (II)
+## Arquitecto vs. Desarrollador (II) {.center}
 
 ![](images/FundamentalsSoftwareArquitecture07.png){fig-align="center" width="55%"}
 
@@ -225,7 +226,7 @@ Pirámide del conocimiento: profundidad vs. amplitud técnica. Lo que uno sabe e
 Image credits: [@richards2020]
 :::
 
-## Arquitecto vs. Desarrollador (III)
+## Arquitecto vs. Desarrollador (III) {.center}
 
 
 ::: columns
@@ -233,7 +234,7 @@ Image credits: [@richards2020]
 
 ### Arquitecto   
 
-breadth {{< fa equals >}} depth
+**breadth** {{< fa equals >}} **depth**
 
 Architect should know what **should be done** to create a platform/product **in the right way** [@francis2022]
 
@@ -242,7 +243,7 @@ Architect should know what **should be done** to create a platform/product **in 
 ::: column
 ### Desarrollador  
 
-depth {{< fa greater-than >}}{{< fa greater-than >}} breadth
+**depth** {{< fa greater-than >}}{{< fa greater-than >}} **breadth**
 
 Developer knows what **can be done** to create a platform/product [@francis2022]
 
@@ -295,9 +296,9 @@ Image credits: [@richards2020]
 
 :::
 
-# Leyes de arquitectura de software
+# Leyes de Arquitectura de Software
 
-## The First Law of Software Architecture
+## The First Law of software architecture
 
 > Everything in software architecture is a **trade-off**.
 
@@ -309,11 +310,11 @@ Mark Richards & Neal Ford [@richards2020]
 
 <br/>
 
-:arrow_right: There’s no perfect solution — only choices with consequences. The only constant in software is change.
+{{< fa circle-arrow-right >}} There’s no perfect solution — only choices with consequences. The only constant in software is change.
 
-:arrow_right: Evaluate trade-offs consciously. Every architectural decision affects the system’s behavior, flexibility, and cost.
+{{< fa circle-arrow-right >}} Evaluate trade-offs consciously. Every architectural decision affects the system’s behavior, flexibility, and cost.
 
-:arrow_right: The only constant in software is change.
+{{< fa circle-arrow-right >}} The only constant in software is change.
 
 
 ## The Second Law of Software Architecture
