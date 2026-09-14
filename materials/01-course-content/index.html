@@ -156,7 +156,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Diseño de Sofware</h1>
-  <p class="subtitle">Contenido curso y recursos</p>
+  <p class="subtitle">Contenido curso y planificación</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -182,11 +182,11 @@ Carlos Granell
 </section>
 <section id="section-1" class="slide level2 center" data-menu-title="Concepto (II)">
 <h2></h2>
-<h3 id="soluciones-habituales-y-bien-testeadas-a-problemas-recurrentes-en-diseño-de-software">…soluciones habituales y bien testeadas a problemas recurrentes en diseño de software</h3>
+<h3 id="soluciones-reutilizables-y-bien-testeadas-a-problemas-recurrentes-en-diseño-de-software">…soluciones reutilizables y bien testeadas a problemas recurrentes en diseño de software</h3>
 </section></section>
 <section>
-<section id="catálogo-de-patrones-de-diseño" class="title-slide slide level1 center">
-<h1>Catálogo de patrones de diseño</h1>
+<section id="patrones-de-diseño-de-software" class="title-slide slide level1 center">
+<h1>Patrones de Diseño de Software</h1>
 
 </section>
 <section id="gang-of-four" class="slide level2">
@@ -200,7 +200,7 @@ Carlos Granell
 </section>
 <section id="patrones-creacionales" class="slide level2">
 <h2>Patrones creacionales</h2>
-<p>Proporcionan mecanismos de creación de objetos</p>
+<p>Proporcionan mecanismos de creación de objetos.</p>
 <ul>
 <li class="fragment">Factory Method</li>
 <li class="fragment">Abstract Factory</li>
@@ -228,7 +228,7 @@ Carlos Granell
 </ul>
 </div></div>
 <aside class="notes">
-<p>Analogía para los estructural es el maridaje culinario: juntamos ingrediantes de distintas formas para formar nuevas relacionas, ya sea combinando ingredientes físicalmente (ensalada) o sin combinación (queso y vino)</p>
+<p>Analogía para los estructurales es el maridaje culinario: juntamos ingredientes de distintas formas para formar nuevas relacioness, ya sea combinando ingredientes físicamente (ensalada) o sin combinación (queso y vino)</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -243,7 +243,7 @@ Carlos Granell
 </section>
 <section id="patrones-de-comportamiento" class="slide level2">
 <h2>Patrones de comportamiento</h2>
-<p>Se encargan de una comunicación efectiva y la asignación de responsabilidades entre objetos (como equipo F1).</p>
+<p>Se encargan de una comunicación efectiva y la asignación de responsabilidades entre objetos (como un equipo F1).</p>
 <div class="columns">
 <div class="column">
 <ul>
@@ -263,7 +263,7 @@ Carlos Granell
 </ul>
 </div></div>
 <aside class="notes">
-<p>Una analogía para los patrones de comportamiento es el pit/box en una carrera de F1: cada miembro del equipo tiene un rol asignado, pero juntos consiguen un objetivo común</p>
+<p>Una analogía para los patrones de comportamiento es el pit/box en una carrera de F1: cada miembro del equipo tiene un rol asignado, pero juntos consiguen un objetivo común.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -277,11 +277,11 @@ Carlos Granell
       }</style></aside>
 </section></section>
 <section>
-<section id="principios-básicos-de-diseño-de-software" class="title-slide slide level1 center">
-<h1>Principios básicos de diseño de software</h1>
+<section id="principios-básicos-de-poo" class="title-slide slide level1 center">
+<h1>Principios Básicos de POO</h1>
 <p>(presentes en casi todos los patrones de diseño)</p>
 </section>
-<section id="encapsula" class="slide level2" data-background-image="../images/rawpixel/balance.jpg" data-background-size="cover">
+<section id="encapsula" class="slide level2" data-background-image="images/balance.jpg" data-background-size="cover">
 <h2></h2>
 <p><span class="emoji" data-emoji="star">⭐</span>Encapsula lo que varía y sepáralo de lo que no cambia</p>
 <div class="fragment">
@@ -303,7 +303,7 @@ Carlos Granell
       }</style></aside>
 </div>
 </section>
-<section id="interfaz" class="slide level2" data-background-image="../images/rawpixel/balance.jpg" data-background-size="cover">
+<section id="interfaz" class="slide level2" data-background-image="images/balance.jpg" data-background-size="cover">
 <h2></h2>
 <p><span class="emoji" data-emoji="star">⭐</span>Programa a una interfaz, no a una implementación</p>
 <div class="fragment">
@@ -312,7 +312,7 @@ Carlos Granell
 </div>
 </div>
 </section>
-<section id="composicion" class="slide level2" data-background-image="../images/rawpixel/balance.jpg" data-background-size="cover">
+<section id="composicion" class="slide level2" data-background-image="images/balance.jpg" data-background-size="cover">
 <h2></h2>
 <p><span class="emoji" data-emoji="star">⭐</span>Favorece la composición sobre la herencia</p>
 <div class="fragment">
@@ -320,8 +320,8 @@ Carlos Granell
 <p><span class="emoji" data-emoji="arrow_right">➡️</span>HAS-A puede ser mejor que IS-A</p>
 </div>
 <aside class="notes">
-<p>La herencia es probablemente la forma más obvia de reutilizar código entre clases. Tienes dos clases con el mismo código. Creas una clase base común para estas dos clases y colocas dentro el código similar. Fet!</p>
-<p>Sin embargo, la herencia establece despendencias fuertes entre clases. Puedes hacer más débil una dependencia haciendo que tu código dependa de interfaces o clases abstractas en lugar de clases concretas.</p>
+<p>La herencia es probablemente la forma más obvia de reutilizar código entre clases. Tienes dos clases con el mismo código. Creas una clase base común para esas dos clases y encapsulas dentro el código similar.</p>
+<p>Sin embargo, la herencia establece despendencias fuertes entre clases <em>de forma estática</em>. Puedes hacer más débil una dependencia haciendo que tu código depende <em>de forma dinámica</em> de interfaces o clases abstractas en lugar de clases concretas o implementaciones.</p>
 <p>En vez de <em>heredar</em> un comportamiento, un objeto obtiene un comportamiento cuando <em>se compone</em> con un objeto de ese comportamiento.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -337,12 +337,35 @@ Carlos Granell
 </div>
 </section></section>
 <section>
+<section id="patrones-de-arquitectura-de-datos" class="title-slide slide level1 center">
+<h1>Patrones de Arquitectura de Datos</h1>
+
+</section>
+<section id="ingeniería-de-datos" class="slide level2">
+<h2>Ingeniería de datos</h2>
+<p>No se trata de trasladar datos de un sistema a otro…</p>
+<div class="fragment">
+<p>sino de diseñar arquitecturas escalables, fiables, seguras, rentables y preparadas para la analítica en tiempo real y la IA.</p>
+</div>
+</section>
+<section id="patrones-de-datos" class="slide level2">
+<h2>Patrones de datos</h2>
+<ul>
+<li class="fragment">ETL Architecture</li>
+<li class="fragment">Data Lake Architecture</li>
+<li class="fragment">Lambda Architecture</li>
+<li class="fragment">Kappa Architecture</li>
+<li class="fragment">Medallion Architecture</li>
+<li class="fragment">Data Product Architecture</li>
+</ul>
+</section></section>
+<section>
 <section id="y-supongo-que-os-preguntaréis." class="title-slide slide level1 center">
 <h1>Y supongo que os preguntaréis….</h1>
 
 </section>
-<section id="puedo-trabajar-como-programador-sin-conocer-un-solo-patrón-de-diseño" class="slide level2">
-<h2>¿Puedo trabajar como programador sin conocer un solo patrón de diseño?</h2>
+<section id="puedo-trabajar-como-programador-sin-conocer-los-patrones-de-diseño-yo-arquitectura-de-datos" class="slide level2">
+<h2>¿Puedo trabajar como programador sin conocer los patrones de diseño (y/o arquitectura de datos)?</h2>
 <div class="fragment">
 <p>Sí, puedes. A lo mejor los has utilizado sin saberlo.</p>
 </div>
@@ -418,9 +441,20 @@ Carlos Granell
 <li class="fragment"><p>No es siempre obvio qué patrón utilizar</p></li>
 <li class="fragment"><p>No abuses de los patrones si existe una solución más sencilla</p></li>
 </ul>
-</section></section>
-<section id="referencias" class="title-slide slide level1 scrollable smaller">
-<h1>Referencias</h1>
+</section>
+<section id="planificación" class="slide level2">
+<h2>Planificación</h2>
+<ul>
+<li class="fragment">Sesión 1: Intro asignatura + contenido</li>
+<li class="fragment">Sesión 2: Arquitectura software + role arquitecto/a</li>
+<li class="fragment">Sesión 3: Principios SOLID + patrones creacionales</li>
+<li class="fragment">Sesión 4 y 5: Patrones estructurales</li>
+<li class="fragment">Sesión 6 y 7: Patrones de comportamiento</li>
+<li class="fragment">Sesión 8: Patrones de arquitectura de datos</li>
+</ul>
+</section>
+<section id="referencias" class="slide level2 scrollable smaller">
+<h2>Referencias</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
@@ -428,7 +462,7 @@ Carlos Granell
 Gamma, Erich, Richard Helm, Ralph Johnson, and John Vlissides. 1994. <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>. Addison-Wesley.
 </div>
 </div>
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="../../images/marca-uji-negre.png" class="slide-logo"></p>

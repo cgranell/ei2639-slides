@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Presentaciones",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nei1026\n\n\nConcepto y principios de los patrones de diseño y de los patrones arquitectura de datos\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nei1026\n\n\nConcepto y principios de los patrones de diseño y de arquitectura de datos\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "materials/01-course-content/index.html#section",
@@ -18,7 +18,7 @@
     "href": "materials/01-course-content/index.html#section-1",
     "title": "Diseño de Sofware",
     "section": "",
-    "text": "…soluciones habituales y bien testeadas a problemas recurrentes en diseño de software"
+    "text": "…soluciones reutilizables y bien testeadas a problemas recurrentes en diseño de software"
   },
   {
     "objectID": "materials/01-course-content/index.html#gang-of-four",
@@ -32,21 +32,21 @@
     "href": "materials/01-course-content/index.html#patrones-creacionales",
     "title": "Diseño de Sofware",
     "section": "Patrones creacionales",
-    "text": "Patrones creacionales\nProporcionan mecanismos de creación de objetos\n\nFactory Method\nAbstract Factory\nBuilder\nPrototype\nSingleton"
+    "text": "Patrones creacionales\nProporcionan mecanismos de creación de objetos.\n\nFactory Method\nAbstract Factory\nBuilder\nPrototype\nSingleton"
   },
   {
     "objectID": "materials/01-course-content/index.html#patrones-estructurales",
     "href": "materials/01-course-content/index.html#patrones-estructurales",
     "title": "Diseño de Sofware",
     "section": "Patrones estructurales",
-    "text": "Patrones estructurales\nExplican cómo ensamblar (o como están conectados) objetos y clases en estructuras más grandes (como maridaje culinario).\n\n\n\nAdapter\nBridge\nComposite\nDecorator\n\n\n\nFacade\nFlyweight\nProxy\n\n\n\nAnalogía para los estructural es el maridaje culinario: juntamos ingrediantes de distintas formas para formar nuevas relacionas, ya sea combinando ingredientes físicalmente (ensalada) o sin combinación (queso y vino)"
+    "text": "Patrones estructurales\nExplican cómo ensamblar (o como están conectados) objetos y clases en estructuras más grandes (como maridaje culinario).\n\n\n\nAdapter\nBridge\nComposite\nDecorator\n\n\n\nFacade\nFlyweight\nProxy\n\n\n\nAnalogía para los estructurales es el maridaje culinario: juntamos ingredientes de distintas formas para formar nuevas relacioness, ya sea combinando ingredientes físicamente (ensalada) o sin combinación (queso y vino)"
   },
   {
     "objectID": "materials/01-course-content/index.html#patrones-de-comportamiento",
     "href": "materials/01-course-content/index.html#patrones-de-comportamiento",
     "title": "Diseño de Sofware",
     "section": "Patrones de comportamiento",
-    "text": "Patrones de comportamiento\nSe encargan de una comunicación efectiva y la asignación de responsabilidades entre objetos (como equipo F1).\n\n\n\nChain of responsability\nCommand\nIterator\nMediator\nMemento\n\n\n\nObserver\nState\nStrategy\nTemplate Method\nVisitor\n\n\n\nUna analogía para los patrones de comportamiento es el pit/box en una carrera de F1: cada miembro del equipo tiene un rol asignado, pero juntos consiguen un objetivo común"
+    "text": "Patrones de comportamiento\nSe encargan de una comunicación efectiva y la asignación de responsabilidades entre objetos (como un equipo F1).\n\n\n\nChain of responsability\nCommand\nIterator\nMediator\nMemento\n\n\n\nObserver\nState\nStrategy\nTemplate Method\nVisitor\n\n\n\nUna analogía para los patrones de comportamiento es el pit/box en una carrera de F1: cada miembro del equipo tiene un rol asignado, pero juntos consiguen un objetivo común."
   },
   {
     "objectID": "materials/01-course-content/index.html#encapsula",
@@ -67,14 +67,28 @@
     "href": "materials/01-course-content/index.html#composicion",
     "title": "Diseño de Sofware",
     "section": "",
-    "text": "⭐Favorece la composición sobre la herencia\n\n\n➡️HAS-A puede ser mejor que IS-A\n\n\nLa herencia es probablemente la forma más obvia de reutilizar código entre clases. Tienes dos clases con el mismo código. Creas una clase base común para estas dos clases y colocas dentro el código similar. Fet!\nSin embargo, la herencia establece despendencias fuertes entre clases. Puedes hacer más débil una dependencia haciendo que tu código dependa de interfaces o clases abstractas en lugar de clases concretas.\nEn vez de heredar un comportamiento, un objeto obtiene un comportamiento cuando se compone con un objeto de ese comportamiento."
+    "text": "⭐Favorece la composición sobre la herencia\n\n\n➡️HAS-A puede ser mejor que IS-A\n\n\nLa herencia es probablemente la forma más obvia de reutilizar código entre clases. Tienes dos clases con el mismo código. Creas una clase base común para esas dos clases y encapsulas dentro el código similar.\nSin embargo, la herencia establece despendencias fuertes entre clases de forma estática. Puedes hacer más débil una dependencia haciendo que tu código depende de forma dinámica de interfaces o clases abstractas en lugar de clases concretas o implementaciones.\nEn vez de heredar un comportamiento, un objeto obtiene un comportamiento cuando se compone con un objeto de ese comportamiento."
   },
   {
-    "objectID": "materials/01-course-content/index.html#puedo-trabajar-como-programador-sin-conocer-un-solo-patrón-de-diseño",
-    "href": "materials/01-course-content/index.html#puedo-trabajar-como-programador-sin-conocer-un-solo-patrón-de-diseño",
+    "objectID": "materials/01-course-content/index.html#ingeniería-de-datos",
+    "href": "materials/01-course-content/index.html#ingeniería-de-datos",
     "title": "Diseño de Sofware",
-    "section": "¿Puedo trabajar como programador sin conocer un solo patrón de diseño?",
-    "text": "¿Puedo trabajar como programador sin conocer un solo patrón de diseño?\n\nSí, puedes. A lo mejor los has utilizado sin saberlo."
+    "section": "Ingeniería de datos",
+    "text": "Ingeniería de datos\nNo se trata de trasladar datos de un sistema a otro…\n\nsino de diseñar arquitecturas escalables, fiables, seguras, rentables y preparadas para la analítica en tiempo real y la IA."
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#patrones-de-datos",
+    "href": "materials/01-course-content/index.html#patrones-de-datos",
+    "title": "Diseño de Sofware",
+    "section": "Patrones de datos",
+    "text": "Patrones de datos\n\nETL Architecture\nData Lake Architecture\nLambda Architecture\nKappa Architecture\nMedallion Architecture\nData Product Architecture"
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#puedo-trabajar-como-programador-sin-conocer-los-patrones-de-diseño-yo-arquitectura-de-datos",
+    "href": "materials/01-course-content/index.html#puedo-trabajar-como-programador-sin-conocer-los-patrones-de-diseño-yo-arquitectura-de-datos",
+    "title": "Diseño de Sofware",
+    "section": "¿Puedo trabajar como programador sin conocer los patrones de diseño (y/o arquitectura de datos)?",
+    "text": "¿Puedo trabajar como programador sin conocer los patrones de diseño (y/o arquitectura de datos)?\n\nSí, puedes. A lo mejor los has utilizado sin saberlo."
   },
   {
     "objectID": "materials/01-course-content/index.html#por-qué-tengo-que-dedicar-tiempo-a-aprenderlos",
@@ -124,5 +138,19 @@
     "title": "Diseño de Sofware",
     "section": "Resumen",
     "text": "Resumen\n\nSoluciones conceptuales muy probadas y testeadas\nProporcionan un vocabulario común\nNo es siempre obvio qué patrón utilizar\nNo abuses de los patrones si existe una solución más sencilla"
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#planificación",
+    "href": "materials/01-course-content/index.html#planificación",
+    "title": "Diseño de Sofware",
+    "section": "Planificación",
+    "text": "Planificación\n\nSesión 1: Intro asignatura + contenido\nSesión 2: Arquitectura software + role arquitecto/a\nSesión 3: Principios SOLID + patrones creacionales\nSesión 4 y 5: Patrones estructurales\nSesión 6 y 7: Patrones de comportamiento\nSesión 8: Patrones de arquitectura de datos"
+  },
+  {
+    "objectID": "materials/01-course-content/index.html#referencias",
+    "href": "materials/01-course-content/index.html#referencias",
+    "title": "Diseño de Sofware",
+    "section": "Referencias",
+    "text": "Referencias\n\n\n\n\nGamma, Erich, Richard Helm, Ralph Johnson, and John Vlissides. 1994. Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley."
   }
 ]
