@@ -4,98 +4,126 @@
     "href": "index.html",
     "title": "Presentaciones",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nContenido curso y planificación\n\n\nei1026\n\n\nConcepto y principios de los patrones de diseño y de arquitectura de datos\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nConceptos y roles\n\n\nei1026, software-architecture\n\n\nConceptos, caracterización y dimensiones de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nCaracterísticas de una arquitectura\n\n\nei1026, software-architecture\n\n\nDimensión de las características de una arquitectura de sofware\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nContenido curso y planificación\n\n\nei1026\n\n\nConcepto y principios de los patrones de diseño y de arquitectura de datos\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nConceptos y roles\n\n\nei1026, software-architecture\n\n\nConceptos, caracterización y dimensiones de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nCaracterísticas de una arquitectura\n\n\nei1026, software-architecture\n\n\nDimensión de las características de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nEstilos de arquitectura\n\n\nei1026, software-architecture\n\n\nDimensión de la estructura o estilo de una arquitectura de software\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "materials/03-architecture-characteristics/index.html#requisitos",
-    "href": "materials/03-architecture-characteristics/index.html#requisitos",
+    "objectID": "materials/04-architecture-structure/index.html#recuerda-dimensiones-arquitectura",
+    "href": "materials/04-architecture-structure/index.html#recuerda-dimensiones-arquitectura",
     "title": "Fundamentos de arquitectura",
-    "section": "Requisitos",
-    "text": "Requisitos\nTodo lo que el software a desarrollar debe hacer o garantizar\n\n\n\nRequisitos funcionales o de negocio\n\nRequisitos no funcionales\n Características de la arquitectura software\n\n\n\n\n\n\n\n\n\nRecuerda\n\n\nUn/a arquitecto/a considera tanto los requisitos funcionales como las características de la arquitectura."
+    "section": "Recuerda: Dimensiones arquitectura",
+    "text": "Recuerda: Dimensiones arquitectura\n\n\nImage credits: (Richards and Ford 2020)"
   },
   {
-    "objectID": "materials/03-architecture-characteristics/index.html#libro-de-referencia",
-    "href": "materials/03-architecture-characteristics/index.html#libro-de-referencia",
+    "objectID": "materials/04-architecture-structure/index.html#definición",
+    "href": "materials/04-architecture-structure/index.html#definición",
+    "title": "Fundamentos de arquitectura",
+    "section": "Definición",
+    "text": "Definición\n como se estructura u organiza todo el backend e interfaces de usuario de un sistema"
+  },
+  {
+    "objectID": "materials/04-architecture-structure/index.html#libro-de-referencia",
+    "href": "materials/04-architecture-structure/index.html#libro-de-referencia",
     "title": "Fundamentos de arquitectura",
     "section": "Libro de referencia",
-    "text": "Libro de referencia\n\n\n\n\nBy Mark Richards and Neal Ford\nJanuary 2020\nCapítulos 4 y 5 (Richards and Ford 2020)"
+    "text": "Libro de referencia\n\n\n\n\nBy Mark Richards and Neal Ford\nJanuary 2020\nCapítulos 9 -18 (Richards and Ford 2020)"
   },
   {
-    "objectID": "materials/03-architecture-characteristics/index.html#section",
-    "href": "materials/03-architecture-characteristics/index.html#section",
+    "objectID": "materials/04-architecture-structure/index.html#monolíticos-vs-distribuidos",
+    "href": "materials/04-architecture-structure/index.html#monolíticos-vs-distribuidos",
     "title": "Fundamentos de arquitectura",
-    "section": "",
-    "text": "Software Architecture “-ilities”: I probably won’t be able to see quality attributes by just looking at the high-level design diagram with some lines connecting to some boxes\nImage credits: (Tai 2022)"
+    "section": "Monolíticos vs Distribuidos",
+    "text": "Monolíticos vs Distribuidos\n\n\nMonolíticos\n\nPor capas\nPipeline\nMicrokernel\n\n\n\nDistribuidos\n\nEvent-driven\nService-oriented\nMicroservicios\n\n\n\n\nMonolítico: una única unidad de código Distribuídos: varias unidades/nodos conectadas con protocolos de acceso remoto"
   },
   {
-    "objectID": "materials/03-architecture-characteristics/index.html#operacionales",
-    "href": "materials/03-architecture-characteristics/index.html#operacionales",
+    "objectID": "materials/04-architecture-structure/index.html#monolíticos---capas",
+    "href": "materials/04-architecture-structure/index.html#monolíticos---capas",
     "title": "Fundamentos de arquitectura",
-    "section": "Operacionales",
-    "text": "Operacionales\n\nAvailability/Disponibilidad: Cuánto tiempo deberá estar disponible el sistema\nContinuity/Continuidad: Capacidad de recuperación ante desastres\nPerformance/Rendimiento: Pruebas de estrés, análisis de picos, análisis de la frecuencia de las funciones utilizadas, capacidad requerida y tiempos de respuesta\nReliability/Fiabilidad: Sistema a prueba de fallos\nRobustness/Robustez: Habilidad para manejar condiciones límite y de error (fallo hw)\nScalability/Escalabilidad: Capacidad para gestionar un numero creciente de usuarios/solicitudes sin degradar rendimiento\nElasticity/Elasticidad: Capacidad para gestionar picos masivos de usuarios/solicitudes\n\n\nContinuity/continuidad = Recoverability/recuperabilidad"
+    "section": "Monolíticos - Capas",
+    "text": "Monolíticos - Capas\n\n\nSeparation of concerns: Componentes en una capa solo saben de la lógica de esa capa.\nLayers of isolation: Modificaciones en una capa no afectan a otras.\nPartición por criterios tecnológicos: Capa agrupa componentes por función técnica (presentacion, etc) en vez de por dominio (e.g., clientes).\n\n\nSeparation of concerns: Componentes en una capa solo saben de la lógica de esa capa. At the class level, not to mix abstraction levels in the same method; not to mix responsibilities in the same method and class.\nLayers of isolation: Modificaciones en una capa no afectan a otras; capas independientes/desacopladas\nPartición por criterios tecnólogicos: Componentes, en lugar de agruparse por dominio (como clientes), se agrupan por su función técnica en la arquitectura (presentación, negocio)\nImage credits: (Richards and Ford 2020)"
   },
   {
-    "objectID": "materials/03-architecture-characteristics/index.html#estructurales",
-    "href": "materials/03-architecture-characteristics/index.html#estructurales",
+    "objectID": "materials/04-architecture-structure/index.html#monolíticos---capas-ii",
+    "href": "materials/04-architecture-structure/index.html#monolíticos---capas-ii",
     "title": "Fundamentos de arquitectura",
-    "section": "Estructurales",
-    "text": "Estructurales\n\nConfigurability/Configurabilidad: Cambiar fácilmente aspectos de la configuración del software\nExtensibility/Extensibilidad: Importancia de añadir nuevas funcionalidades\nInstallability/Instalabilidad: Facilidad de instalación del sistema en las plataformas necesarias\nReuse/Reutilización: Capacidad para aprovechar componentes comunes en múltiples productos\nI18n: Soporte para múltiples idiomas; unidades de medida; monedas"
+    "section": "Monolíticos - Capas (II)",
+    "text": "Monolíticos - Capas (II)\nLayered architectures are consequence of applying separation of concerns to application structure (Nogueira 2022)\n\nModel View Controller (MVC)\nModel View Presenter (MVP)\nHexagonal Architecture\nOnion Architecture\nClean Architecture"
   },
   {
-    "objectID": "materials/03-architecture-characteristics/index.html#transversales",
-    "href": "materials/03-architecture-characteristics/index.html#transversales",
+    "objectID": "materials/04-architecture-structure/index.html#monolíticos---pipeline",
+    "href": "materials/04-architecture-structure/index.html#monolíticos---pipeline",
     "title": "Fundamentos de arquitectura",
-    "section": "Transversales",
-    "text": "Transversales\n\nMaintainability/Mantenibilidad: Facilidad de aplicar cambios y mejorar el sistema\nPortability/Portabilidad: ¿Es necesario que el sistema se ejecute en más de una plataforma?\nSupportability/Soporte: ¿Qué nivel de soporte técnico (logging) necesita la aplicación?\nUpgradeability/Actualización: Capacidad para actualizar rápidamente desde una versión anterior a una versión más nueva en servidores y clientes."
+    "section": "Monolíticos - Pipeline",
+    "text": "Monolíticos - Pipeline\n\nPipes & filters transforman documentos/datos/mensajes de forma concatenada.\n\nImage credits: (Richards and Ford 2020)"
   },
   {
-    "objectID": "materials/03-architecture-characteristics/index.html#section-1",
-    "href": "materials/03-architecture-characteristics/index.html#section-1",
+    "objectID": "materials/04-architecture-structure/index.html#monolíticos---pipeline-ii",
+    "href": "materials/04-architecture-structure/index.html#monolíticos---pipeline-ii",
     "title": "Fundamentos de arquitectura",
-    "section": "",
-    "text": "¡La mayoría de estas características no estan explícitamente descritas en los requisitos!"
+    "section": "Monolíticos - Pipeline (II)",
+    "text": "Monolíticos - Pipeline (II)\n\n\nCon respecto a la gestión de datos de entrada en streaming, el primer componente en el paso 5 es un sistema de mensajería basado en Apache Kafka, que asegura la recepción, buffer y ruteo del flujo de datos en streaming. (Rodríguez Pupo 2021)\n\n\nherramientas ETL (extract, transform, and load)\ncadenas de productor-consumidor de datos\ndatos en streaming (telemetría, sensores, etc)\n\n\n“The first component is the (Kafka) messaging system, which ensures reliable handling (receive, buffer, route) of the incoming flow of data. The message system emits and exchanges messages, which contain the metrics data payload, through a Kafka topic to which connector applications can subscribe in order to handle/process the data stream. One such connector application is the self-developed persistence component, which connects to the (Kafka) messaging system and persists the messages in the (Cassandra) database” (pg 89)\nImage credits: (Rodríguez Pupo 2021)"
   },
   {
-    "objectID": "materials/03-architecture-characteristics/index.html#section-2",
-    "href": "materials/03-architecture-characteristics/index.html#section-2",
+    "objectID": "materials/04-architecture-structure/index.html#monolíticos---microkernel",
+    "href": "materials/04-architecture-structure/index.html#monolíticos---microkernel",
     "title": "Fundamentos de arquitectura",
-    "section": "",
-    "text": "#1 Selecciona las justas.\n No diseñes a generic architecture\n\nCada característica que añades complicará el diseño global del sistema. Mantén la lista corta!\nHelpful Tips Information Knowledge Concept. Image credits: Rawpixel.com"
+    "section": "Monolíticos - Microkernel",
+    "text": "Monolíticos - Microkernel\n\n\nCore system es extensible\nPlug-ins independientes, encapsulados y autónomos (standalone), que se comunican con el sistema via interfaces (REST, pipe, …)\nEjemplos: VSCode extensions, Jira plugins, Chrome extensions, Firefox add-ons, Alexa skills, etc.\n\n\nCore system es la funcional mínima/básica del sistema. Funcionalidad mínima requirida para el sistema básico.\nPlug-ins son componentes independientes, standalone que proporcionan funcionalidad adicional.\nImage credits: (Richards and Ford 2020)"
   },
   {
-    "objectID": "materials/03-architecture-characteristics/index.html#section-3",
-    "href": "materials/03-architecture-characteristics/index.html#section-3",
+    "objectID": "materials/04-architecture-structure/index.html#monolíticos---microkernel-ii",
+    "href": "materials/04-architecture-structure/index.html#monolíticos---microkernel-ii",
     "title": "Fundamentos de arquitectura",
-    "section": "",
-    "text": "#2 Existen compromisos opuestos entre características.\n Todo es compromiso\n(First Law of Software Architecture)\n\nPor ejemplo, rendimiento vs seguridad. Aumentar la seguridad de un sistema, puede degradar su rendimiento.\nHelpful Tips Information Knowledge Concept. Image credits: Rawpixel.com"
+    "section": "Monolíticos - Microkernel (II)",
+    "text": "Monolíticos - Microkernel (II)\n\nCombinación de estilos: Core System se organiza como layered architectura\n\nImage credits: (Richards and Ford 2020)"
   },
   {
-    "objectID": "materials/03-architecture-characteristics/index.html#section-4",
-    "href": "materials/03-architecture-characteristics/index.html#section-4",
+    "objectID": "materials/04-architecture-structure/index.html#distribuidos---event-driven",
+    "href": "materials/04-architecture-structure/index.html#distribuidos---event-driven",
     "title": "Fundamentos de arquitectura",
-    "section": "",
-    "text": "#3 Nunca busques la mejor arquitectura,\n sino la menos mala\n\n¿Sabes? la architectura, como el software, cambiará en el futuro. Diseña para que esos cambios sean fáciles en el futuro.\nHelpful Tips Information Knowledge Concept. Image credits: Rawpixel.com"
+    "section": "Distribuidos - Event-driven",
+    "text": "Distribuidos - Event-driven\n\n\nEvento: tipo de mensaje que describe lo que está occuriendo en el sistema\nProductor emite un evento. Consumidor se suscribe a eventos\nEDA promueve comunicacion asíncronoa de mensajes (cola eventos) en vez de request/response\nEDA como microservicios basados en eventos asíncronos\n\n\nThe core purpose of event-driven architecture (EDA) is that a software design pattern which has a system of loosely coupled microservices which is used event based, both the many events are being published by system and these events are being consumed their subscribes. It is an architecture for distributed systems, that promotes asynchronous message communication rather than a request/response pattern.\n\nProductor emite un evento/tópico.\nConsumidor se suscribe a eventos/tópicos.\nCola de eventos facilita mensajes asíncronos.\n\nImage credits: (Richards and Ford 2020)"
   },
   {
-    "objectID": "materials/03-architecture-characteristics/index.html#section-5",
-    "href": "materials/03-architecture-characteristics/index.html#section-5",
+    "objectID": "materials/04-architecture-structure/index.html#distribuidos---event-driven-ii",
+    "href": "materials/04-architecture-structure/index.html#distribuidos---event-driven-ii",
     "title": "Fundamentos de arquitectura",
-    "section": "",
-    "text": "Escucha a los stakeholders\n\nEntiende su lenguaje\n\n\nEvita el problema lost in translation\n\n\nTraduce sus peticiones en características deseables de la arquitectura\n\nPeople meeting and brainstorming for a project. Image credits: Rawpixel.com"
+    "section": "Distribuidos - Event-driven (II)",
+    "text": "Distribuidos - Event-driven (II)\nBroker topology\n\n\nNo hay coordinación centralizada de eventos;\nBroadcasting eventos a multiples suscriptores\nImage credits: (Richards and Ford 2020)"
   },
   {
-    "objectID": "materials/03-architecture-characteristics/index.html#si-los-stakeholders-hablan-de",
-    "href": "materials/03-architecture-characteristics/index.html#si-los-stakeholders-hablan-de",
+    "objectID": "materials/04-architecture-structure/index.html#distribuidos---event-driven-iii",
+    "href": "materials/04-architecture-structure/index.html#distribuidos---event-driven-iii",
     "title": "Fundamentos de arquitectura",
-    "section": "Si los stakeholders hablan de…",
-    "text": "Si los stakeholders hablan de…\n…adquisiciones y fusiones\n\nInteroperability + scalability + adaptability + extensibility\n\n\n…reducir tiempos para llegar al mercado\n\nAgility + testability + deployability\n\n\n\n…incrementar la satisfacción del usuario\n\nPerformance + availability + testability + security\n\n\n\n…presupuesto limitado\n\nSimplicity + feasibility"
+    "section": "Distribuidos - Event-driven (III)",
+    "text": "Distribuidos - Event-driven (III)\nMediator topology\n\n\nImage credits: (Richards and Ford 2020)"
   },
   {
-    "objectID": "materials/03-architecture-characteristics/index.html#warren-buffetts-255-rule",
-    "href": "materials/03-architecture-characteristics/index.html#warren-buffetts-255-rule",
+    "objectID": "materials/04-architecture-structure/index.html#distribuidos---event-driven-ejemplos",
+    "href": "materials/04-architecture-structure/index.html#distribuidos---event-driven-ejemplos",
     "title": "Fundamentos de arquitectura",
-    "section": "Warren Buffett’s 25/5 Rule",
-    "text": "Warren Buffett’s 25/5 Rule\nEstrategia de productividad en 3 pasos\n\nEscribe los 25 objetivos para tu carrera/profesión\nMarca las 5 más importantes\nDescarta las otras 20. No requieren tu atención hasta que hayas tenido éxito con las top5\n\n\n\n\n\n\n\n\nTip\n\n\nDeja que los stakeholders sean los que determinen las 3 ó 5 características esenciales"
+    "section": "Distribuidos - Event-driven (ejemplos)",
+    "text": "Distribuidos - Event-driven (ejemplos)\n\nNativeScript Task Dispatcher], desarrollado por Alberto González y Miguel Matey (González-Pérez and Matey-Sanz 2021), (González-Pérez et al. 2022)\nGrafo de tareas cuyas dependencias se gestionan mediante eventos (smartphone) - Ejemplo"
+  },
+  {
+    "objectID": "materials/04-architecture-structure/index.html#distribuidos---service-oriented",
+    "href": "materials/04-architecture-structure/index.html#distribuidos---service-oriented",
+    "title": "Fundamentos de arquitectura",
+    "section": "Distribuidos - Service-oriented",
+    "text": "Distribuidos - Service-oriented\n\n\nImage credits: (Richards and Ford 2020)"
+  },
+  {
+    "objectID": "materials/04-architecture-structure/index.html#distribuidos---microservicios",
+    "href": "materials/04-architecture-structure/index.html#distribuidos---microservicios",
+    "title": "Fundamentos de arquitectura",
+    "section": "Distribuidos - Microservicios",
+    "text": "Distribuidos - Microservicios\n\n\nDomain-driven design (vs partición técnica)\nBounded context: cada microservicio modela un dominio o workflow\nData isolation: cada microservicio tiene su base de datos y esquema de datos\nDespligue con virtualización/contenerización\n\n\nImage credits: (Richards and Ford 2020)"
+  },
+  {
+    "objectID": "materials/04-architecture-structure/index.html#distribuidos---microservicios-ejemplo",
+    "href": "materials/04-architecture-structure/index.html#distribuidos---microservicios-ejemplo",
+    "title": "Fundamentos de arquitectura",
+    "section": "Distribuidos - Microservicios (ejemplo)",
+    "text": "Distribuidos - Microservicios (ejemplo)\nMicroservicios en Akka para computación de métricas basadas en mensajes (Rodríguez Pupo 2021)"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#section",
@@ -250,6 +278,97 @@
     "title": "Fundamentos de arquitectura",
     "section": "The Second Law of Software Architecture",
     "text": "The Second Law of Software Architecture\n\nWhy is more important than how.\n\n\nMark Richards & Neal Ford (Richards and Ford 2020)\n\n\n\n Essential for well-informed decisions.\n Understanding the rationale behind our choices allows us to reevaluate them when needed and retain valuable knowledge."
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#requisitos",
+    "href": "materials/03-architecture-characteristics/index.html#requisitos",
+    "title": "Fundamentos de arquitectura",
+    "section": "Requisitos",
+    "text": "Requisitos\nTodo lo que el software a desarrollar debe hacer o garantizar\n\n\n\nRequisitos funcionales o de negocio\n\nRequisitos no funcionales\n Características de la arquitectura software\n\n\n\n\n\n\n\n\n\nRecuerda\n\n\nUn/a arquitecto/a considera tanto los requisitos funcionales como las características de la arquitectura."
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#libro-de-referencia",
+    "href": "materials/03-architecture-characteristics/index.html#libro-de-referencia",
+    "title": "Fundamentos de arquitectura",
+    "section": "Libro de referencia",
+    "text": "Libro de referencia\n\n\n\n\nBy Mark Richards and Neal Ford\nJanuary 2020\nCapítulos 4 y 5 (Richards and Ford 2020)"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#section",
+    "href": "materials/03-architecture-characteristics/index.html#section",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "Software Architecture “-ilities”: I probably won’t be able to see quality attributes by just looking at the high-level design diagram with some lines connecting to some boxes\nImage credits: (Tai 2022)"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#operacionales",
+    "href": "materials/03-architecture-characteristics/index.html#operacionales",
+    "title": "Fundamentos de arquitectura",
+    "section": "Operacionales",
+    "text": "Operacionales\n\nAvailability/Disponibilidad: Cuánto tiempo deberá estar disponible el sistema\nContinuity/Continuidad: Capacidad de recuperación ante desastres\nPerformance/Rendimiento: Pruebas de estrés, análisis de picos, análisis de la frecuencia de las funciones utilizadas, capacidad requerida y tiempos de respuesta\nReliability/Fiabilidad: Sistema a prueba de fallos\nRobustness/Robustez: Habilidad para manejar condiciones límite y de error (fallo hw)\nScalability/Escalabilidad: Capacidad para gestionar un numero creciente de usuarios/solicitudes sin degradar rendimiento\nElasticity/Elasticidad: Capacidad para gestionar picos masivos de usuarios/solicitudes\n\n\nContinuity/continuidad = Recoverability/recuperabilidad"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#estructurales",
+    "href": "materials/03-architecture-characteristics/index.html#estructurales",
+    "title": "Fundamentos de arquitectura",
+    "section": "Estructurales",
+    "text": "Estructurales\n\nConfigurability/Configurabilidad: Cambiar fácilmente aspectos de la configuración del software\nExtensibility/Extensibilidad: Importancia de añadir nuevas funcionalidades\nInstallability/Instalabilidad: Facilidad de instalación del sistema en las plataformas necesarias\nReuse/Reutilización: Capacidad para aprovechar componentes comunes en múltiples productos\nI18n: Soporte para múltiples idiomas; unidades de medida; monedas"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#transversales",
+    "href": "materials/03-architecture-characteristics/index.html#transversales",
+    "title": "Fundamentos de arquitectura",
+    "section": "Transversales",
+    "text": "Transversales\n\nMaintainability/Mantenibilidad: Facilidad de aplicar cambios y mejorar el sistema\nPortability/Portabilidad: ¿Es necesario que el sistema se ejecute en más de una plataforma?\nSupportability/Soporte: ¿Qué nivel de soporte técnico (logging) necesita la aplicación?\nUpgradeability/Actualización: Capacidad para actualizar rápidamente desde una versión anterior a una versión más nueva en servidores y clientes."
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#section-1",
+    "href": "materials/03-architecture-characteristics/index.html#section-1",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "¡La mayoría de estas características no estan explícitamente descritas en los requisitos!"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#section-2",
+    "href": "materials/03-architecture-characteristics/index.html#section-2",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "#1 Selecciona las justas.\n No diseñes a generic architecture\n\nCada característica que añades complicará el diseño global del sistema. Mantén la lista corta!\nHelpful Tips Information Knowledge Concept. Image credits: Rawpixel.com"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#section-3",
+    "href": "materials/03-architecture-characteristics/index.html#section-3",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "#2 Existen compromisos opuestos entre características.\n Todo es compromiso\n(First Law of Software Architecture)\n\nPor ejemplo, rendimiento vs seguridad. Aumentar la seguridad de un sistema, puede degradar su rendimiento.\nHelpful Tips Information Knowledge Concept. Image credits: Rawpixel.com"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#section-4",
+    "href": "materials/03-architecture-characteristics/index.html#section-4",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "#3 Nunca busques la mejor arquitectura,\n sino la menos mala\n\n¿Sabes? la architectura, como el software, cambiará en el futuro. Diseña para que esos cambios sean fáciles en el futuro.\nHelpful Tips Information Knowledge Concept. Image credits: Rawpixel.com"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#section-5",
+    "href": "materials/03-architecture-characteristics/index.html#section-5",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "Escucha a los stakeholders\n\nEntiende su lenguaje\n\n\nEvita el problema lost in translation\n\n\nTraduce sus peticiones en características deseables de la arquitectura\n\nPeople meeting and brainstorming for a project. Image credits: Rawpixel.com"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#si-los-stakeholders-hablan-de",
+    "href": "materials/03-architecture-characteristics/index.html#si-los-stakeholders-hablan-de",
+    "title": "Fundamentos de arquitectura",
+    "section": "Si los stakeholders hablan de…",
+    "text": "Si los stakeholders hablan de…\n…adquisiciones y fusiones\n\nInteroperability + scalability + adaptability + extensibility\n\n\n…reducir tiempos para llegar al mercado\n\nAgility + testability + deployability\n\n\n\n…incrementar la satisfacción del usuario\n\nPerformance + availability + testability + security\n\n\n\n…presupuesto limitado\n\nSimplicity + feasibility"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#warren-buffetts-255-rule",
+    "href": "materials/03-architecture-characteristics/index.html#warren-buffetts-255-rule",
+    "title": "Fundamentos de arquitectura",
+    "section": "Warren Buffett’s 25/5 Rule",
+    "text": "Warren Buffett’s 25/5 Rule\nEstrategia de productividad en 3 pasos\n\nEscribe los 25 objetivos para tu carrera/profesión\nMarca las 5 más importantes\nDescarta las otras 20. No requieren tu atención hasta que hayas tenido éxito con las top5\n\n\n\n\n\n\n\n\nTip\n\n\nDeja que los stakeholders sean los que determinen las 3 ó 5 características esenciales"
   },
   {
     "objectID": "materials/01-course-content/index.html#section",
