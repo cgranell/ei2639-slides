@@ -282,7 +282,7 @@ Image credits: [@richards2020]
 
 ::: incremental
 
-- **GUÍA** decisiones de arquitectura, principios de diseño, estructura...
+- **GUÍA**: decisiones de arquitectura, principios de diseño, estructura...
 
 - **CAMBIO**: Analiza continuamente y recomienda mejoras
 
@@ -298,7 +298,7 @@ Image credits: [@richards2020]
 
 # Leyes de Arquitectura de Software
 
-## The First Law of software architecture
+## The First Law of Software Architecture
 
 > Everything in software architecture is a **trade-off**.
 
