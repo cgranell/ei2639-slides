@@ -119,7 +119,7 @@ Image credits: [@richards2020]
 
 ## Estructura
 
-:arrow_right: Estilo(s) de la arquitectura, i.e., organización lógica de las partes (por capas, microservicios, etc.)
+{{< fa circle-arrow-right >}} Estilo(s) de la arquitectura, i.e., organización lógica de las partes (por capas, microservicios, etc.)
 
 
 ## Estructura - ejemplos
@@ -134,7 +134,7 @@ Image credits: [@richards2020]
 
 ## Características de la arquitectura 
 
-:arrow_right: Criterios y/o requisitos para el funcionamiento correcto del sistema (ortogonal a la funcionalidad)
+{{< fa circle-arrow-right >}} Criterios y/o requisitos para el funcionamiento correcto del sistema (ortogonal a la funcionalidad)
 
 
 ## Características - ejemplos 
@@ -150,7 +150,7 @@ Image credits: [@richards2020]
 
 ## Decisiones de la arquitectura 
 
-:arrow_right: Reglas y/o restricciones (tajantes) del sistema, i.e. qué se puede y no se puede hacer
+{{< fa circle-arrow-right >}} Reglas y/o restricciones (tajantes) del sistema, i.e. qué se puede y no se puede hacer
 
 ## Decisiones - ejemplos
 
@@ -164,7 +164,7 @@ Image credits: [@richards2020]
 
 ## Principios de diseño 
 
-:arrow_right: Guías, recomendaciones o preferencias (en contraposición a las *reglas tajantes* como las decisiones)
+{{< fa circle-arrow-right >}} Guías, recomendaciones o preferencias (en contraposición a las *reglas tajantes* como las decisiones)
 
 ## Principios de diseño - ejemplos
 
@@ -234,7 +234,7 @@ Image credits: [@richards2020]
 
 ### Arquitecto   
 
-**breadth** {{< fa equals >}} **depth**
+*breadth* {{< fa equals >}} *depth*
 
 Architect should know what **should be done** to create a platform/product **in the right way** [@francis2022]
 
@@ -243,7 +243,7 @@ Architect should know what **should be done** to create a platform/product **in 
 ::: column
 ### Desarrollador  
 
-**depth** {{< fa greater-than >}}{{< fa greater-than >}} **breadth**
+*depth* {{< fa greater-than >}}{{< fa greater-than >}} *breadth*
 
 Developer knows what **can be done** to create a platform/product [@francis2022]
 
@@ -329,8 +329,8 @@ Mark Richards & Neal Ford [@richards2020]
 
 <br/>
 
-:arrow_right: Essential for well-informed decisions. 
+{{< fa circle-arrow-right >}} Essential for well-informed decisions. 
 
-:arrow_right: Understanding the rationale behind our choices allows us to reevaluate them when needed and retain valuable knowledge.
+{{< fa circle-arrow-right >}} Understanding the rationale behind our choices allows us to reevaluate them when needed and retain valuable knowledge.
 
 # Referencias {.scrollable}
