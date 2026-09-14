@@ -46,7 +46,7 @@
     "href": "materials/02-architecture-concepts/index.html#estructura",
     "title": "Fundamentos de arquitectura",
     "section": "Estructura",
-    "text": "Estructura\n➡️ Estilo(s) de la arquitectura, i.e., por capas, microservicios, etc."
+    "text": "Estructura\n➡️ Estilo(s) de la arquitectura, i.e., organización lógica de las partes (por capas, microservicios, etc.)"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#estructura---ejemplos",
@@ -60,7 +60,7 @@
     "href": "materials/02-architecture-concepts/index.html#características-de-la-arquitectura",
     "title": "Fundamentos de arquitectura",
     "section": "Características de la arquitectura",
-    "text": "Características de la arquitectura\n➡️ Criterios/requisitos para el funcionamiento correcto del sistema (ortogonal a la funcionalidad)"
+    "text": "Características de la arquitectura\n➡️ Criterios y/o requisitos para el funcionamiento correcto del sistema (ortogonal a la funcionalidad)"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#características---ejemplos",
@@ -74,7 +74,7 @@
     "href": "materials/02-architecture-concepts/index.html#decisiones-de-la-arquitectura",
     "title": "Fundamentos de arquitectura",
     "section": "Decisiones de la arquitectura",
-    "text": "Decisiones de la arquitectura\n➡️ Reglas/restricciones (tajantes) del sistema, i.e. qué se puede y no se puede hacer"
+    "text": "Decisiones de la arquitectura\n➡️ Reglas y/o restricciones (tajantes) del sistema, i.e. qué se puede y no se puede hacer"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#decisiones---ejemplos",
@@ -88,7 +88,7 @@
     "href": "materials/02-architecture-concepts/index.html#principios-de-diseño",
     "title": "Fundamentos de arquitectura",
     "section": "Principios de diseño",
-    "text": "Principios de diseño\n➡️ Guías, recomendaciones o preferencias (en vez de reglas tajantes como las decisiones)"
+    "text": "Principios de diseño\n➡️ Guías, recomendaciones o preferencias (en contraposición a las reglas tajantes como las decisiones)"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#principios-de-diseño---ejemplos",
@@ -130,14 +130,14 @@
     "href": "materials/02-architecture-concepts/index.html#arquitecto-vs.-desarrollador-iii",
     "title": "Fundamentos de arquitectura",
     "section": "Arquitecto vs. Desarrollador (III)",
-    "text": "Arquitecto vs. Desarrollador (III)\n\n\nArquitecto\nbreadth {{&lt; fa equals &gt;}} depth\nArchitect should know what should be done to create a platform/product in the right way (Francis 2022)\n\nDesarrollador\ndepth {{&lt; fa greater-than &gt;}}{{&lt; fa greater-than &gt;}} breadth\nDeveloper knows what can be done to create a platform/product (Francis 2022)\n\n\n\n\n\n\n\n\nRecuerda\n\n\nA Software Architect needs a broad and deep knowledge of almost everything in order to accomplish the business goals (Tai 2022)\n\n\n\n\nSource: What it takes to become a software architect"
+    "text": "Arquitecto vs. Desarrollador (III)\n\n\nArquitecto\nbreadth  depth\nArchitect should know what should be done to create a platform/product in the right way (Francis 2022)\n\nDesarrollador\ndepth  breadth\nDeveloper knows what can be done to create a platform/product (Francis 2022)\n\n\n\n\n\n\n\n\nRecuerda\n\n\nA Software Architect needs a broad and deep knowledge of almost everything in order to accomplish the business goals (Tai 2022)\n\n\n\n\nSource: What it takes to become a software architect"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#arquitecto-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d6172726f772d7269676874203e7d7d-breadth-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120657175616c73203e7d7d-depth",
     "href": "materials/02-architecture-concepts/index.html#arquitecto-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120636972636c652d6172726f772d7269676874203e7d7d-breadth-b58fc729-690b-4000-b19f-365a4093b2ff7b7b3c20666120657175616c73203e7d7d-depth",
     "title": "Fundamentos de arquitectura",
-    "section": "Arquitecto {{< fa circle-arrow-right >}} breadth {{< fa equals >}} depth",
-    "text": "Arquitecto {{&lt; fa circle-arrow-right &gt;}} breadth {{&lt; fa equals &gt;}} depth\n\n\nPirámide del conocimiento: El arquitecto se especializa en algunas áreas de interés del proyecto. Sacrifica profundidad técnica en aras de tener una visión más amplia. Image credits: (Richards and Ford 2020)"
+    "section": "Arquitecto  breadth  depth",
+    "text": "Arquitecto  breadth  depth\n\n\nPirámide del conocimiento: El arquitecto se especializa en algunas áreas de interés del proyecto. Sacrifica profundidad técnica en aras de tener una visión más amplia. Image credits: (Richards and Ford 2020)"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#qué-roles-desempeña-una-arquitectoa",
@@ -150,8 +150,8 @@
     "objectID": "materials/02-architecture-concepts/index.html#the-first-law-of-software-architecture",
     "href": "materials/02-architecture-concepts/index.html#the-first-law-of-software-architecture",
     "title": "Fundamentos de arquitectura",
-    "section": "The First Law of Software Architecture",
-    "text": "The First Law of Software Architecture\n\nEverything in software architecture is a trade-off.\n\n\nMark Richards & Neal Ford (Richards and Ford 2020)\n\n\n\n➡️ There’s no perfect solution — only choices with consequences. The only constant in software is change.\n➡️ Evaluate trade-offs consciously. Every architectural decision affects the system’s behavior, flexibility, and cost.\n➡️ The only constant in software is change."
+    "section": "The First Law of software architecture",
+    "text": "The First Law of software architecture\n\nEverything in software architecture is a trade-off.\n\n\nMark Richards & Neal Ford (Richards and Ford 2020)\n\n\n\n There’s no perfect solution — only choices with consequences. The only constant in software is change.\n Evaluate trade-offs consciously. Every architectural decision affects the system’s behavior, flexibility, and cost.\n The only constant in software is change."
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#the-second-law-of-software-architecture",
