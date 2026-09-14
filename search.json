@@ -11,7 +11,7 @@
     "href": "materials/03-architecture-characteristics/index.html#requisitos",
     "title": "Fundamentos de arquitectura",
     "section": "Requisitos",
-    "text": "Requisitos\nTodo lo que el software a desarrollar debe hacer o garantizar\n\n\n\nRequisitos funcionales o de negocio\n\nRequisitos no funcionales\n características de la arquitectura\n\n\n\n\n\n\n\n\n\nRecuerda\n\n\nUn/a arquitecto/a considera tanto los requisitos funcionales como las características de la arquitectura."
+    "text": "Requisitos\nTodo lo que el software a desarrollar debe hacer o garantizar\n\n\n\nRequisitos funcionales o de negocio\n\nRequisitos no funcionales\n Características de la arquitectura software\n\n\n\n\n\n\n\n\n\nRecuerda\n\n\nUn/a arquitecto/a considera tanto los requisitos funcionales como las características de la arquitectura."
   },
   {
     "objectID": "materials/03-architecture-characteristics/index.html#libro-de-referencia",
@@ -74,7 +74,7 @@
     "href": "materials/03-architecture-characteristics/index.html#section-4",
     "title": "Fundamentos de arquitectura",
     "section": "",
-    "text": "#3 Nunca busques la mejor arquitectura,\n sino la menos mala.\n\n¿Sabes? la architectura, como el software, cambiará en el futuro. Diseña para que esos cambios sean fáciles en el futuro.\nHelpful Tips Information Knowledge Concept. Image credits: Rawpixel.com"
+    "text": "#3 Nunca busques la mejor arquitectura,\n sino la menos mala\n\n¿Sabes? la architectura, como el software, cambiará en el futuro. Diseña para que esos cambios sean fáciles en el futuro.\nHelpful Tips Information Knowledge Concept. Image credits: Rawpixel.com"
   },
   {
     "objectID": "materials/03-architecture-characteristics/index.html#section-5",
