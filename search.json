@@ -4,7 +4,98 @@
     "href": "index.html",
     "title": "Presentaciones",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nei1026\n\n\nConcepto y principios de los patrones de diseño y de arquitectura de datos\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nei1026, software-architecture\n\n\nConceptos y componentes de la arquitectura de sofware\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nei1026\n\n\nConcepto y principios de los patrones de diseño y de arquitectura de datos\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nei1026, software-architecture\n\n\nConceptos y componentes de la arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nei1026, software-architecture\n\n\nDimensión de las características de una arquitectura de sofware\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#requisitos",
+    "href": "materials/03-architecture-characteristics/index.html#requisitos",
+    "title": "Fundamentos de arquitectura",
+    "section": "Requisitos",
+    "text": "Requisitos\nTodo lo que el software a desarrollar debe hacer o garantizar\n\n\n\nRequisitos funcionales o de negocio\n\nRequisitos no funcionales\n características de la arquitectura\n\n\n\n\n\n\n\n\n\nRecuerda\n\n\nUn/a arquitecto/a considera tanto los requisitos funcionales como las características de la arquitectura."
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#libro-de-referencia",
+    "href": "materials/03-architecture-characteristics/index.html#libro-de-referencia",
+    "title": "Fundamentos de arquitectura",
+    "section": "Libro de referencia",
+    "text": "Libro de referencia\n\n\n\n\nBy Mark Richards and Neal Ford\nJanuary 2020\nCapítulos 4 y 5 (Richards and Ford 2020)"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#section",
+    "href": "materials/03-architecture-characteristics/index.html#section",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "Software Architecture “-ilities”: I probably won’t be able to see quality attributes by just looking at the high-level design diagram with some lines connecting to some boxes\nImage credits: (Tai 2022)"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#operacionales",
+    "href": "materials/03-architecture-characteristics/index.html#operacionales",
+    "title": "Fundamentos de arquitectura",
+    "section": "Operacionales",
+    "text": "Operacionales\n\nAvailability/Disponibilidad: Cuánto tiempo deberá estar disponible el sistema\nContinuity/Continuidad: Capacidad de recuperación ante desastres\nPerformance/Rendimiento: Pruebas de estrés, análisis de picos, análisis de la frecuencia de las funciones utilizadas, capacidad requerida y tiempos de respuesta\nReliability/Fiabilidad: Sistema a prueba de fallos\nRobustness/Robustez: Habilidad para manejar condiciones límite y de error (fallo hw)\nScalability/Escalabilidad: Capacidad para gestionar un numero creciente de usuarios/solicitudes sin degradar rendimiento\nElasticity/Elasticidad: Capacidad para gestionar picos masivos de usuarios/solicitudes\n\n\nContinuity/continuidad = Recoverability/recuperabilidad"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#estructurales",
+    "href": "materials/03-architecture-characteristics/index.html#estructurales",
+    "title": "Fundamentos de arquitectura",
+    "section": "Estructurales",
+    "text": "Estructurales\n\nConfigurability/Configurabilidad: Cambiar fácilmente aspectos de la configuración del software\nExtensibility/Extensibilidad: Importancia de añadir nuevas funcionalidades\nInstallability/Instalabilidad: Facilidad de instalación del sistema en las plataformas necesarias\nReuse/Reutilización: Capacidad para aprovechar componentes comunes en múltiples productos\nI18n: Soporte para múltiples idiomas; unidades de medida; monedas"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#transversales",
+    "href": "materials/03-architecture-characteristics/index.html#transversales",
+    "title": "Fundamentos de arquitectura",
+    "section": "Transversales",
+    "text": "Transversales\n\nMaintainability/Mantenibilidad: Facilidad de aplicar cambios y mejorar el sistema\nPortability/Portabilidad: ¿Es necesario que el sistema se ejecute en más de una plataforma?\nSupportability/Soporte: ¿Qué nivel de soporte técnico (logging) necesita la aplicación?\nUpgradeability/Actualización: Capacidad para actualizar rápidamente desde una versión anterior a una versión más nueva en servidores y clientes."
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#section-1",
+    "href": "materials/03-architecture-characteristics/index.html#section-1",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "¡La mayoría de estas características no estan explícitamente descritas en los requisitos!"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#section-2",
+    "href": "materials/03-architecture-characteristics/index.html#section-2",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "#1 Selecciona las justas.\n No diseñes a generic architecture\n\nCada característica que añades complicará el diseño global del sistema. Mantén la lista corta!\nHelpful Tips Information Knowledge Concept. Image credits: Rawpixel.com"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#section-3",
+    "href": "materials/03-architecture-characteristics/index.html#section-3",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "#2 Existen compromisos opuestos entre características.\n Todo es compromiso\n(First Law of Software Architecture)\n\nPor ejemplo, rendimiento vs seguridad. Aumentar la seguridad de un sistema, puede degradar su rendimiento.\nHelpful Tips Information Knowledge Concept. Image credits: Rawpixel.com"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#section-4",
+    "href": "materials/03-architecture-characteristics/index.html#section-4",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "#3 Nunca busques la mejor arquitectura,\n sino la menos mala.\n\n¿Sabes? la architectura, como el software, cambiará en el futuro. Diseña para que esos cambios sean fáciles en el futuro.\nHelpful Tips Information Knowledge Concept. Image credits: Rawpixel.com"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#section-5",
+    "href": "materials/03-architecture-characteristics/index.html#section-5",
+    "title": "Fundamentos de arquitectura",
+    "section": "",
+    "text": "Escucha a los stakeholders\n\nEntiende su lenguaje\n\n\nEvita el problema lost in translation\n\n\nTraduce sus peticiones en características deseables de la arquitectura\n\nPeople meeting and brainstorming for a project. Image credits: Rawpixel.com"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#si-los-stakeholders-hablan-de",
+    "href": "materials/03-architecture-characteristics/index.html#si-los-stakeholders-hablan-de",
+    "title": "Fundamentos de arquitectura",
+    "section": "Si los stakeholders hablan de…",
+    "text": "Si los stakeholders hablan de…\n…adquisiciones y fusiones\n\nInteroperability + scalability + adaptability + extensibility\n\n\n…reducir tiempos para llegar al mercado\n\nAgility + testability + deployability\n\n\n\n…incrementar la satisfacción del usuario\n\nPerformance + availability + testability + security\n\n\n\n…presupuesto limitado\n\nSimplicity + feasibility"
+  },
+  {
+    "objectID": "materials/03-architecture-characteristics/index.html#warren-buffetts-255-rule",
+    "href": "materials/03-architecture-characteristics/index.html#warren-buffetts-255-rule",
+    "title": "Fundamentos de arquitectura",
+    "section": "Warren Buffett’s 25/5 Rule",
+    "text": "Warren Buffett’s 25/5 Rule\nEstrategia de productividad en 3 pasos\n\nEscribe los 25 objetivos para tu carrera/profesión\nMarca las 5 más importantes\nDescarta las otras 20. No requieren tu atención hasta que hayas tenido éxito con las top5\n\n\n\n\n\n\n\n\nTip\n\n\nDeja que los stakeholders sean los que determinen las 3 ó 5 características esenciales"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#section",
