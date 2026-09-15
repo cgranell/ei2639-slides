@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Presentaciones",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nContenido curso y planificación\n\n\nei1026\n\n\nConcepto y principios de los patrones de diseño y de arquitectura de datos\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nConceptos y roles\n\n\nei1026, software-architecture\n\n\nConceptos, caracterización y dimensiones de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nCaracterísticas de una arquitectura\n\n\nei1026, software-architecture\n\n\nDimensión de las características de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nEstructura/estilos de una arquitectura\n\n\nei1026, software-architecture\n\n\nDimensión de la estructura o estilo de una arquitectura de software\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nContenido curso y planificación\n\n\nei1026\n\n\nConcepto y principios de los patrones de diseño y de arquitectura de datos\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nConceptos y roles\n\n\nei1026, software-architecture\n\n\nConceptos, caracterización y dimensiones de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nCaracterísticas de una arquitectura\n\n\nei1026, software-architecture\n\n\nDimensión de las características de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nEstructura/estilos de una arquitectura\n\n\nei1026, software-architecture\n\n\nDimensión de la estructura o estilo de una arquitectura de software\n\n\n\n\n\n\nPrincipios SOLID\n\n\nGuía rápida\n\n\nei1026, solid-principles\n\n\nDescripción de los 5 principos SOLID para software de calidad\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "materials/04-architecture-structure/index.html#recuerda-dimensiones-arquitectura",
@@ -124,6 +124,69 @@
     "title": "Fundamentos de arquitectura",
     "section": "Distribuidos - Microservicios (ejemplo)",
     "text": "Distribuidos - Microservicios (ejemplo)\nMicroservicios en Akka para computación de métricas basadas en mensajes (Rodríguez Pupo 2021)"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#section",
+    "href": "materials/05-solid-principle/index.html#section",
+    "title": "Principios SOLID",
+    "section": "",
+    "text": "¿Cómo reconocemos que el aire es de baja calidad? ¿Que síntomas observamos?\nPollution collage element, torn paper design Image credits: Rawpixel.com"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#section-1",
+    "href": "materials/05-solid-principle/index.html#section-1",
+    "title": "Principios SOLID",
+    "section": "",
+    "text": "¿Cómo reconocemos código “malo”? ¿Nos sirven los principios básicos d ediseño de software? ¿Qué pasa cuando se modifica código malo? Síntomas del código malo: dependencia, fragilidad, rigidez, falta de reutilización o inmobilidad, viscosidad, etc.\nSoftware developer programming code on black background Image credits: Rawpixel.com"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#concepto",
+    "href": "materials/05-solid-principle/index.html#concepto",
+    "title": "Principios SOLID",
+    "section": "Concepto",
+    "text": "Concepto\n5 principios SOLID del diseño OO para que el software sea más comprensible, flexible y fácil de mantener (Martin 2002)\n\nreducen la complejidad de sistemas/aplicaciones a medida que crecen y\nprevienen los síntomas del código malo\n\n\nReceta contra los síntomas del código malo.\nPrincipios SOLID introducidos por Robert Martin (Uncle Bob) en 2000: Design Principles and Design Patterns\nSOLID: The First 5 Principles of Object Oriented Design | DigitalOcean"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#srp",
+    "href": "materials/05-solid-principle/index.html#srp",
+    "title": "Principios SOLID",
+    "section": "Single Responsability Principle - Principo de responsabilidad única",
+    "text": "Single Responsability Principle - Principo de responsabilidad única\nUna clase debería tener un único propósito\nUna clase debería tener una (buena) razón para cambiar.\nSi hace demasiadas tareas, hay que modificarla cada vez que una de esas tareas cambia.\n\n✔️ Principo de diseño encapsulación\n\nJunta las tareas que cambian por las mismas razones en una clase\nSepara las tareas que cambian por diferentes razones en clases distintas\n\n✔️ Reduce complejidad, fácil entender qué hace una clase\n\nReduce complejidad: Si una clase hace demasiadas cosas, hay que cambiarla cada vez que una de esas cosas cambia\nEasier to understand: Classes, software components and microservices that have only one responsibility are much easier to explain, understand and implement than the ones that provide a solution for everything. This reduces the number of bugs, improves your development speed, and makes your life as a software developer a lot easier\nhttps://stackify.com/solid-design-principles/"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#ocp",
+    "href": "materials/05-solid-principle/index.html#ocp",
+    "title": "Principios SOLID",
+    "section": "Open/Closed Principle - Principio de abierto/cerrado",
+    "text": "Open/Closed Principle - Principio de abierto/cerrado\n✔️ Cerrada a la modificación: Si una clase está desarrollada, probada y revisada, no la reescribas para añadir nuevas funcionalidades\n✔️ Abierta a la extensión: Si necesitas nuevo comportamiento, crea subclases\n✔️ Principo de diseño interfaz\n\nExtender una clase permite añadir nuevo comportamiento sin descomponer clientes existentes de la clase original\n\n\nAbierta y cerrada no son mutuamente excluyentes. Una clase puede estar al mismo tiempo abierta (para la extensión) y cerrada (para la modificación). El código simple es tanto abierto y cerrado.\nOf course, the one exception to the rule is when fixing bugs in existing code.\nhttps://stackify.com/solid-design-open-closed-principle/"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#lsp",
+    "href": "materials/05-solid-principle/index.html#lsp",
+    "title": "Principios SOLID",
+    "section": "Liskov Substitution Principle - Principio de sustitución de Liskov",
+    "text": "Liskov Substitution Principle - Principio de sustitución de Liskov\nSi la clase A es un subtipo de la clase B, deberíamos poder reemplazar B por A sin descomponer el comportamiento de nuestro programa\n\n✔️ Principio de diseño del sentido común (OO)\n\nEscribe abstracciones claras y bien definidas\nSubclases deben ser compatibles con (el comportamiento) de la clase padre\nAl sobrescribir un método, extiende el comportamiento base en lugar de sustituirlo por algo totalmente distinto\n\n\nEscribe abstracciones nítidas, claras y bien definidas.\nhttps://stackify.com/solid-design-liskov-substitution-principle/"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#isp",
+    "href": "materials/05-solid-principle/index.html#isp",
+    "title": "Principios SOLID",
+    "section": "Interface Segregation Principle - Principio de segregación de la interfaz",
+    "text": "Interface Segregation Principle - Principio de segregación de la interfaz\nInterfaces que fuerzan a las clases (implementaciones) a que implementen métodos que no necesitan\n\n✔️ No forzar a clientes (implementaciones) que dependan de métodos que no utilizan\n✔️ Si una interfaz es demasiado grande, sepárala en varias interfaces más pequeñas, para que sean funcionalmente más concisas\n\nhttps://stackify.com/interface-segregation-principle/"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#dip",
+    "href": "materials/05-solid-principle/index.html#dip",
+    "title": "Principios SOLID",
+    "section": "Dependency Inversion Principle - Principio de inversión de dependencia",
+    "text": "Dependency Inversion Principle - Principio de inversión de dependencia\nClases de alto nivel (componentes, servicios) no deben depender de clases de bajo nivel.\n\n✔️ Desacoplamiento de módulos/componentes/clases\n✔️ Principo de diseño composición\n\nComponentes/entidades deben depender de abstracciones, no de implementaciones\n\n\nClases de bajo nivel implementan operaciones básicas como transferir datos por la red.\nClases de alto nivel contienen la lógica de negocio que indican a las clases de bajo nivel que hagan algo.\nEl uso del operador new crea dependencias fuertes entre clases.\nhttps://stackify.com/dependency-inversion-principle/"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#solid-con-ejemplos",
+    "href": "materials/05-solid-principle/index.html#solid-con-ejemplos",
+    "title": "Principios SOLID",
+    "section": "SOLID con ejemplos",
+    "text": "SOLID con ejemplos\n\n(Milignton 2022): Ejemplos claros y sencillos en Java para entender los principios SOLID.\n(Oloruntoba 2021) y (Soysal 2022) proporcionan más ejemplos.\n(Martin 2014): Charla de Robert Martín (creador principios) in Yale"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#section",

@@ -10,8 +10,8 @@
   <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Carlos Granell">
-  <meta name="dcterms.date" content="14/09/2026">
-  <title>EI1039 - slide decks – Diseño de Sofware</title>
+  <meta name="dcterms.date" content="15/09/2026">
+  <title>EI1039 - slide decks – Principios SOLID</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -155,8 +155,8 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Diseño de Sofware</h1>
-  <p class="subtitle">Contenido curso y planificación</p>
+  <h1 class="title">Principios SOLID</h1>
+  <p class="subtitle">Guía rápida</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -171,64 +171,25 @@ Carlos Granell
 
   <p class="date">Sep 15, 2026</p>
 </section>
+<section id="principios-básicos-de-diseño-de-software-poo" class="title-slide slide level1 center">
+<h1>Principios Básicos de Diseño de Software (POO)</h1>
+<ul>
+<li class="fragment"><p><a href="01-course-content#encapsula">Encapsula lo que varía…</a></p></li>
+<li class="fragment"><p><a href="01-course-content#interfaz">Programa a una interfaz, …</a></p></li>
+<li class="fragment"><p><a href="01-course-content#composicion">Favorece la composición sobre …</a></p></li>
+</ul>
+</section>
+
 <section>
-<section id="recuerda" class="title-slide slide level1 center">
-<h1>Recuerda</h1>
+<section id="pero" class="title-slide slide level1 center">
+<h1>Pero</h1>
 
 </section>
-<section id="section" class="slide level2 center" data-menu-title="Concepto">
+<section id="section" class="slide level2" data-menu-title="Aire baja calidad" data-background-image="images/airquality.jpg" data-background-size="cover">
 <h2></h2>
-<h3 id="los-patrones-de-diseño-son">Los patrones de diseño son…</h3>
-</section>
-<section id="section-1" class="slide level2 center" data-menu-title="Concepto (II)">
-<h2></h2>
-<h3 id="soluciones-reutilizables-y-bien-testeadas-a-problemas-recurrentes-en-diseño-de-software">…soluciones reutilizables y bien testeadas a problemas recurrentes en diseño de software</h3>
-</section></section>
-<section>
-<section id="patrones-de-diseño-de-software" class="title-slide slide level1 center">
-<h1>Patrones de Diseño de Software</h1>
-
-</section>
-<section id="gang-of-four" class="slide level2">
-<h2>Gang of Four</h2>
-<p>Los cuatro autores del libro <strong>Design Patterns: Elements of Reusable Object-Oriented Software</strong> <span class="citation" data-cites="gamma1994">(<a href="#/referencias" role="doc-biblioref" onclick="">Gamma et al. 1994</a>)</span></p>
-<ul>
-<li class="fragment">Todos eran desarrolladores de aplicaciones e interfaces gráficas.</li>
-<li class="fragment">Descubrieron patrones que surgían en sus soluciones de diseño.</li>
-<li class="fragment">Formalizaron esos patrones en este libro clásico.</li>
-</ul>
-</section>
-<section id="patrones-creacionales" class="slide level2">
-<h2>Patrones creacionales</h2>
-<p>Proporcionan mecanismos de creación de objetos.</p>
-<ul>
-<li class="fragment">Factory Method</li>
-<li class="fragment">Abstract Factory</li>
-<li class="fragment">Builder</li>
-<li class="fragment">Prototype</li>
-<li class="fragment">Singleton</li>
-</ul>
-</section>
-<section id="patrones-estructurales" class="slide level2">
-<h2>Patrones estructurales</h2>
-<p>Explican cómo ensamblar (o como están conectados) objetos y clases en estructuras más grandes (como maridaje culinario).</p>
-<div class="columns">
-<div class="column">
-<ul>
-<li class="fragment">Adapter</li>
-<li class="fragment">Bridge</li>
-<li class="fragment">Composite</li>
-<li class="fragment">Decorator</li>
-</ul>
-</div><div class="column">
-<ul>
-<li class="fragment">Facade</li>
-<li class="fragment">Flyweight</li>
-<li class="fragment">Proxy</li>
-</ul>
-</div></div>
 <aside class="notes">
-<p>Analogía para los estructurales es el maridaje culinario: juntamos ingredientes de distintas formas para formar nuevas relacioness, ya sea combinando ingredientes físicamente (ensalada) o sin combinación (queso y vino)</p>
+<p>¿Cómo reconocemos que el aire es de baja calidad? ¿Que síntomas observamos?</p>
+<p>Pollution collage element, torn paper design Image credits: <a href="https://www.rawpixel.com/image/6792062/">Rawpixel.com</a></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -241,29 +202,11 @@ Carlos Granell
           display:block!important;
       }</style></aside>
 </section>
-<section id="patrones-de-comportamiento" class="slide level2">
-<h2>Patrones de comportamiento</h2>
-<p>Se encargan de una comunicación efectiva y la asignación de responsabilidades entre objetos (como un equipo F1).</p>
-<div class="columns">
-<div class="column">
-<ul>
-<li class="fragment">Chain of responsability</li>
-<li class="fragment">Command</li>
-<li class="fragment">Iterator</li>
-<li class="fragment">Mediator</li>
-<li class="fragment">Memento</li>
-</ul>
-</div><div class="column">
-<ul>
-<li class="fragment">Observer</li>
-<li class="fragment">State</li>
-<li class="fragment">Strategy</li>
-<li class="fragment">Template Method</li>
-<li class="fragment">Visitor</li>
-</ul>
-</div></div>
+<section id="section-1" class="slide level2" data-menu-title="Código  baja calidad" data-background-image="images/sw-code.jpg" data-background-size="cover">
+<h2></h2>
 <aside class="notes">
-<p>Una analogía para los patrones de comportamiento es el pit/box en una carrera de F1: cada miembro del equipo tiene un rol asignado, pero juntos consiguen un objetivo común.</p>
+<p>¿Cómo reconocemos código “malo”? ¿Nos sirven los principios básicos d ediseño de software? ¿Qué pasa cuando se modifica código malo? Síntomas del código malo: dependencia, fragilidad, rigidez, falta de reutilización o inmobilidad, viscosidad, etc.</p>
+<p>Software developer programming code on black background Image credits: <a href="https://www.rawpixel.com/image/593170">Rawpixel.com</a></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -277,19 +220,49 @@ Carlos Granell
       }</style></aside>
 </section></section>
 <section>
-<section id="principios-básicos-de-poo" class="title-slide slide level1 center">
-<h1>Principios Básicos de POO</h1>
-<p>(presentes en casi todos los patrones de diseño)</p>
+<section id="solid" class="title-slide slide level1 center">
+<h1>SOLID</h1>
+
 </section>
-<section id="encapsula" class="slide level2" data-background-image="images/balance.jpg" data-background-size="cover">
-<h2></h2>
-<p><span class="emoji" data-emoji="star">⭐</span>Encapsula lo que varía y sepáralo de lo que no cambia</p>
-<div class="fragment">
-<div style="text-align: right">
-<p><span class="emoji" data-emoji="arrow_right">➡️</span>Minimiza/aisla el efecto provocado por los cambios</p>
-</div>
+<section id="concepto" class="slide level2">
+<h2>Concepto</h2>
+<p><strong>5 principios SOLID del diseño OO</strong> para que el software sea más comprensible, flexible y fácil de mantener <span class="citation" data-cites="martin2002">(<a href="#/referencias" role="doc-biblioref" onclick="">Martin 2002</a>)</span></p>
+<ul>
+<li class="fragment"><p><strong>reducen la complejidad</strong> de sistemas/aplicaciones a medida que crecen y</p></li>
+<li class="fragment"><p><strong>previenen</strong> los síntomas del <strong>código malo</strong></p></li>
+</ul>
 <aside class="notes">
-<p>Stones Wooden Table Group of Objects Concept Image credits: <a href="https://www.rawpixel.com/image/69379/">Rawpixel.com</a></p>
+<p>Receta contra los síntomas del código malo.</p>
+<p>Principios SOLID introducidos por Robert Martin (<em>Uncle Bob</em>) en 2000: <a href="http://staff.cs.utu.fi/~jounsmed/doos_06/material/DesignPrinciplesAndPatterns.pdf">Design Principles and Design Patterns</a></p>
+<p><a href="https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design">SOLID: The First 5 Principles of Object Oriented Design | DigitalOcean</a></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="srp" class="slide level2 smaller">
+<h2>Single Responsability Principle - Principo de responsabilidad única</h2>
+<p>Una clase debería tener un único propósito</p>
+<p>Una clase debería tener una (buena) razón para cambiar.</p>
+<p>Si hace demasiadas tareas, hay que modificarla cada vez que una de esas tareas cambia.</p>
+<div class="fragment">
+<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> <a href="01-course-content/index.qmd#encapsula">Principo de diseño encapsulación</a></p>
+<ul>
+<li><p>Junta las tareas que cambian <em>por las mismas razones</em> en una clase</p></li>
+<li><p>Separa las tareas que cambian <em>por diferentes razones</em> en clases distintas</p></li>
+</ul>
+<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> Reduce complejidad, fácil entender qué hace una clase</p>
+<aside class="notes">
+<p>Reduce complejidad: Si una clase hace demasiadas cosas, hay que cambiarla cada vez que una de esas cosas cambia</p>
+<p>Easier to understand: Classes, software components and microservices that have only one responsibility are much easier to explain, understand and implement than the ones that provide a solution for everything. This reduces the number of bugs, improves your development speed, and makes your life as a software developer a lot easier</p>
+<p><a href="https://stackify.com/solid-design-principles/">https://stackify.com/solid-design-principles/</a></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -303,26 +276,18 @@ Carlos Granell
       }</style></aside>
 </div>
 </section>
-<section id="interfaz" class="slide level2" data-background-image="images/balance.jpg" data-background-size="cover">
-<h2></h2>
-<p><span class="emoji" data-emoji="star">⭐</span>Programa a una interfaz, no a una implementación</p>
-<div class="fragment">
-<div style="text-align: right">
-<p><span class="emoji" data-emoji="arrow_right">➡️</span>Diseño flexible depende de abstracciones, no de clases concretas</p>
-</div>
-</div>
-</section>
-<section id="composicion" class="slide level2" data-background-image="images/balance.jpg" data-background-size="cover">
-<h2></h2>
-<p><span class="emoji" data-emoji="star">⭐</span>Favorece la composición sobre la herencia</p>
-<div class="fragment">
-<div style="text-align: right">
-<p><span class="emoji" data-emoji="arrow_right">➡️</span>HAS-A puede ser mejor que IS-A</p>
-</div>
+<section id="ocp" class="slide level2">
+<h2>Open/Closed Principle - Principio de abierto/cerrado</h2>
+<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> <strong>Cerrada a la modificación</strong>: Si una clase está desarrollada, probada y revisada, <em>no</em> la reescribas para añadir nuevas funcionalidades</p>
+<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> <strong>Abierta a la extensión</strong>: Si necesitas nuevo comportamiento, <em>crea subclases</em></p>
+<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> <a href="01-course-content/index.qmd#interfaz">Principo de diseño interfaz</a></p>
+<ul>
+<li>Extender una clase permite añadir nuevo comportamiento sin descomponer clientes existentes de la clase original</li>
+</ul>
 <aside class="notes">
-<p>La herencia es probablemente la forma más obvia de reutilizar código entre clases. Tienes dos clases con el mismo código. Creas una clase base común para esas dos clases y encapsulas dentro el código similar.</p>
-<p>Sin embargo, la herencia establece despendencias fuertes entre clases <em>de forma estática</em>. Puedes hacer más débil una dependencia haciendo que tu código depende <em>de forma dinámica</em> de interfaces o clases abstractas en lugar de clases concretas o implementaciones.</p>
-<p>En vez de <em>heredar</em> un comportamiento, un objeto obtiene un comportamiento cuando <em>se compone</em> con un objeto de ese comportamiento.</p>
+<p>Abierta y cerrada no son mutuamente excluyentes. Una clase puede estar al mismo tiempo abierta (para la extensión) y cerrada (para la modificación). El código simple es tanto abierto y cerrado.</p>
+<p>Of course, the one exception to the rule is when fixing bugs in existing code.</p>
+<p><a href="https://stackify.com/solid-design-open-closed-principle/">https://stackify.com/solid-design-open-closed-principle/</a></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -334,68 +299,20 @@ Carlos Granell
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</div>
-</section></section>
-<section>
-<section id="patrones-de-arquitectura-de-datos" class="title-slide slide level1 center">
-<h1>Patrones de Arquitectura de Datos</h1>
-
 </section>
-<section id="ingeniería-de-datos" class="slide level2">
-<h2>Ingeniería de datos</h2>
-<p>No se trata de trasladar datos de un sistema a otro…</p>
+<section id="lsp" class="slide level2">
+<h2>Liskov Substitution Principle - Principio de sustitución de Liskov</h2>
+<p>Si la clase A es un subtipo de la clase B, deberíamos poder reemplazar B por A sin descomponer el comportamiento de nuestro programa</p>
 <div class="fragment">
-<p>sino de diseñar arquitecturas escalables, fiables, seguras, rentables y preparadas para la analítica en tiempo real y la IA.</p>
-</div>
-</section>
-<section id="patrones-de-datos" class="slide level2">
-<h2>Patrones de datos</h2>
+<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> Principio de diseño del sentido común (OO)</p>
 <ul>
-<li class="fragment">ETL Architecture</li>
-<li class="fragment">Data Lake Architecture</li>
-<li class="fragment">Lambda Architecture</li>
-<li class="fragment">Kappa Architecture</li>
-<li class="fragment">Medallion Architecture</li>
-<li class="fragment">Data Product Architecture</li>
+<li><p>Escribe abstracciones claras y bien definidas</p></li>
+<li><p>Subclases deben ser compatibles con (el comportamiento) de la clase padre</p></li>
+<li><p>Al sobrescribir un método, extiende el comportamiento base en lugar de sustituirlo por algo totalmente distinto</p></li>
 </ul>
-</section></section>
-<section>
-<section id="y-supongo-que-os-preguntaréis." class="title-slide slide level1 center">
-<h1>Y supongo que os preguntaréis….</h1>
-
-</section>
-<section id="puedo-trabajar-como-programador-sin-conocer-los-patrones-de-diseño-yo-arquitectura-de-datos" class="slide level2">
-<h2>¿Puedo trabajar como programador sin conocer los patrones de diseño (y/o arquitectura de datos)?</h2>
-<div class="fragment">
-<p>Sí, puedes. A lo mejor los has utilizado sin saberlo.</p>
-</div>
-</section>
-<section id="por-qué-tengo-que-dedicar-tiempo-a-aprenderlos" class="slide level2">
-<h2>¿Por qué tengo que dedicar tiempo a aprenderlos?</h2>
-<div class="fragment">
-<p>Como ingenieros/as, proporcionamos soluciones a problemas. Cuanto mayor sea tu <strong>juego de herramientas</strong> para resolver problemas, mejor ingeniero/a serás.</p>
-</div>
-</section>
-<section id="si-aplico-un-patrón-copio-su-código-y-listo" class="slide level2">
-<h2>Si aplico un patrón, ¿copio su código y listo?</h2>
-<div class="fragment">
-<p>Los patrones no son código ya preparado como funciones o algoritmos. Son <strong>soluciones conceptuales</strong> para resolver un problema frecuente de diseño en tu código.</p>
-<div class="callout callout-important callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong><strong>Recuerda</strong></strong></p>
-</div>
-<div class="callout-content">
-<p>patrón <strong>≌</strong> plano</p>
-</div>
-</div>
-</div>
 <aside class="notes">
-<p>Un algoritmo == una receta de cocina: ambos cuentan con pasos claros para alcanzar una meta.</p>
-<p>Un patrón == un plano, ya que puedes observar el resultado y sus funciones, pero el orden exacto de la implementación depende de ti.</p>
+<p>Escribe abstracciones nítidas, claras y bien definidas.</p>
+<p><a href="https://stackify.com/solid-design-liskov-substitution-principle/">https://stackify.com/solid-design-liskov-substitution-principle/</a></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -409,58 +326,81 @@ Carlos Granell
       }</style></aside>
 </div>
 </section>
-<section id="y-entonces-cómo-implemento-un-patrón-en-mi-código" class="slide level2">
-<h2>Y entonces, ¿cómo implemento un patrón en mi código?</h2>
+<section id="isp" class="slide level2">
+<h2>Interface Segregation Principle - Principio de segregación de la interfaz</h2>
+<p>Interfaces que fuerzan a las clases (implementaciones) a que implementen métodos que no necesitan</p>
 <div class="fragment">
-<p>Sigue los detalles de la solución conceptual del patrón pero la implementación depende de ti, para que encaje con las <strong>restricciones</strong> y <strong>objetivo</strong> de tu código.</p>
+<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> No forzar a clientes (implementaciones) que dependan de métodos que no utilizan</p>
+<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> Si una interfaz es demasiado grande, sepárala en varias interfaces más pequeñas, para que sean <em>funcionalmente</em> más concisas</p>
+<aside class="notes">
+<p><a href="https://stackify.com/interface-segregation-principle/">https://stackify.com/interface-segregation-principle/</a></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
-<section id="lo-más-difícil-entonces-es-implementar-una-versión-personalizada-del-patrón" class="slide level2">
-<h2>¿Lo más difícil entonces es implementar una versión personalizada del patrón?</h2>
+<section id="dip" class="slide level2">
+<h2>Dependency Inversion Principle - Principio de inversión de dependencia</h2>
+<p>Clases de alto nivel (componentes, servicios) no deben depender de clases de bajo nivel.</p>
 <div class="fragment">
-<p>No, esa es la parte “mecánica” (sin despreciar la dificultad que atañe escribir código).</p>
-</div>
-</section>
-<section id="qué-es-lo-más-difícil" class="slide level2">
-<h2>¿Qué es lo más difícil? <span class="emoji" data-emoji="fearful">😨</span></h2>
-<div class="fragment">
-<p>Reconocer si un patrón en particular <em>ES o NO ES</em> la <strong>solución</strong> a tu <strong>problema</strong> particular</p>
-</div>
-</section>
-<section id="y-además-los-patrones-definen-un-vocabulario-común-para-comunicarte-con-tu-equipo" class="slide level2">
-<h2>Y además los patrones definen un vocabulario común para comunicarte con tu equipo</h2>
-<div class="fragment">
-<p>“Sí, claro, utiliza un <em>singleton</em> para eso que quieres hacer”.</p>
-</div>
-</section>
-<section id="resumen" class="slide level2">
-<h2>Resumen</h2>
+<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> <strong>Desacoplamiento</strong> de módulos/componentes/clases</p>
+<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> <a href="01-course-content/index.qmd#composicion">Principo de diseño composición</a></p>
 <ul>
-<li class="fragment"><p>Soluciones conceptuales muy probadas y testeadas</p></li>
-<li class="fragment"><p>Proporcionan un vocabulario común</p></li>
-<li class="fragment"><p>No es siempre obvio qué patrón utilizar</p></li>
-<li class="fragment"><p>No abuses de los patrones si existe una solución más sencilla</p></li>
+<li>Componentes/entidades deben depender de abstracciones, no de implementaciones</li>
+</ul>
+<aside class="notes">
+<p>Clases de bajo nivel implementan operaciones básicas como transferir datos por la red.</p>
+<p>Clases de alto nivel contienen la lógica de negocio que indican a las clases de bajo nivel que hagan algo.</p>
+<p>El uso del operador <code>new</code> crea dependencias fuertes entre clases.</p>
+<p><a href="https://stackify.com/dependency-inversion-principle/">https://stackify.com/dependency-inversion-principle/</a></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</div>
+</section>
+<section id="solid-con-ejemplos" class="slide level2">
+<h2>SOLID con ejemplos</h2>
+<ul>
+<li><p><span class="citation" data-cites="milington2022">(<a href="#/referencias" role="doc-biblioref" onclick="">Milignton 2022</a>)</span>: Ejemplos claros y sencillos en Java para entender los principios SOLID.</p></li>
+<li><p><span class="citation" data-cites="oloruntoba2020">(<a href="#/referencias" role="doc-biblioref" onclick="">Oloruntoba 2021</a>)</span> y <span class="citation" data-cites="soysal2022">(<a href="#/referencias" role="doc-biblioref" onclick="">Soysal 2022</a>)</span> proporcionan más ejemplos.</p></li>
+<li><p><span class="citation" data-cites="martin2014">(<a href="#/referencias" role="doc-biblioref" onclick="">Martin 2014</a>)</span>: Charla de Robert Martín (creador principios) in Yale</p></li>
 </ul>
 </section></section>
-<section id="planificación" class="title-slide slide level1 center">
-<h1>Planificación</h1>
-<ul>
-<li class="fragment">Sesión 1: Intro asignatura + contenido</li>
-<li class="fragment">Sesión 2: Arquitectura software + role arquitecto/a</li>
-<li class="fragment">Sesión 3: Principios SOLID + patrones creacionales</li>
-<li class="fragment">Sesión 4 y 5: Patrones estructurales</li>
-<li class="fragment">Sesión 6 y 7: Patrones de comportamiento</li>
-<li class="fragment">Sesión 8: Patrones de arquitectura de datos</li>
-</ul>
-</section>
-
 <section id="referencias" class="title-slide slide level1 scrollable smaller">
 <h1>Referencias</h1>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
-<div id="ref-gamma1994" class="csl-entry" role="listitem">
-Gamma, Erich, Richard Helm, Ralph Johnson, and John Vlissides. 1994. <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>. Addison-Wesley.
+<div id="ref-martin2002" class="csl-entry" role="listitem">
+Martin, Robert. 2002. <em>Agile Software Development: Principles, Patterns, and Practices</em>. Pearson Education, 1st edition. <a href="http://blog.cleancoder.com/uncle-bob/2020/10/18/Solid-Relevance.html">http://blog.cleancoder.com/uncle-bob/2020/10/18/Solid-Relevance.html</a>.
+</div>
+<div id="ref-martin2014" class="csl-entry" role="listitem">
+Martin, Robert. 2014. <em>SOLID Principles of Objetc Oriented &amp; AGILE Design (Video)</em>. <a href="https://www.youtube.com/watch?v=TMuno5RZNeE">https://www.youtube.com/watch?v=TMuno5RZNeE</a>.
+</div>
+<div id="ref-milington2022" class="csl-entry" role="listitem">
+Milignton, Sam. 2022. <em>A Solid Guide to SOLID: Principles</em>. <a href="https://www.baeldung.com/solid-principles">https://www.baeldung.com/solid-principles</a>.
+</div>
+<div id="ref-oloruntoba2020" class="csl-entry" role="listitem">
+Oloruntoba, Samuel. 2021. <em>SOLID: The First 5 Principles of Object Oriented Design</em>. <a href="https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design">https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design</a>.
+</div>
+<div id="ref-soysal2022" class="csl-entry" role="listitem">
+Soysal, Berke. 2022. <em>SOLID Principles with (Almost) Real-Life Examples in Java</em>. <a href="https://betterprogramming.pub/solid-principles-with-almost-real-life-examples-in-java-b292a4e2c18b">https://betterprogramming.pub/solid-principles-with-almost-real-life-examples-in-java-b292a4e2c18b</a>.
 </div>
 </div>
 </section>

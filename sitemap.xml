@@ -2,22 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cgranell.github.io/ei2639-slides/index.html</loc>
-    <lastmod>2026-09-14T11:43:26.418Z</lastmod>
+    <lastmod>2026-09-15T07:36:28.869Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/ei2639-slides/materials/04-architecture-structure/index.html</loc>
-    <lastmod>2026-09-14T11:43:26.449Z</lastmod>
+    <lastmod>2026-09-15T07:36:28.897Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cgranell.github.io/ei2639-slides/materials/05-solid-principle/index.html</loc>
+    <lastmod>2026-09-15T07:36:28.901Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/ei2639-slides/materials/02-architecture-concepts/index.html</loc>
-    <lastmod>2026-09-14T11:43:26.439Z</lastmod>
+    <lastmod>2026-09-15T07:36:28.888Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/ei2639-slides/materials/03-architecture-characteristics/index.html</loc>
-    <lastmod>2026-09-14T11:43:26.444Z</lastmod>
+    <lastmod>2026-09-15T07:36:28.893Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/ei2639-slides/materials/01-course-content/index.html</loc>
-    <lastmod>2026-09-14T11:43:26.420Z</lastmod>
+    <lastmod>2026-09-15T07:36:28.871Z</lastmod>
   </url>
 </urlset>
