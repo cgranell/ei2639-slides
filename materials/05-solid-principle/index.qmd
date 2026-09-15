@@ -1,7 +1,7 @@
 ---
 title: "Principios SOLID"
 subtitle: "Guía rápida"
-description: "Descripción de los 5 principos SOLID para software de calidad"
+description: "Descripción de los principos SOLID para software de calidad"
 author: "Carlos Granell"
 institute: "[GEOTEC](https://geotec.uji.es/), Universitat Jaume I"
 date: last-modified
