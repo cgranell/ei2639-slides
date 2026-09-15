@@ -6,7 +6,9 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Carlos Granell">
@@ -171,8 +173,8 @@ Carlos Granell
 
   <p class="date">Sep 15, 2026</p>
 </section>
-<section id="principios-básicos-de-diseño-de-software-poo" class="title-slide slide level1 center">
-<h1>Principios Básicos de Diseño de Software (POO)</h1>
+<section id="principios-básicos-oo-de-diseño-de-software" class="title-slide slide level1 center">
+<h1>Principios Básicos (OO) de Diseño de Software</h1>
 <ul>
 <li class="fragment"><p><a href="../01-course-content#encapsula">Encapsula lo que varía…</a></p></li>
 <li class="fragment"><p><a href="../01-course-content#interfaz">Programa a una interfaz, …</a></p></li>
@@ -185,10 +187,10 @@ Carlos Granell
 <h1>Pero</h1>
 
 </section>
-<section id="section" class="slide level2" data-menu-title="Aire baja calidad" data-background-image="images/airquality.jpg" data-background-size="cover">
+<section id="section" class="slide level2" data-menu-title="Aire de baja calidad" data-background-image="images/airquality.jpg" data-background-size="cover">
 <h2></h2>
 <aside class="notes">
-<p>¿Cómo reconocemos que el aire es de baja calidad? ¿Que síntomas observamos?</p>
+<p>¿Cómo reconocemos que el aire es de baja calidad? ¿Que síntomas observamos? ¿Cómo lo percibimos?</p>
 <p>Pollution collage element, torn paper design Image credits: <a href="https://www.rawpixel.com/image/6792062/">Rawpixel.com</a></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -202,10 +204,26 @@ Carlos Granell
           display:block!important;
       }</style></aside>
 </section>
-<section id="section-1" class="slide level2" data-menu-title="Código  baja calidad" data-background-image="images/sw-code.jpg" data-background-size="cover">
+<section id="section-1" class="slide level2" data-menu-title="Código de baja calidad" data-background-image="images/sw-code.jpg" data-background-size="cover">
 <h2></h2>
+<div class="fragment highlight-red grow">
+<p>Dependencia</p>
+</div>
+<div class="fragment highlight-red grow">
+<p>Fragilidad</p>
+</div>
+<div class="fragment highlight-red grow">
+<p>Rigidez</p>
+</div>
+<div class="fragment highlight-red">
+<p>Falta de reutilización</p>
+</div>
+<div class="fragment highlight-red">
+<p>Viscosidad</p>
+</div>
 <aside class="notes">
-<p>¿Cómo reconocemos código “malo”? ¿Nos sirven los principios básicos d ediseño de software? ¿Qué pasa cuando se modifica código malo? Síntomas del código malo: dependencia, fragilidad, rigidez, falta de reutilización o inmobilidad, viscosidad, etc.</p>
+<p>¿Cómo reconocemos que un código es “malo”? ¿Nos sirven los principios básicos de diseño de software para afirmarlo? ¿Qué pasa cuando se modifica o actualiza un código malo?</p>
+<p>Síntomas del código malo: dependencia, fragilidad, rigidez, falta de reutilización o inmobilidad, viscosidad, etc.</p>
 <p>Software developer programming code on black background Image credits: <a href="https://www.rawpixel.com/image/593170">Rawpixel.com</a></p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -248,17 +266,17 @@ Carlos Granell
       }</style></aside>
 </section>
 <section id="srp" class="slide level2 smaller">
-<h2>Single Responsability Principle - Principo de responsabilidad única</h2>
-<p>Una clase debería tener un único propósito</p>
-<p>Una clase debería tener una (buena) razón para cambiar.</p>
-<p>Si hace demasiadas tareas, hay que modificarla cada vez que una de esas tareas cambia.</p>
+<h2>Single Responsability Principle - <em>Principio de responsabilidad única</em></h2>
+<p><i class="fa-solid fa-check" aria-label="check"></i> Una clase debería tener <strong>un único propósito</strong>: Reduce complejidad, fácil entender qué hace cada clase</p>
 <div class="fragment">
-<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> <a href="../01-course-content#encapsula">Principo de diseño encapsulación</a></p>
+<p><i class="fa-solid fa-check" aria-label="check"></i> Una clase debería tener una <strong>(buena) razón para cambiar</strong>: Si hace demasiadas tareas, hay que modificarla cada vez que una de esas tareas cambia.</p>
+</div>
+<div class="fragment">
+<p><i class="fa-solid fa-circle-arrow-right" aria-label="circle-arrow-right"></i> <a href="../01-course-content#encapsula">Principo de diseño encapsulación</a></p>
 <ul>
 <li><p>Junta las tareas que cambian <em>por las mismas razones</em> en una clase</p></li>
 <li><p>Separa las tareas que cambian <em>por diferentes razones</em> en clases distintas</p></li>
 </ul>
-<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> Reduce complejidad, fácil entender qué hace una clase</p>
 <aside class="notes">
 <p>Reduce complejidad: Si una clase hace demasiadas cosas, hay que cambiarla cada vez que una de esas cosas cambia</p>
 <p>Easier to understand: Classes, software components and microservices that have only one responsibility are much easier to explain, understand and implement than the ones that provide a solution for everything. This reduces the number of bugs, improves your development speed, and makes your life as a software developer a lot easier</p>

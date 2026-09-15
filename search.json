@@ -130,14 +130,14 @@
     "href": "materials/05-solid-principle/index.html#section",
     "title": "Principios SOLID",
     "section": "",
-    "text": "¿Cómo reconocemos que el aire es de baja calidad? ¿Que síntomas observamos?\nPollution collage element, torn paper design Image credits: Rawpixel.com"
+    "text": "¿Cómo reconocemos que el aire es de baja calidad? ¿Que síntomas observamos? ¿Cómo lo percibimos?\nPollution collage element, torn paper design Image credits: Rawpixel.com"
   },
   {
     "objectID": "materials/05-solid-principle/index.html#section-1",
     "href": "materials/05-solid-principle/index.html#section-1",
     "title": "Principios SOLID",
     "section": "",
-    "text": "¿Cómo reconocemos código “malo”? ¿Nos sirven los principios básicos d ediseño de software? ¿Qué pasa cuando se modifica código malo? Síntomas del código malo: dependencia, fragilidad, rigidez, falta de reutilización o inmobilidad, viscosidad, etc.\nSoftware developer programming code on black background Image credits: Rawpixel.com"
+    "text": "Dependencia\n\n\nFragilidad\n\n\nRigidez\n\n\nFalta de reutilización\n\n\nViscosidad\n\n\n¿Cómo reconocemos que un código es “malo”? ¿Nos sirven los principios básicos de diseño de software para afirmarlo? ¿Qué pasa cuando se modifica o actualiza un código malo?\nSíntomas del código malo: dependencia, fragilidad, rigidez, falta de reutilización o inmobilidad, viscosidad, etc.\nSoftware developer programming code on black background Image credits: Rawpixel.com"
   },
   {
     "objectID": "materials/05-solid-principle/index.html#concepto",
@@ -150,8 +150,8 @@
     "objectID": "materials/05-solid-principle/index.html#srp",
     "href": "materials/05-solid-principle/index.html#srp",
     "title": "Principios SOLID",
-    "section": "Single Responsability Principle - Principo de responsabilidad única",
-    "text": "Single Responsability Principle - Principo de responsabilidad única\nUna clase debería tener un único propósito\nUna clase debería tener una (buena) razón para cambiar.\nSi hace demasiadas tareas, hay que modificarla cada vez que una de esas tareas cambia.\n\n✔️ Principo de diseño encapsulación\n\nJunta las tareas que cambian por las mismas razones en una clase\nSepara las tareas que cambian por diferentes razones en clases distintas\n\n✔️ Reduce complejidad, fácil entender qué hace una clase\n\nReduce complejidad: Si una clase hace demasiadas cosas, hay que cambiarla cada vez que una de esas cosas cambia\nEasier to understand: Classes, software components and microservices that have only one responsibility are much easier to explain, understand and implement than the ones that provide a solution for everything. This reduces the number of bugs, improves your development speed, and makes your life as a software developer a lot easier\nhttps://stackify.com/solid-design-principles/"
+    "section": "Single Responsability Principle - Principio de responsabilidad única",
+    "text": "Single Responsability Principle - Principio de responsabilidad única\n Una clase debería tener un único propósito: Reduce complejidad, fácil entender qué hace cada clase\n\n Una clase debería tener una (buena) razón para cambiar: Si hace demasiadas tareas, hay que modificarla cada vez que una de esas tareas cambia.\n\n\n Principo de diseño encapsulación\n\nJunta las tareas que cambian por las mismas razones en una clase\nSepara las tareas que cambian por diferentes razones en clases distintas\n\n\nReduce complejidad: Si una clase hace demasiadas cosas, hay que cambiarla cada vez que una de esas cosas cambia\nEasier to understand: Classes, software components and microservices that have only one responsibility are much easier to explain, understand and implement than the ones that provide a solution for everything. This reduces the number of bugs, improves your development speed, and makes your life as a software developer a lot easier\nhttps://stackify.com/solid-design-principles/"
   },
   {
     "objectID": "materials/05-solid-principle/index.html#ocp",
