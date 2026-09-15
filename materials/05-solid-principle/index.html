@@ -184,7 +184,7 @@ Carlos Granell
 
 <section>
 <section id="pero" class="title-slide slide level1 center">
-<h1>Pero</h1>
+<h1>PERO</h1>
 
 </section>
 <section id="section" class="slide level2" data-menu-title="Aire de baja calidad" data-background-image="images/airquality.jpg" data-background-size="cover">
@@ -206,6 +206,9 @@ Carlos Granell
 </section>
 <section id="section-1" class="slide level2" data-menu-title="Código de baja calidad" data-background-image="images/sw-code.jpg" data-background-size="cover">
 <h2></h2>
+</section>
+<section id="section-2" class="slide level2" data-menu-title="Código de baja calidad - síntomas" data-background-image="images/sw-code.jpg" data-background-size="cover">
+<h2></h2>
 <div class="fragment highlight-red grow">
 <p>Dependencia</p>
 </div>
@@ -215,10 +218,10 @@ Carlos Granell
 <div class="fragment highlight-red grow">
 <p>Rigidez</p>
 </div>
-<div class="fragment highlight-red">
+<div class="fragment highlight-red grow">
 <p>Falta de reutilización</p>
 </div>
-<div class="fragment highlight-red">
+<div class="fragment highlight-red grow">
 <p>Viscosidad</p>
 </div>
 <aside class="notes">
@@ -265,17 +268,20 @@ Carlos Granell
           display:block!important;
       }</style></aside>
 </section>
-<section id="srp" class="slide level2 smaller">
-<h2>Single Responsability Principle - <em>Principio de responsabilidad única</em></h2>
-<p><i class="fa-solid fa-check" aria-label="check"></i> Una clase debería tener <strong>un único propósito</strong>: Reduce complejidad, fácil entender qué hace cada clase</p>
+<section id="srp" class="slide level2">
+<h2>Single Responsability Principle</h2>
+<p>Una clase debería tener:</p>
 <div class="fragment">
-<p><i class="fa-solid fa-check" aria-label="check"></i> Una clase debería tener una <strong>(buena) razón para cambiar</strong>: Si hace demasiadas tareas, hay que modificarla cada vez que una de esas tareas cambia.</p>
+<p><i class="fa-solid fa-check" aria-label="check"></i> <strong>un único propósito</strong>: Reduce complejidad, fácil entender qué hace cada clase</p>
+</div>
+<div class="fragment">
+<p><i class="fa-solid fa-check" aria-label="check"></i> una <strong>buena razón para cambiar</strong>: Si hace demasiadas tareas, hay que modificarla cada vez que una tarea cambia.</p>
 </div>
 <div class="fragment">
 <p><i class="fa-solid fa-circle-arrow-right" aria-label="circle-arrow-right"></i> <a href="../01-course-content#encapsula">Principo de diseño encapsulación</a></p>
 <ul>
-<li><p>Junta las tareas que cambian <em>por las mismas razones</em> en una clase</p></li>
-<li><p>Separa las tareas que cambian <em>por diferentes razones</em> en clases distintas</p></li>
+<li class="fragment"><p>Tareas que cambian <em>por las mismas razones</em> en una clase</p></li>
+<li class="fragment"><p>Tareas que cambian <em>por diferentes razones</em> en clases distintas</p></li>
 </ul>
 <aside class="notes">
 <p>Reduce complejidad: Si una clase hace demasiadas cosas, hay que cambiarla cada vez que una de esas cosas cambia</p>
@@ -295,12 +301,17 @@ Carlos Granell
 </div>
 </section>
 <section id="ocp" class="slide level2">
-<h2>Open/Closed Principle - Principio de abierto/cerrado</h2>
-<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> <strong>Cerrada a la modificación</strong>: Si una clase está desarrollada, probada y revisada, <em>no</em> la reescribas para añadir nuevas funcionalidades</p>
-<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> <strong>Abierta a la extensión</strong>: Si necesitas nuevo comportamiento, <em>crea subclases</em></p>
-<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> <a href="../01-course-content#interfaz">Principo de diseño interfaz</a></p>
+<h2>Open/Closed Principle</h2>
+<div class="fragment">
+<p><i class="fa-solid fa-check" aria-label="check"></i> <strong>Cerrada a la modificación</strong>: Si una clase está desarrollada, probada y revisada, <em>no</em> la reescribas para añadir nuevas funcionalidades</p>
+</div>
+<div class="fragment">
+<p><i class="fa-solid fa-check" aria-label="check"></i> <strong>Abierta a la extensión</strong>: Si necesitas nuevo comportamiento, <em>crea subclases</em></p>
+</div>
+<div class="fragment">
+<p><i class="fa-solid fa-circle-arrow-right" aria-label="circle-arrow-right"></i> <a href="../01-course-content#interfaz">Principo de diseño interfaz</a></p>
 <ul>
-<li>Extender una clase permite añadir nuevo comportamiento sin descomponer clientes existentes de la clase original</li>
+<li class="fragment">Extender una clase permite añadir nuevo comportamiento sin descomponer clientes existentes de la clase original</li>
 </ul>
 <aside class="notes">
 <p>Abierta y cerrada no son mutuamente excluyentes. Una clase puede estar al mismo tiempo abierta (para la extensión) y cerrada (para la modificación). El código simple es tanto abierto y cerrado.</p>
@@ -317,16 +328,17 @@ Carlos Granell
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+</div>
 </section>
 <section id="lsp" class="slide level2">
 <h2>Liskov Substitution Principle - Principio de sustitución de Liskov</h2>
-<p>Si la clase A es un subtipo de la clase B, deberíamos poder reemplazar B por A sin descomponer el comportamiento de nuestro programa</p>
+<p><i class="fa-solid fa-check" aria-label="check"></i> Si la clase A es un subtipo de la clase B, se podría reemplazar B por A sin alterar el comportamiento del sistema</p>
 <div class="fragment">
-<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> Principio de diseño del sentido común (OO)</p>
+<p><i class="fa-solid fa-circle-arrow-right" aria-label="circle-arrow-right"></i> Principio de diseño del sentido común</p>
 <ul>
-<li><p>Escribe abstracciones claras y bien definidas</p></li>
-<li><p>Subclases deben ser compatibles con (el comportamiento) de la clase padre</p></li>
-<li><p>Al sobrescribir un método, extiende el comportamiento base en lugar de sustituirlo por algo totalmente distinto</p></li>
+<li class="fragment"><p>Escribe abstracciones claras y bien definidas</p></li>
+<li class="fragment"><p>Subclases deben ser compatibles con (el comportamiento) de la clase padre</p></li>
+<li class="fragment"><p>Al sobrescribir un método, extiende el comportamiento base en lugar de sustituirlo por algo totalmente distinto</p></li>
 </ul>
 <aside class="notes">
 <p>Escribe abstracciones nítidas, claras y bien definidas.</p>
@@ -345,11 +357,10 @@ Carlos Granell
 </div>
 </section>
 <section id="isp" class="slide level2">
-<h2>Interface Segregation Principle - Principio de segregación de la interfaz</h2>
-<p>Interfaces que fuerzan a las clases (implementaciones) a que implementen métodos que no necesitan</p>
+<h2>Interface Segregation Principle</h2>
+<p><i class="fa-solid fa-check" aria-label="check"></i> <strong>Interfaces con funcionalidad/comportamiento conciso</strong>: Evita interfaces para que los clientes (implementaciones) no dependan de métodos que no necesitan</p>
 <div class="fragment">
-<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> No forzar a clientes (implementaciones) que dependan de métodos que no utilizan</p>
-<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> Si una interfaz es demasiado grande, sepárala en varias interfaces más pequeñas, para que sean <em>funcionalmente</em> más concisas</p>
+<p><i class="fa-solid fa-check" aria-label="check"></i> <strong>Divide interfaces</strong>: Si una interfaz es demasiado grande, sepárala en varias interfaces más pequeñas</p>
 <aside class="notes">
 <p><a href="https://stackify.com/interface-segregation-principle/">https://stackify.com/interface-segregation-principle/</a></p>
 <style type="text/css">
@@ -366,13 +377,12 @@ Carlos Granell
 </div>
 </section>
 <section id="dip" class="slide level2">
-<h2>Dependency Inversion Principle - Principio de inversión de dependencia</h2>
-<p>Clases de alto nivel (componentes, servicios) no deben depender de clases de bajo nivel.</p>
+<h2>Dependency Inversion Principle</h2>
+<p><i class="fa-solid fa-check" aria-label="check"></i> <strong>Desacoplamiento</strong> de módulos/componentes/clases: clases de alto nivel (componentes, servicios) no deben depender de clases de bajo nivel.</p>
 <div class="fragment">
-<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> <strong>Desacoplamiento</strong> de módulos/componentes/clases</p>
-<p><span class="emoji" data-emoji="heavy_check_mark">✔️</span> <a href="../01-course-content#composicion">Principo de diseño composición</a></p>
+<p><i class="fa-solid fa-circle-arrow-right" aria-label="circle-arrow-right"></i> <a href="../01-course-content#composicion">Principo de diseño composición</a></p>
 <ul>
-<li>Componentes/entidades deben depender de abstracciones, no de implementaciones</li>
+<li class="fragment">Componentes/entidades de alto nivel deben depender de abstracciones, no de implementaciones</li>
 </ul>
 <aside class="notes">
 <p>Clases de bajo nivel implementan operaciones básicas como transferir datos por la red.</p>
@@ -392,8 +402,8 @@ Carlos Granell
       }</style></aside>
 </div>
 </section>
-<section id="solid-con-ejemplos" class="slide level2">
-<h2>SOLID con ejemplos</h2>
+<section id="solid-en-ejemplos" class="slide level2">
+<h2>SOLID en ejemplos</h2>
 <ul>
 <li><p><span class="citation" data-cites="milington2022">(<a href="#/referencias" role="doc-biblioref" onclick="">Milignton 2022</a>)</span>: Ejemplos claros y sencillos en Java para entender los principios SOLID.</p></li>
 <li><p><span class="citation" data-cites="oloruntoba2020">(<a href="#/referencias" role="doc-biblioref" onclick="">Oloruntoba 2021</a>)</span> y <span class="citation" data-cites="soysal2022">(<a href="#/referencias" role="doc-biblioref" onclick="">Soysal 2022</a>)</span> proporcionan más ejemplos.</p></li>

@@ -133,8 +133,8 @@
     "text": "¿Cómo reconocemos que el aire es de baja calidad? ¿Que síntomas observamos? ¿Cómo lo percibimos?\nPollution collage element, torn paper design Image credits: Rawpixel.com"
   },
   {
-    "objectID": "materials/05-solid-principle/index.html#section-1",
-    "href": "materials/05-solid-principle/index.html#section-1",
+    "objectID": "materials/05-solid-principle/index.html#section-2",
+    "href": "materials/05-solid-principle/index.html#section-2",
     "title": "Principios SOLID",
     "section": "",
     "text": "Dependencia\n\n\nFragilidad\n\n\nRigidez\n\n\nFalta de reutilización\n\n\nViscosidad\n\n\n¿Cómo reconocemos que un código es “malo”? ¿Nos sirven los principios básicos de diseño de software para afirmarlo? ¿Qué pasa cuando se modifica o actualiza un código malo?\nSíntomas del código malo: dependencia, fragilidad, rigidez, falta de reutilización o inmobilidad, viscosidad, etc.\nSoftware developer programming code on black background Image credits: Rawpixel.com"
@@ -150,43 +150,43 @@
     "objectID": "materials/05-solid-principle/index.html#srp",
     "href": "materials/05-solid-principle/index.html#srp",
     "title": "Principios SOLID",
-    "section": "Single Responsability Principle - Principio de responsabilidad única",
-    "text": "Single Responsability Principle - Principio de responsabilidad única\n Una clase debería tener un único propósito: Reduce complejidad, fácil entender qué hace cada clase\n\n Una clase debería tener una (buena) razón para cambiar: Si hace demasiadas tareas, hay que modificarla cada vez que una de esas tareas cambia.\n\n\n Principo de diseño encapsulación\n\nJunta las tareas que cambian por las mismas razones en una clase\nSepara las tareas que cambian por diferentes razones en clases distintas\n\n\nReduce complejidad: Si una clase hace demasiadas cosas, hay que cambiarla cada vez que una de esas cosas cambia\nEasier to understand: Classes, software components and microservices that have only one responsibility are much easier to explain, understand and implement than the ones that provide a solution for everything. This reduces the number of bugs, improves your development speed, and makes your life as a software developer a lot easier\nhttps://stackify.com/solid-design-principles/"
+    "section": "Single Responsability Principle",
+    "text": "Single Responsability Principle\nUna clase debería tener:\n\n un único propósito: Reduce complejidad, fácil entender qué hace cada clase\n\n\n una buena razón para cambiar: Si hace demasiadas tareas, hay que modificarla cada vez que una tarea cambia.\n\n\n Principo de diseño encapsulación\n\nTareas que cambian por las mismas razones en una clase\nTareas que cambian por diferentes razones en clases distintas\n\n\nReduce complejidad: Si una clase hace demasiadas cosas, hay que cambiarla cada vez que una de esas cosas cambia\nEasier to understand: Classes, software components and microservices that have only one responsibility are much easier to explain, understand and implement than the ones that provide a solution for everything. This reduces the number of bugs, improves your development speed, and makes your life as a software developer a lot easier\nhttps://stackify.com/solid-design-principles/"
   },
   {
     "objectID": "materials/05-solid-principle/index.html#ocp",
     "href": "materials/05-solid-principle/index.html#ocp",
     "title": "Principios SOLID",
-    "section": "Open/Closed Principle - Principio de abierto/cerrado",
-    "text": "Open/Closed Principle - Principio de abierto/cerrado\n✔️ Cerrada a la modificación: Si una clase está desarrollada, probada y revisada, no la reescribas para añadir nuevas funcionalidades\n✔️ Abierta a la extensión: Si necesitas nuevo comportamiento, crea subclases\n✔️ Principo de diseño interfaz\n\nExtender una clase permite añadir nuevo comportamiento sin descomponer clientes existentes de la clase original\n\n\nAbierta y cerrada no son mutuamente excluyentes. Una clase puede estar al mismo tiempo abierta (para la extensión) y cerrada (para la modificación). El código simple es tanto abierto y cerrado.\nOf course, the one exception to the rule is when fixing bugs in existing code.\nhttps://stackify.com/solid-design-open-closed-principle/"
+    "section": "Open/Closed Principle",
+    "text": "Open/Closed Principle\n\n Cerrada a la modificación: Si una clase está desarrollada, probada y revisada, no la reescribas para añadir nuevas funcionalidades\n\n\n Abierta a la extensión: Si necesitas nuevo comportamiento, crea subclases\n\n\n Principo de diseño interfaz\n\nExtender una clase permite añadir nuevo comportamiento sin descomponer clientes existentes de la clase original\n\n\nAbierta y cerrada no son mutuamente excluyentes. Una clase puede estar al mismo tiempo abierta (para la extensión) y cerrada (para la modificación). El código simple es tanto abierto y cerrado.\nOf course, the one exception to the rule is when fixing bugs in existing code.\nhttps://stackify.com/solid-design-open-closed-principle/"
   },
   {
     "objectID": "materials/05-solid-principle/index.html#lsp",
     "href": "materials/05-solid-principle/index.html#lsp",
     "title": "Principios SOLID",
     "section": "Liskov Substitution Principle - Principio de sustitución de Liskov",
-    "text": "Liskov Substitution Principle - Principio de sustitución de Liskov\nSi la clase A es un subtipo de la clase B, deberíamos poder reemplazar B por A sin descomponer el comportamiento de nuestro programa\n\n✔️ Principio de diseño del sentido común (OO)\n\nEscribe abstracciones claras y bien definidas\nSubclases deben ser compatibles con (el comportamiento) de la clase padre\nAl sobrescribir un método, extiende el comportamiento base en lugar de sustituirlo por algo totalmente distinto\n\n\nEscribe abstracciones nítidas, claras y bien definidas.\nhttps://stackify.com/solid-design-liskov-substitution-principle/"
+    "text": "Liskov Substitution Principle - Principio de sustitución de Liskov\n Si la clase A es un subtipo de la clase B, se podría reemplazar B por A sin alterar el comportamiento del sistema\n\n Principio de diseño del sentido común\n\nEscribe abstracciones claras y bien definidas\nSubclases deben ser compatibles con (el comportamiento) de la clase padre\nAl sobrescribir un método, extiende el comportamiento base en lugar de sustituirlo por algo totalmente distinto\n\n\nEscribe abstracciones nítidas, claras y bien definidas.\nhttps://stackify.com/solid-design-liskov-substitution-principle/"
   },
   {
     "objectID": "materials/05-solid-principle/index.html#isp",
     "href": "materials/05-solid-principle/index.html#isp",
     "title": "Principios SOLID",
-    "section": "Interface Segregation Principle - Principio de segregación de la interfaz",
-    "text": "Interface Segregation Principle - Principio de segregación de la interfaz\nInterfaces que fuerzan a las clases (implementaciones) a que implementen métodos que no necesitan\n\n✔️ No forzar a clientes (implementaciones) que dependan de métodos que no utilizan\n✔️ Si una interfaz es demasiado grande, sepárala en varias interfaces más pequeñas, para que sean funcionalmente más concisas\n\nhttps://stackify.com/interface-segregation-principle/"
+    "section": "Interface Segregation Principle",
+    "text": "Interface Segregation Principle\n Interfaces con funcionalidad/comportamiento conciso: Evita interfaces para que los clientes (implementaciones) no dependan de métodos que no necesitan\n\n Divide interfaces: Si una interfaz es demasiado grande, sepárala en varias interfaces más pequeñas\n\nhttps://stackify.com/interface-segregation-principle/"
   },
   {
     "objectID": "materials/05-solid-principle/index.html#dip",
     "href": "materials/05-solid-principle/index.html#dip",
     "title": "Principios SOLID",
-    "section": "Dependency Inversion Principle - Principio de inversión de dependencia",
-    "text": "Dependency Inversion Principle - Principio de inversión de dependencia\nClases de alto nivel (componentes, servicios) no deben depender de clases de bajo nivel.\n\n✔️ Desacoplamiento de módulos/componentes/clases\n✔️ Principo de diseño composición\n\nComponentes/entidades deben depender de abstracciones, no de implementaciones\n\n\nClases de bajo nivel implementan operaciones básicas como transferir datos por la red.\nClases de alto nivel contienen la lógica de negocio que indican a las clases de bajo nivel que hagan algo.\nEl uso del operador new crea dependencias fuertes entre clases.\nhttps://stackify.com/dependency-inversion-principle/"
+    "section": "Dependency Inversion Principle",
+    "text": "Dependency Inversion Principle\n Desacoplamiento de módulos/componentes/clases: clases de alto nivel (componentes, servicios) no deben depender de clases de bajo nivel.\n\n Principo de diseño composición\n\nComponentes/entidades de alto nivel deben depender de abstracciones, no de implementaciones\n\n\nClases de bajo nivel implementan operaciones básicas como transferir datos por la red.\nClases de alto nivel contienen la lógica de negocio que indican a las clases de bajo nivel que hagan algo.\nEl uso del operador new crea dependencias fuertes entre clases.\nhttps://stackify.com/dependency-inversion-principle/"
   },
   {
-    "objectID": "materials/05-solid-principle/index.html#solid-con-ejemplos",
-    "href": "materials/05-solid-principle/index.html#solid-con-ejemplos",
+    "objectID": "materials/05-solid-principle/index.html#solid-en-ejemplos",
+    "href": "materials/05-solid-principle/index.html#solid-en-ejemplos",
     "title": "Principios SOLID",
-    "section": "SOLID con ejemplos",
-    "text": "SOLID con ejemplos\n\n(Milignton 2022): Ejemplos claros y sencillos en Java para entender los principios SOLID.\n(Oloruntoba 2021) y (Soysal 2022) proporcionan más ejemplos.\n(Martin 2014): Charla de Robert Martín (creador principios) in Yale"
+    "section": "SOLID en ejemplos",
+    "text": "SOLID en ejemplos\n\n(Milignton 2022): Ejemplos claros y sencillos en Java para entender los principios SOLID.\n(Oloruntoba 2021) y (Soysal 2022) proporcionan más ejemplos.\n(Martin 2014): Charla de Robert Martín (creador principios) in Yale"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#section",
