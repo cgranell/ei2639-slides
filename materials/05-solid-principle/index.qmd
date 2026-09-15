@@ -34,15 +34,13 @@ bibliography: ../../references.bib
 # Principios Básicos de Diseño de Software (POO)
 
 ::: incremental
+
 -   [Encapsula lo que varía...](../01-course-content#encapsula)
 
 -   [Programa a una interfaz, ...](../01-course-content#interfaz)
 
-<<<<<<< HEAD
 -   [Favorece la composición sobre ...](../01-course-content#composicion)
-=======
--   [Favorece la composición sobre ...](../01-course-content/index.qmd#composicion)
->>>>>>> 0f46ed1acd7d7f07e1f466ad9f6268af3e5431ea
+
 :::
 
 # Pero
