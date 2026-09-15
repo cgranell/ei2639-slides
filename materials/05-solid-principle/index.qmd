@@ -1,0 +1,216 @@
+---
+title: "Principios SOLID"
+subtitle: "Guía rápida"
+description: "Descripción de los 5 principos SOLID para software de calidad"
+author: "Carlos Granell"
+institute: "[GEOTEC](https://geotec.uji.es/), Universitat Jaume I"
+date: last-modified
+date-format: "MMM D, YYYY"
+categories: [ei1026, solid-principles]
+
+format: 
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+    progress: true
+    logo: ../../images/marca-uji-negre.png
+    footer: "[https://cgranell.github.io/ei2639/](https://cgranell.github.io/ei2639/)"
+    theme: [default]
+    transition: fade
+    preview-links: true
+    author-meta: "Carlos Granell"
+    date-meta: "15/09/2026"
+    chalkboard: 
+      theme: whiteboard
+      buttons: false
+      boardmarker-width: 3
+from: markdown+emoji
+execute:
+  echo: true
+bibliography: ../../references.bib
+---
+
+
+# Principios Básicos de Diseño de Software (POO)
+
+::: incremental
+-   [Encapsula lo que varía...](01-course-content#encapsula)
+
+-   [Programa a una interfaz, ...](01-course-content#interfaz)
+
+-   [Favorece la composición sobre ...](01-course-content#composicion)
+:::
+
+# Pero
+
+##  {data-menu-title="Aire baja calidad" background-image="images/airquality.jpg" background-size="cover"}
+
+
+:::notes
+¿Cómo reconocemos que el aire es de baja calidad? ¿Que síntomas observamos?
+
+Pollution collage element, torn paper design
+Image credits: [Rawpixel.com](https://www.rawpixel.com/image/6792062/)
+:::
+
+##  {data-menu-title="Código  baja calidad" background-image="images/sw-code.jpg" background-size="cover"}
+
+
+:::notes
+
+¿Cómo reconocemos código "malo"? 
+¿Nos sirven los principios básicos d ediseño de software? 
+¿Qué pasa cuando se modifica código malo? 
+Síntomas del código malo: dependencia, fragilidad, rigidez, falta de reutilización o inmobilidad, viscosidad, etc.
+
+
+Software developer programming code on black background
+Image credits: [Rawpixel.com](https://www.rawpixel.com/image/593170)
+:::
+
+# SOLID {.center}
+
+## Concepto 
+
+**5 principios SOLID del diseño OO** para que el software sea más comprensible, flexible y fácil de mantener [@martin2002]
+
+::: incremental
+- **reducen la complejidad** de sistemas/aplicaciones a medida que crecen y
+
+- **previenen** los síntomas del **código malo**
+:::
+
+:::notes
+
+Receta contra los síntomas del código malo.
+
+Principios SOLID introducidos por Robert Martin (*Uncle Bob*) en 2000: [Design Principles and Design Patterns](http://staff.cs.utu.fi/~jounsmed/doos_06/material/DesignPrinciplesAndPatterns.pdf)
+
+[SOLID: The First 5 Principles of Object Oriented Design | DigitalOcean](https://www.digitalocean.com/community/conceptual-articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
+:::
+
+
+## Single Responsability Principle - Principo de responsabilidad única {#srp .smaller} 
+
+
+Una clase debería tener un único propósito
+
+Una clase debería tener una (buena) razón para cambiar.
+
+Si hace demasiadas tareas, hay que modificarla cada vez que una de esas tareas cambia.
+
+. . .
+
+:heavy_check_mark: [Principo de diseño encapsulación](01-course-content/index.qmd#encapsula)
+
+-   Junta las tareas que cambian *por las mismas razones* en una clase
+
+-   Separa las tareas que cambian *por diferentes razones* en clases distintas
+
+:heavy_check_mark: Reduce complejidad, fácil entender qué hace una clase
+
+
+:::notes
+Reduce complejidad: Si una clase hace demasiadas cosas, hay que cambiarla cada vez que una de esas cosas cambia
+
+Easier to understand: Classes, software components and microservices that have only one responsibility are much easier to explain, understand and implement than the ones that provide a solution for everything. This reduces the number of bugs, improves your development speed, and makes your life as a software developer a lot easier
+
+[https://stackify.com/solid-design-principles/](https://stackify.com/solid-design-principles/)
+
+:::
+
+## Open/Closed Principle - Principio de abierto/cerrado {#ocp}
+
+:heavy_check_mark: **Cerrada a la modificación**: Si una clase está desarrollada, probada y revisada, *no* la reescribas para añadir nuevas funcionalidades
+
+:heavy_check_mark: **Abierta a la extensión**: Si necesitas nuevo comportamiento, *crea subclases*
+
+:heavy_check_mark: [Principo de diseño interfaz](01-course-content/index.qmd#interfaz)
+
+- Extender una clase permite añadir nuevo comportamiento sin descomponer clientes existentes de la clase original
+
+::: notes
+Abierta y cerrada no son mutuamente excluyentes. 
+Una clase puede estar al mismo tiempo abierta (para la extensión) y cerrada (para la modificación). 
+El código simple es tanto abierto y cerrado.
+
+Of course, the one exception to the rule is when fixing bugs in existing code.
+
+[https://stackify.com/solid-design-open-closed-principle/](https://stackify.com/solid-design-open-closed-principle/)
+:::
+
+
+## Liskov Substitution Principle - Principio de sustitución de Liskov {#lsp}
+
+Si la clase A es un subtipo de la clase B, deberíamos poder reemplazar B por A sin descomponer el comportamiento de nuestro programa
+
+. . .
+
+:heavy_check_mark: Principio de diseño del sentido común (OO)
+
+- Escribe abstracciones claras y bien definidas
+
+- Subclases deben ser compatibles con (el comportamiento) de la clase padre
+
+- Al sobrescribir un método, extiende el comportamiento base en lugar de sustituirlo por algo totalmente distinto
+
+
+::: notes
+Escribe abstracciones nítidas, claras y bien definidas. 
+
+[https://stackify.com/solid-design-liskov-substitution-principle/](https://stackify.com/solid-design-liskov-substitution-principle/)
+
+:::
+
+## Interface Segregation Principle - Principio de segregación de la interfaz {#isp}
+
+
+Interfaces que fuerzan a las clases (implementaciones) a que implementen métodos que no necesitan
+
+. . .
+
+:heavy_check_mark: No forzar a clientes (implementaciones) que dependan de métodos que no utilizan
+
+:heavy_check_mark: Si una interfaz es demasiado grande, sepárala en varias interfaces más pequeñas, para que sean *funcionalmente* más concisas
+
+
+:::notes
+[https://stackify.com/interface-segregation-principle/](https://stackify.com/interface-segregation-principle/)
+:::
+
+## Dependency Inversion Principle - Principio de inversión de dependencia {#dip}
+
+
+Clases de alto nivel (componentes, servicios) no deben depender de clases de bajo nivel.
+
+. . .
+
+:heavy_check_mark: **Desacoplamiento** de módulos/componentes/clases
+
+:heavy_check_mark: [Principo de diseño composición](01-course-content/index.qmd#composicion)
+
+- Componentes/entidades deben depender de abstracciones, no de implementaciones
+
+
+:::notes
+
+Clases de bajo nivel implementan operaciones básicas como transferir datos por la red. 
+
+Clases de alto nivel contienen la lógica de negocio que indican a las clases de bajo nivel que hagan algo.
+
+El uso del operador `new` crea dependencias fuertes entre clases.
+
+
+[https://stackify.com/dependency-inversion-principle/](https://stackify.com/dependency-inversion-principle/)
+:::
+
+## SOLID con ejemplos
+
+- [@milington2022]: Ejemplos claros y sencillos en Java para entender los principios SOLID.
+
+- [@oloruntoba2020] y [@soysal2022] proporcionan más ejemplos.
+
+- [@martin2014]: Charla de Robert Martín (creador principios) in Yale
+
+
+# Referencias {.scrollable}
