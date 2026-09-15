@@ -31,7 +31,7 @@ bibliography: ../../references.bib
 ---
 
 
-# Principios Básicos de Diseño de Software (POO)
+# Principios Básicos (OO) de Diseño de Software
 
 ::: incremental
 
@@ -45,24 +45,46 @@ bibliography: ../../references.bib
 
 # Pero
 
-##  {data-menu-title="Aire baja calidad" background-image="images/airquality.jpg" background-size="cover"}
+##  {data-menu-title="Aire de baja calidad" background-image="images/airquality.jpg" background-size="cover"}
 
 
 :::notes
-¿Cómo reconocemos que el aire es de baja calidad? ¿Que síntomas observamos?
+¿Cómo reconocemos que el aire es de baja calidad? ¿Que síntomas observamos? ¿Cómo lo percibimos?
 
 Pollution collage element, torn paper design
 Image credits: [Rawpixel.com](https://www.rawpixel.com/image/6792062/)
 :::
 
-##  {data-menu-title="Código  baja calidad" background-image="images/sw-code.jpg" background-size="cover"}
+##  {data-menu-title="Código de baja calidad" background-image="images/sw-code.jpg" background-size="cover"}
+
+
+::: {.fragment .highlight-red .grow}
+Dependencia
+:::
+
+::: {.fragment .highlight-red .grow}
+Fragilidad
+:::
+
+::: {.fragment .highlight-red .grow}
+Rigidez
+:::
+
+::: {.fragment .highlight-red}
+Falta de reutilización
+:::
+
+::: {.fragment .highlight-red}
+Viscosidad
+:::
 
 
 :::notes
 
-¿Cómo reconocemos código "malo"? 
-¿Nos sirven los principios básicos d ediseño de software? 
-¿Qué pasa cuando se modifica código malo? 
+¿Cómo reconocemos que un código es "malo"? 
+¿Nos sirven los principios básicos de diseño de software para afirmarlo? 
+¿Qué pasa cuando se modifica o actualiza un código malo? 
+
 Síntomas del código malo: dependencia, fragilidad, rigidez, falta de reutilización o inmobilidad, viscosidad, etc.
 
 
@@ -70,7 +92,7 @@ Software developer programming code on black background
 Image credits: [Rawpixel.com](https://www.rawpixel.com/image/593170)
 :::
 
-# SOLID {.center}
+# SOLID
 
 ## Concepto 
 
@@ -92,24 +114,22 @@ Principios SOLID introducidos por Robert Martin (*Uncle Bob*) en 2000: [Design P
 :::
 
 
-## Single Responsability Principle - Principo de responsabilidad única {#srp .smaller} 
+## Single Responsability Principle - *Principio de responsabilidad única* {#srp .smaller} 
 
 
-Una clase debería tener un único propósito
-
-Una clase debería tener una (buena) razón para cambiar.
-
-Si hace demasiadas tareas, hay que modificarla cada vez que una de esas tareas cambia.
+{{< fa check >}} Una clase debería tener **un único propósito**: Reduce complejidad, fácil entender qué hace cada clase
 
 . . .
 
-:heavy_check_mark: [Principo de diseño encapsulación](../01-course-content#encapsula)
+{{< fa check >}} Una clase debería tener una **(buena) razón para cambiar**: Si hace demasiadas tareas, hay que modificarla cada vez que una de esas tareas cambia.
+
+. . .
+
+{{< fa circle-arrow-right >}} [Principo de diseño encapsulación](../01-course-content#encapsula)
 
 -   Junta las tareas que cambian *por las mismas razones* en una clase
 
 -   Separa las tareas que cambian *por diferentes razones* en clases distintas
-
-:heavy_check_mark: Reduce complejidad, fácil entender qué hace una clase
 
 
 :::notes
