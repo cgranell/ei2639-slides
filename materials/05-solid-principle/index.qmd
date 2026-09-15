@@ -43,7 +43,7 @@ bibliography: ../../references.bib
 
 :::
 
-# Pero
+# PERO
 
 ##  {data-menu-title="Aire de baja calidad" background-image="images/airquality.jpg" background-size="cover"}
 
@@ -58,6 +58,8 @@ Image credits: [Rawpixel.com](https://www.rawpixel.com/image/6792062/)
 ##  {data-menu-title="Código de baja calidad" background-image="images/sw-code.jpg" background-size="cover"}
 
 
+##  {data-menu-title="Código de baja calidad - síntomas" background-image="images/sw-code.jpg" background-size="cover"}
+
 ::: {.fragment .highlight-red .grow}
 Dependencia
 :::
@@ -70,11 +72,11 @@ Fragilidad
 Rigidez
 :::
 
-::: {.fragment .highlight-red}
+::: {.fragment .highlight-red .grow}
 Falta de reutilización
 :::
 
-::: {.fragment .highlight-red}
+::: {.fragment .highlight-red .grow}
 Viscosidad
 :::
 
@@ -114,23 +116,27 @@ Principios SOLID introducidos por Robert Martin (*Uncle Bob*) en 2000: [Design P
 :::
 
 
-## Single Responsability Principle - *Principio de responsabilidad única* {#srp .smaller} 
+## Single Responsability Principle {#srp} 
 
-
-{{< fa check >}} Una clase debería tener **un único propósito**: Reduce complejidad, fácil entender qué hace cada clase
+Una clase debería tener:
 
 . . .
 
-{{< fa check >}} Una clase debería tener una **(buena) razón para cambiar**: Si hace demasiadas tareas, hay que modificarla cada vez que una de esas tareas cambia.
+{{< fa check >}} **un único propósito**: Reduce complejidad, fácil entender qué hace cada clase
+
+. . .
+
+{{< fa check >}} una **buena razón para cambiar**: Si hace demasiadas tareas, hay que modificarla cada vez que una tarea cambia.
 
 . . .
 
 {{< fa circle-arrow-right >}} [Principo de diseño encapsulación](../01-course-content#encapsula)
 
--   Junta las tareas que cambian *por las mismas razones* en una clase
+::: incremental
+-   Tareas que cambian *por las mismas razones* en una clase
 
--   Separa las tareas que cambian *por diferentes razones* en clases distintas
-
+-   Tareas que cambian *por diferentes razones* en clases distintas
+:::
 
 :::notes
 Reduce complejidad: Si una clase hace demasiadas cosas, hay que cambiarla cada vez que una de esas cosas cambia
@@ -141,15 +147,23 @@ Easier to understand: Classes, software components and microservices that have o
 
 :::
 
-## Open/Closed Principle - Principio de abierto/cerrado {#ocp}
+## Open/Closed Principle {#ocp}
 
-:heavy_check_mark: **Cerrada a la modificación**: Si una clase está desarrollada, probada y revisada, *no* la reescribas para añadir nuevas funcionalidades
+. . .
 
-:heavy_check_mark: **Abierta a la extensión**: Si necesitas nuevo comportamiento, *crea subclases*
+{{< fa check >}} **Cerrada a la modificación**: Si una clase está desarrollada, probada y revisada, *no* la reescribas para añadir nuevas funcionalidades
 
-:heavy_check_mark: [Principo de diseño interfaz](../01-course-content#interfaz)
+. . .
 
+{{< fa check >}} **Abierta a la extensión**: Si necesitas nuevo comportamiento, *crea subclases*
+
+. . .
+
+{{< fa circle-arrow-right >}} [Principo de diseño interfaz](../01-course-content#interfaz)
+
+::: incremental
 - Extender una clase permite añadir nuevo comportamiento sin descomponer clientes existentes de la clase original
+:::
 
 ::: notes
 Abierta y cerrada no son mutuamente excluyentes. 
@@ -164,17 +178,19 @@ Of course, the one exception to the rule is when fixing bugs in existing code.
 
 ## Liskov Substitution Principle - Principio de sustitución de Liskov {#lsp}
 
-Si la clase A es un subtipo de la clase B, deberíamos poder reemplazar B por A sin descomponer el comportamiento de nuestro programa
+{{< fa check >}} Si la clase A es un subtipo de la clase B, se podría reemplazar B por A sin alterar el comportamiento del sistema
 
 . . .
 
-:heavy_check_mark: Principio de diseño del sentido común (OO)
+{{< fa circle-arrow-right >}} Principio de diseño del sentido común
 
+::: incremental
 - Escribe abstracciones claras y bien definidas
 
 - Subclases deben ser compatibles con (el comportamiento) de la clase padre
 
 - Al sobrescribir un método, extiende el comportamiento base en lugar de sustituirlo por algo totalmente distinto
+:::
 
 
 ::: notes
@@ -184,35 +200,33 @@ Escribe abstracciones nítidas, claras y bien definidas.
 
 :::
 
-## Interface Segregation Principle - Principio de segregación de la interfaz {#isp}
+## Interface Segregation Principle {#isp}
 
 
-Interfaces que fuerzan a las clases (implementaciones) a que implementen métodos que no necesitan
+{{< fa check >}} **Interfaces con funcionalidad/comportamiento conciso**: Evita interfaces para que los clientes (implementaciones) no dependan de métodos que no necesitan
 
 . . .
 
-:heavy_check_mark: No forzar a clientes (implementaciones) que dependan de métodos que no utilizan
 
-:heavy_check_mark: Si una interfaz es demasiado grande, sepárala en varias interfaces más pequeñas, para que sean *funcionalmente* más concisas
+{{< fa check >}} **Divide interfaces**: Si una interfaz es demasiado grande, sepárala en varias interfaces más pequeñas
 
 
 :::notes
 [https://stackify.com/interface-segregation-principle/](https://stackify.com/interface-segregation-principle/)
 :::
 
-## Dependency Inversion Principle - Principio de inversión de dependencia {#dip}
+## Dependency Inversion Principle {#dip}
 
 
-Clases de alto nivel (componentes, servicios) no deben depender de clases de bajo nivel.
+{{< fa check >}} **Desacoplamiento** de módulos/componentes/clases: clases de alto nivel (componentes, servicios) no deben depender de clases de bajo nivel.
 
 . . .
 
-:heavy_check_mark: **Desacoplamiento** de módulos/componentes/clases
+{{< fa circle-arrow-right >}} [Principo de diseño composición](../01-course-content#composicion)
 
-:heavy_check_mark: [Principo de diseño composición](../01-course-content#composicion)
-
-- Componentes/entidades deben depender de abstracciones, no de implementaciones
-
+:::incremental
+- Componentes/entidades de alto nivel deben depender de abstracciones, no de implementaciones
+:::
 
 :::notes
 
@@ -226,7 +240,7 @@ El uso del operador `new` crea dependencias fuertes entre clases.
 [https://stackify.com/dependency-inversion-principle/](https://stackify.com/dependency-inversion-principle/)
 :::
 
-## SOLID con ejemplos
+## SOLID en ejemplos
 
 - [@milington2022]: Ejemplos claros y sencillos en Java para entender los principios SOLID.
 
