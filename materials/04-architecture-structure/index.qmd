@@ -10,7 +10,7 @@ author: "Carlos Granell"
 institute: "[GEOTEC](https://geotec.uji.es/), Universitat Jaume I"
 date: last-modified
 date-format: "MMM D, YYYY"
-categories: [ei1026, software-architecture]
+categories: [ei1039, software-architecture]
 
 format: 
   revealjs:

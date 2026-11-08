@@ -6,7 +6,7 @@ author: "Carlos Granell"
 institute: "[GEOTEC](https://geotec.uji.es/), Universitat Jaume I"
 date: last-modified
 date-format: "MMM D, YYYY"
-categories: [ei1026]
+categories: [ei1039, syllabus]
 
 format: 
   revealjs:

@@ -1,12 +1,12 @@
 ---
 title: "Flashcards"
 subtitle: "Errores comunes en patrones de diseño"
-description: "Errores comunes en patrones de diseño"
+description: "Conocer un patrón no es solo saber cuándo usarlo, sino también reconocer cuándo se está usando mal"
 author: "Carlos Granell"
 institute: "[GEOTEC](https://geotec.uji.es/), Universitat Jaume I"
 date: last-modified
 date-format: "MMM D, YYYY"
-categories: [ei1026, flashcards]
+categories: [ei1039, flashcards]
 
 format:
   revealjs:
@@ -38,6 +38,16 @@ Conocer un patrón no es solo saber **cuándo** usarlo, sino también reconocer 
 
 . . .
 
+Un patrón mal usado puede ser peor que no usar ninguno: añade clases, indirección y complejidad sin aportar flexibilidad.
+
+. . .
+
+Los asistentes de IA generan código con patrones con mucha facilidad, pero no siempre los aplican bien. Detectar estos errores y saber corregirlos es parte de lo que hoy significa *saber programar*.
+
+
+## Flashcards
+
+
 Cada *flashcard* tiene tres diapositivas:
 
 1. :mag: **Síntoma**: un fragmento de código o una situación.
@@ -50,27 +60,42 @@ Cada *flashcard* tiene tres diapositivas:
 ¿Qué patrón se intenta aplicar? ¿Qué falla? ¿Cómo lo corregirías?
 :::
 
-## Las flashcards de hoy {.smaller}
+::: {.notes}
+
+Inspira en la sección [*Caveats*](https://www.data-to-viz.com/caveats.html) de *From Data to Viz*, una colección de errores frecuentes en visualización de datos en la que cada tarjeta describe un error y cómo corregirlo.
+:::
+
+## Recuerda los principios
+
+Muchos errores se explican con los principios básicos: 
+- *encapsula lo que varía*, 
+- *programa a una interfaz, no a una implementación* y 
+- *favorece la composición sobre la herencia*. 
+
+También te serán útiles el principio SOLID *abierto/cerrado* y el de *responsabilidad única*.
+
+
+## Catálogo de flashcards {.smaller}
 
 | # | Error | Patrón | Familia |
 |:-:|-------|--------|---------|
-| 4 | La fábrica con un `if` que no deja de crecer | *Factory Method* | [Creacional]{style="color:#2b6cb0; font-weight:600;"} |
-| 5 | El decorador que cambia la interfaz | *Decorator* | [Estructural]{style="color:#2f855a; font-weight:600;"} |
-| 6 | La fachada que lo hace todo | *Facade* | [Estructural]{style="color:#2f855a; font-weight:600;"} |
-| 9 | La estrategia con el `if` escondido | *Strategy* | [Comportamiento]{style="color:#975a16; font-weight:600;"} |
-| 10 | La subclase que se salta la plantilla | *Template Method* | [Comportamiento]{style="color:#975a16; font-weight:600;"} |
+| 1 | La fábrica con un `if` que no deja de crecer | *Factory Method* | [Creacional]{style="color:#2b6cb0; font-weight:600;"} |
+| 10 | El decorador que cambia la interfaz | *Decorator* | [Estructural]{style="color:#2f855a; font-weight:600;"} |
+| 11 | La fachada que lo hace todo | *Facade* | [Estructural]{style="color:#2f855a; font-weight:600;"} |
+| 20 | La estrategia con el `if` escondido | *Strategy* | [Comportamiento]{style="color:#975a16; font-weight:600;"} |
+| 21 | La subclase que se salta la plantilla | *Template Method* | [Comportamiento]{style="color:#975a16; font-weight:600;"} |
 
 <!-- ============================================================ -->
-<!-- FLASHCARD 4 · FACTORY METHOD                                 -->
+<!-- FLASHCARD 1 · FACTORY METHOD                                 -->
 <!-- ============================================================ -->
 
-# Flashcard 4 {background-color="#2b6cb0"}
+# Flashcard 1 {background-color="#2b6cb0"}
 
 [Creacional · *Factory Method*]{style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;"}
 
 [La fábrica con un `if` que no deja de crecer]{style="font-size: 1.3em; font-weight: 600;"}
 
-## :mag: Flashcard 4 · Síntoma
+## :mag: Flashcard 1 · Síntoma
 
 La aplicación de logística necesita un transporte nuevo: el **tren**. Cada transporte nuevo obliga a modificar esta función.
 
@@ -91,10 +116,10 @@ def crear_transporte(tipo):
 ¿Qué ocurre al añadir `Tren`? ¿Y diez transportes más?
 :::
 
-## :x: Flashcard 4 · ¿Qué falla? {.smaller}
+## :x: Flashcard 1 · ¿Qué falla? {.smaller}
 
 ::: {.incremental}
-- **No es *Factory Method*.** Es una **fábrica simple** (*simple factory*): centraliza la creación, pero no es el patrón de la *Gang of Four* [@gamma1994].
+- **No es *Factory Method*.** Es una **fábrica simple** (*simple factory*) poruqe centraliza la creación, pero no es un *Factory Method* según [@gamma1994].
 - **Vulnera el principio abierto/cerrado.** Cada tipo nuevo obliga a **modificar** la función, en lugar de **extenderla**.
 - **Acopla la función a todas las clases concretas.** `crear_transporte()` debe conocer `Camion`, `Barco`, `Avion`, `Tren`…
 - **Tiende a replicarse.** El mismo `if tipo == ...` acaba apareciendo en otras partes del código (costes, tiempos de entrega…).
@@ -106,7 +131,7 @@ def crear_transporte(tipo):
 Una fábrica simple **no es un error en sí misma** si los tipos son pocos y casi nunca cambian. El error es confundirla con *Factory Method* o dejar que crezca sin control.
 :::
 
-## :white_check_mark: Flashcard 4 · ¿Cómo corregirlo? {.smaller}
+## :white_check_mark: Flashcard 1 · ¿Cómo corregirlo? {.smaller}
 
 :::: {.columns}
 
@@ -164,16 +189,16 @@ Añadir un tipo nuevo debería consistir en **añadir código**, no en **modific
 :::
 
 <!-- ============================================================ -->
-<!-- FLASHCARD 5 · DECORATOR                                      -->
+<!-- FLASHCARD 10 · DECORATOR                                      -->
 <!-- ============================================================ -->
 
-# Flashcard 5 {background-color="#2f855a"}
+# Flashcard 10 {background-color="#2f855a"}
 
 [Estructural · *Decorator*]{style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;"}
 
 [El decorador que cambia la interfaz]{style="font-size: 1.3em; font-weight: 600;"}
 
-## :mag: Flashcard 5 · Síntoma
+## :mag: Flashcard 10 · Síntoma
 
 Tras envolver el notificador de correo con el de SMS, `enviar()` no manda nada.
 
@@ -197,7 +222,7 @@ n.enviar("Hola")                         # ¿qué se envía?
 ¿Qué método se ejecuta en la última línea?
 :::
 
-## :x: Flashcard 5 · ¿Qué falla? {.smaller}
+## :x: Flashcard 10 · ¿Qué falla? {.smaller}
 
 ::: {.incremental}
 - **No redefine `enviar()`.** Hereda el método vacío de `Notificador` y **no delega** en el objeto envuelto: el correo nunca se envía.
@@ -212,7 +237,7 @@ n.enviar("Hola")                         # ¿qué se envía?
 *Programa a una interfaz, no a una implementación*: el cliente acaba dependiendo de `NotificadorSMS`, no de `Notificador`.
 :::
 
-## :white_check_mark: Flashcard 5 · ¿Cómo corregirlo? {.smaller}
+## :white_check_mark: Flashcard 10 · ¿Cómo corregirlo? {.smaller}
 
 :::: {.columns}
 
@@ -254,16 +279,16 @@ Los datos extra se pasan en el **constructor**, no en métodos nuevos. Y si lo q
 :::
 
 <!-- ============================================================ -->
-<!-- FLASHCARD 6 · FACADE                                         -->
+<!-- FLASHCARD 11 · FACADE                                         -->
 <!-- ============================================================ -->
 
-# Flashcard 6 {background-color="#2f855a"}
+# Flashcard 11 {background-color="#2f855a"}
 
 [Estructural · *Facade*]{style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;"}
 
 [La fachada que lo hace todo]{style="font-size: 1.3em; font-weight: 600;"}
 
-## :mag: Flashcard 6 · Síntoma
+## :mag: Flashcard 11 · Síntoma
 
 Cualquier cambio en la tienda en línea acaba tocando esta clase, y todo el equipo la modifica a la vez.
 
@@ -286,10 +311,10 @@ class FachadaTienda:
 ¿Cuántas razones distintas para cambiar tiene esta clase?
 :::
 
-## :x: Flashcard 6 · ¿Qué falla? {.smaller}
+## :x: Flashcard 11 · ¿Qué falla? {.smaller}
 
 ::: {.incremental}
-- **Es un objeto dios** (*God object*). La fachada concentra carritos, pagos, impuestos, envíos, usuarios e informes.
+- **Es un objeto dios** (*[God object](https://en.wikipedia.org/wiki/God_object)*). La fachada concentra carritos, pagos, impuestos, envíos, usuarios e informes.
 - **Vulnera el principio de responsabilidad única.** La clase tiene muchas razones distintas para cambiar.
 - **Contiene lógica, no solo coordinación.** Métodos como `calcular_iva()` implementan reglas de negocio que deberían vivir en el subsistema.
 - **Se convierte en un cuello de botella.** Todo el equipo modifica el mismo archivo, con conflictos constantes al integrar cambios.
@@ -301,7 +326,7 @@ class FachadaTienda:
 Lo mismo le puede ocurrir a un *Mediator*: un mediador que lo sabe todo y lo hace todo es otro objeto dios.
 :::
 
-## :white_check_mark: Flashcard 6 · ¿Cómo corregirlo? {.smaller}
+## :white_check_mark: Flashcard 11 · ¿Cómo corregirlo? {.smaller}
 
 :::: {.columns}
 
@@ -336,18 +361,18 @@ Una fachada **simplifica** el acceso a un subsistema; no lo **sustituye**.
 :::
 
 <!-- ============================================================ -->
-<!-- FLASHCARD 9 · STRATEGY                                       -->
+<!-- FLASHCARD 20 · STRATEGY                                       -->
 <!-- ============================================================ -->
 
-# Flashcard 9 {background-color="#975a16"}
+# Flashcard 20 {background-color="#975a16"}
 
 [Comportamiento · *Strategy*]{style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;"}
 
 [La estrategia con el `if` escondido]{style="font-size: 1.3em; font-weight: 600;"}
 
-## :mag: Flashcard 9 · Síntoma
+## :mag: Flashcard 20 · Síntoma
 
-Se han creado clases para cada estrategia, pero añadir el modo «patinete» sigue obligando a modificar `Navegador`.
+Se han creado clases para cada estrategia, pero añadir el modo "patinete" sigue obligando a modificar `Navegador`.
 
 ```{.python code-line-numbers="|3-8|9"}
 class Navegador:
@@ -367,7 +392,7 @@ class Navegador:
 ¿Qué ha ganado el diseño al crear las clases `RutaCoche`, `RutaAPie` y `RutaBici`?
 :::
 
-## :x: Flashcard 9 · ¿Qué falla? {.smaller}
+## :x: Flashcard 20 · ¿Qué falla? {.smaller}
 
 ::: {.incremental}
 - **El contexto elige la estrategia con condicionales.** `Navegador` conoce **todas** las estrategias concretas.
@@ -382,7 +407,7 @@ class Navegador:
 Elegir una estrategia a partir de un dato (un texto, una opción de configuración) **no está prohibido**. Lo importante es hacerlo **una sola vez** y **fuera** del contexto.
 :::
 
-## :white_check_mark: Flashcard 9 · ¿Cómo corregirlo? {.smaller}
+## :white_check_mark: Flashcard 20 · ¿Cómo corregirlo? {.smaller}
 
 :::: {.columns}
 
@@ -428,16 +453,16 @@ El contexto no debe saber **qué** estrategia usa; solo que **tiene** una.
 :::
 
 <!-- ============================================================ -->
-<!-- FLASHCARD 10 · TEMPLATE METHOD                               -->
+<!-- FLASHCARD 21 · TEMPLATE METHOD                               -->
 <!-- ============================================================ -->
 
-# Flashcard 10 {background-color="#975a16"}
+# Flashcard 21 {background-color="#975a16"}
 
 [Comportamiento · *Template Method*]{style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;"}
 
 [La subclase que se salta la plantilla]{style="font-size: 1.3em; font-weight: 600;"}
 
-## :mag: Flashcard 10 · Síntoma
+## :mag: Flashcard 21 · Síntoma
 
 Los informes rápidos salen vacíos: nunca se cargan los datos.
 
@@ -460,12 +485,12 @@ class InformeRapido(Informe):
 `InformeRapido` solo quería saltarse el análisis. ¿Qué ha perdido por el camino?
 :::
 
-## :x: Flashcard 10 · ¿Qué falla? {.smaller}
+## :x: Flashcard 21 · ¿Qué falla? {.smaller}
 
 ::: {.incremental}
 - **La subclase redefine el método plantilla**, en lugar de redefinir solo alguno de sus **pasos**.
 - **Rompe el esqueleto del algoritmo.** Desaparecen pasos obligatorios, como `cargar_datos()`, que la superclase debía garantizar.
-- **Invierte el control.** En *Template Method*, la superclase llama a las subclases, y no al revés: es el *principio de Hollywood* («no nos llames, ya te llamaremos»).
+- **Invierte el control.** En *Template Method*, la superclase llama a las subclases, y no al revés: es el *[principio de Hollywood](https://en.wikipedia.org/wiki/Inversion_of_control)* ("no nos llames, ya te llamaremos").
 - **Vulnera el principio abierto/cerrado.** La plantilla debería estar **cerrada** a modificaciones y **abierta** a extensiones a través de sus pasos.
 :::
 
@@ -475,7 +500,7 @@ class InformeRapido(Informe):
 Si una subclase necesita un algoritmo **completamente distinto**, quizá el patrón adecuado no es *Template Method*, sino *Strategy*.
 :::
 
-## :white_check_mark: Flashcard 10 · ¿Cómo corregirlo? {.smaller}
+## :white_check_mark: Flashcard 21 · ¿Cómo corregirlo? {.smaller}
 
 :::: {.columns}
 
