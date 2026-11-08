@@ -4,7 +4,133 @@
     "href": "index.html",
     "title": "Presentaciones",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nContenido curso y planificación\n\n\nei1026\n\n\nConcepto y principios de los patrones de diseño y de arquitectura de datos\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nConceptos y roles\n\n\nei1026, software-architecture\n\n\nConceptos, caracterización y dimensiones de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nCaracterísticas de una arquitectura\n\n\nei1026, software-architecture\n\n\nDimensión de las características de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nEstructura/estilos de una arquitectura\n\n\nei1026, software-architecture\n\n\nDimensión de la estructura o estilo de una arquitectura de software\n\n\n\n\n\n\nPrincipios SOLID\n\n\nGuía rápida\n\n\nei1026, solid-principles\n\n\nDescripción de los principos SOLID para software de calidad\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nContenido curso y planificación\n\n\nei1026\n\n\nConcepto y principios de los patrones de diseño y de arquitectura de datos\n\n\n\n\n\n\nFlashcards\n\n\nErrores comunes en patrones de diseño\n\n\nei1026, flashcards\n\n\nErrores comunes en patrones de diseño\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nConceptos y roles\n\n\nei1026, software-architecture\n\n\nConceptos, caracterización y dimensiones de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nCaracterísticas de una arquitectura\n\n\nei1026, software-architecture\n\n\nDimensión de las características de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nEstructura/estilos de una arquitectura\n\n\nei1026, software-architecture\n\n\nDimensión de la estructura o estilo de una arquitectura de software\n\n\n\n\n\n\nPrincipios SOLID\n\n\nGuía rápida\n\n\nei1026, solid-principles\n\n\nDescripción de los principos SOLID para software de calidad\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#errores-comunes-con-patrones-de-diseño",
+    "href": "materials/06-flashcards/index.html#errores-comunes-con-patrones-de-diseño",
+    "title": "Flashcards",
+    "section": "Errores comunes con patrones de diseño",
+    "text": "Errores comunes con patrones de diseño\nConocer un patrón no es solo saber cuándo usarlo, sino también reconocer cuándo se está usando mal.\n\nCada flashcard tiene tres diapositivas:\n\n🔍 Síntoma: un fragmento de código o una situación.\n❌ ¿Qué falla?: el diagnóstico.\n✅ ¿Cómo corregirlo?: la solución.\n\n\n\n\n\n\n\n\n\nAnte cada síntoma\n\n\n¿Qué patrón se intenta aplicar? ¿Qué falla? ¿Cómo lo corregirías?"
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#las-flashcards-de-hoy",
+    "href": "materials/06-flashcards/index.html#las-flashcards-de-hoy",
+    "title": "Flashcards",
+    "section": "Las flashcards de hoy",
+    "text": "Las flashcards de hoy\n\n\n\n\n\n\n\n\n\n#\nError\nPatrón\nFamilia\n\n\n\n\n4\nLa fábrica con un if que no deja de crecer\nFactory Method\nCreacional\n\n\n5\nEl decorador que cambia la interfaz\nDecorator\nEstructural\n\n\n6\nLa fachada que lo hace todo\nFacade\nEstructural\n\n\n9\nLa estrategia con el if escondido\nStrategy\nComportamiento\n\n\n10\nLa subclase que se salta la plantilla\nTemplate Method\nComportamiento"
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-4-síntoma",
+    "href": "materials/06-flashcards/index.html#flashcard-4-síntoma",
+    "title": "Flashcards",
+    "section": "🔍 Flashcard 4 · Síntoma",
+    "text": "🔍 Flashcard 4 · Síntoma\nLa aplicación de logística necesita un transporte nuevo: el tren. Cada transporte nuevo obliga a modificar esta función.\ndef crear_transporte(tipo):\n    if tipo == \"camion\":\n        return Camion()\n    elif tipo == \"barco\":\n        return Barco()\n    elif tipo == \"avion\":\n        return Avion()\n    # ... y una rama más por cada transporte\n\n\n\n\n\n\n\nPara el grupo\n\n\n¿Qué ocurre al añadir Tren? ¿Y diez transportes más?"
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-4-qué-falla",
+    "href": "materials/06-flashcards/index.html#flashcard-4-qué-falla",
+    "title": "Flashcards",
+    "section": "❌ Flashcard 4 · ¿Qué falla?",
+    "text": "❌ Flashcard 4 · ¿Qué falla?\n\nNo es Factory Method. Es una fábrica simple (simple factory): centraliza la creación, pero no es el patrón de la Gang of Four (Gamma et al. 1994).\nVulnera el principio abierto/cerrado. Cada tipo nuevo obliga a modificar la función, en lugar de extenderla.\nAcopla la función a todas las clases concretas. crear_transporte() debe conocer Camion, Barco, Avion, Tren…\nTiende a replicarse. El mismo if tipo == ... acaba apareciendo en otras partes del código (costes, tiempos de entrega…).\n\n\n\n\n\n\n\n\nPero…\n\n\nUna fábrica simple no es un error en sí misma si los tipos son pocos y casi nunca cambian. El error es confundirla con Factory Method o dejar que crezca sin control."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-4-cómo-corregirlo",
+    "href": "materials/06-flashcards/index.html#flashcard-4-cómo-corregirlo",
+    "title": "Flashcards",
+    "section": "✅ Flashcard 4 · ¿Cómo corregirlo?",
+    "text": "✅ Flashcard 4 · ¿Cómo corregirlo?\n\n\nOpción 1: Factory Method\nCada subclase decide qué transporte crear.\nclass Logistica(ABC):\n    @abstractmethod\n    def crear_transporte(self) -&gt; Transporte: ...\n\n    def planificar_entrega(self, carga):\n        t = self.crear_transporte()\n        t.entregar(carga)\n\nclass LogisticaTerrestre(Logistica):\n    def crear_transporte(self):\n        return Camion()\n\nclass LogisticaFerroviaria(Logistica):\n    def crear_transporte(self):\n        return Tren()\n\nOpción 2: registro de tipos\nUn diccionario sustituye a la cadena de if.\nTRANSPORTES = {\n    \"camion\": Camion,\n    \"barco\": Barco,\n    \"avion\": Avion,\n}\n\ndef crear_transporte(tipo):\n    return TRANSPORTES[tipo]()\n\n# Añadir el tren: una línea,\n# sin tocar crear_transporte()\nTRANSPORTES[\"tren\"] = Tren\n\n\n\n\n\n\n\n\nPara recordar\n\n\nAñadir un tipo nuevo debería consistir en añadir código, no en modificar el que ya funciona."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-5-síntoma",
+    "href": "materials/06-flashcards/index.html#flashcard-5-síntoma",
+    "title": "Flashcards",
+    "section": "🔍 Flashcard 5 · Síntoma",
+    "text": "🔍 Flashcard 5 · Síntoma\nTras envolver el notificador de correo con el de SMS, enviar() no manda nada.\nclass Notificador:\n    def enviar(self, msg): ...\n\nclass NotificadorSMS(Notificador):\n    def __init__(self, envuelto):\n        self.envuelto = envuelto\n    def enviar_sms(self, msg, telefono):   # método nuevo\n        ...\n\nn = NotificadorSMS(NotificadorEmail())\nn.enviar(\"Hola\")                         # ¿qué se envía?\n\n\n\n\n\n\n\nPara el grupo\n\n\n¿Qué método se ejecuta en la última línea?"
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-5-qué-falla",
+    "href": "materials/06-flashcards/index.html#flashcard-5-qué-falla",
+    "title": "Flashcards",
+    "section": "❌ Flashcard 5 · ¿Qué falla?",
+    "text": "❌ Flashcard 5 · ¿Qué falla?\n\nNo redefine enviar(). Hereda el método vacío de Notificador y no delega en el objeto envuelto: el correo nunca se envía.\nAñade una interfaz nueva. Para enviar el SMS, el cliente tiene que llamar a enviar_sms(), así que debe conocer la clase concreta del decorador.\nDeja de ser transparente. Un decorador debería poder usarse exactamente igual que el objeto que envuelve.\nNo se pueden apilar decoradores. NotificadorSlack(NotificadorSMS(...)) no sabría que tiene que llamar a enviar_sms().\n\n\n\n\n\n\n\n\nPrincipio vulnerado\n\n\nPrograma a una interfaz, no a una implementación: el cliente acaba dependiendo de NotificadorSMS, no de Notificador."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-5-cómo-corregirlo",
+    "href": "materials/06-flashcards/index.html#flashcard-5-cómo-corregirlo",
+    "title": "Flashcards",
+    "section": "✅ Flashcard 5 · ¿Cómo corregirlo?",
+    "text": "✅ Flashcard 5 · ¿Cómo corregirlo?\n\n\nMisma interfaz, más comportamiento, y delegación\nclass NotificadorSMS(Notificador):\n    def __init__(self, envuelto, telefono):\n        self.envuelto = envuelto\n        self.telefono = telefono   # dato extra\n\n    def enviar(self, msg):\n        self.envuelto.enviar(msg)  # delega\n        self._enviar_sms(msg)      # añade\n\nAhora sí se pueden apilar\nn = NotificadorSlack(\n        NotificadorSMS(\n            NotificadorEmail(),\n            \"600 000 000\"))\n\nn.enviar(\"Hola\")\n# correo + SMS + Slack\n\n\n\n\n\n\n\n\nPara recordar\n\n\nLos datos extra se pasan en el constructor, no en métodos nuevos. Y si lo que necesitas es cambiar la interfaz, no buscas un Decorator, sino un Adapter."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-6-síntoma",
+    "href": "materials/06-flashcards/index.html#flashcard-6-síntoma",
+    "title": "Flashcards",
+    "section": "🔍 Flashcard 6 · Síntoma",
+    "text": "🔍 Flashcard 6 · Síntoma\nCualquier cambio en la tienda en línea acaba tocando esta clase, y todo el equipo la modifica a la vez.\nclass FachadaTienda:\n    def anadir_al_carrito(self, usuario, producto): ...\n    def aplicar_descuento(self, carrito, codigo): ...\n    def cobrar(self, pedido, tarjeta): ...\n    def calcular_iva(self, pedido, pais): ...\n    def programar_envio(self, pedido): ...\n    def generar_factura_pdf(self, pedido): ...\n    def registrar_usuario(self, datos): ...\n    def informe_ventas_mensual(self, mes): ...\n    # ... y 52 métodos más\n\n\n\n\n\n\n\nPara el grupo\n\n\n¿Cuántas razones distintas para cambiar tiene esta clase?"
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-6-qué-falla",
+    "href": "materials/06-flashcards/index.html#flashcard-6-qué-falla",
+    "title": "Flashcards",
+    "section": "❌ Flashcard 6 · ¿Qué falla?",
+    "text": "❌ Flashcard 6 · ¿Qué falla?\n\nEs un objeto dios (God object). La fachada concentra carritos, pagos, impuestos, envíos, usuarios e informes.\nVulnera el principio de responsabilidad única. La clase tiene muchas razones distintas para cambiar.\nContiene lógica, no solo coordinación. Métodos como calcular_iva() implementan reglas de negocio que deberían vivir en el subsistema.\nSe convierte en un cuello de botella. Todo el equipo modifica el mismo archivo, con conflictos constantes al integrar cambios.\n\n\n\n\n\n\n\n\nUn riesgo compartido\n\n\nLo mismo le puede ocurrir a un Mediator: un mediador que lo sabe todo y lo hace todo es otro objeto dios."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-6-cómo-corregirlo",
+    "href": "materials/06-flashcards/index.html#flashcard-6-cómo-corregirlo",
+    "title": "Flashcards",
+    "section": "✅ Flashcard 6 · ¿Cómo corregirlo?",
+    "text": "✅ Flashcard 6 · ¿Cómo corregirlo?\n\n\n\nVarias fachadas pequeñas, una por subsistema o caso de uso: FachadaPedidos, FachadaUsuarios, FachadaInformes…\nLa fachada solo coordina y delega. La lógica de negocio vive en el subsistema.\nUna fachada puede componer otras fachadas si hace falta.\n\n\nclass FachadaPedidos:\n    def __init__(self, carrito, pagos, envios):\n        self.carrito = carrito\n        self.pagos = pagos\n        self.envios = envios\n\n    def comprar(self, usuario):\n        pedido = self.carrito.cerrar(usuario)\n        self.pagos.cobrar(pedido)\n        self.envios.programar(pedido)\n        return pedido\n\n\n\n\n\n\n\n\nPara recordar\n\n\nUna fachada simplifica el acceso a un subsistema; no lo sustituye."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-9-síntoma",
+    "href": "materials/06-flashcards/index.html#flashcard-9-síntoma",
+    "title": "Flashcards",
+    "section": "🔍 Flashcard 9 · Síntoma",
+    "text": "🔍 Flashcard 9 · Síntoma\nSe han creado clases para cada estrategia, pero añadir el modo «patinete» sigue obligando a modificar Navegador.\nclass Navegador:\n    def calcular_ruta(self, origen, destino, modo):\n        if modo == \"coche\":\n            self.estrategia = RutaCoche()\n        elif modo == \"pie\":\n            self.estrategia = RutaAPie()\n        elif modo == \"bici\":\n            self.estrategia = RutaBici()\n        return self.estrategia.calcular(origen, destino)\n\n\n\n\n\n\n\nPara el grupo\n\n\n¿Qué ha ganado el diseño al crear las clases RutaCoche, RutaAPie y RutaBici?"
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-9-qué-falla",
+    "href": "materials/06-flashcards/index.html#flashcard-9-qué-falla",
+    "title": "Flashcards",
+    "section": "❌ Flashcard 9 · ¿Qué falla?",
+    "text": "❌ Flashcard 9 · ¿Qué falla?\n\nEl contexto elige la estrategia con condicionales. Navegador conoce todas las estrategias concretas.\nVulnera el principio abierto/cerrado. Cada modo nuevo obliga a modificar Navegador.\nVulnera programa a una interfaz. El contexto debería depender solo de la interfaz común de las estrategias, no de sus clases.\nSe pierde el beneficio del patrón. El if sigue ahí, solo que más escondido.\n\n\n\n\n\n\n\n\nPero…\n\n\nElegir una estrategia a partir de un dato (un texto, una opción de configuración) no está prohibido. Lo importante es hacerlo una sola vez y fuera del contexto."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-9-cómo-corregirlo",
+    "href": "materials/06-flashcards/index.html#flashcard-9-cómo-corregirlo",
+    "title": "Flashcards",
+    "section": "✅ Flashcard 9 · ¿Cómo corregirlo?",
+    "text": "✅ Flashcard 9 · ¿Cómo corregirlo?\n\n\nEl contexto solo delega\nclass Navegador:\n    def __init__(self, estrategia):\n        self.estrategia = estrategia\n\n    def calcular_ruta(self, origen, destino):\n        return self.estrategia.calcular(\n            origen, destino)\n\nEl cliente elige, en un único lugar\nESTRATEGIAS = {\n    \"coche\": RutaCoche,\n    \"pie\": RutaAPie,\n    \"bici\": RutaBici,\n    \"patinete\": RutaPatinete,  # nueva\n}\n\nnav = Navegador(ESTRATEGIAS[modo]())\nnav.calcular_ruta(origen, destino)\n\nnav.estrategia = RutaAPie()  # cambio en\n                             # ejecución\n\n\n\n\n\n\n\n\nPara recordar\n\n\nEl contexto no debe saber qué estrategia usa; solo que tiene una."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-10-síntoma",
+    "href": "materials/06-flashcards/index.html#flashcard-10-síntoma",
+    "title": "Flashcards",
+    "section": "🔍 Flashcard 10 · Síntoma",
+    "text": "🔍 Flashcard 10 · Síntoma\nLos informes rápidos salen vacíos: nunca se cargan los datos.\nclass Informe:\n    def generar(self):            # método plantilla\n        self.cargar_datos()\n        self.analizar()\n        self.exportar()\n\n\nclass InformeRapido(Informe):\n    def generar(self):            # redefine la plantilla entera\n        self.exportar()\n\n\n\n\n\n\n\nPara el grupo\n\n\nInformeRapido solo quería saltarse el análisis. ¿Qué ha perdido por el camino?"
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-10-qué-falla",
+    "href": "materials/06-flashcards/index.html#flashcard-10-qué-falla",
+    "title": "Flashcards",
+    "section": "❌ Flashcard 10 · ¿Qué falla?",
+    "text": "❌ Flashcard 10 · ¿Qué falla?\n\nLa subclase redefine el método plantilla, en lugar de redefinir solo alguno de sus pasos.\nRompe el esqueleto del algoritmo. Desaparecen pasos obligatorios, como cargar_datos(), que la superclase debía garantizar.\nInvierte el control. En Template Method, la superclase llama a las subclases, y no al revés: es el principio de Hollywood («no nos llames, ya te llamaremos»).\nVulnera el principio abierto/cerrado. La plantilla debería estar cerrada a modificaciones y abierta a extensiones a través de sus pasos.\n\n\n\n\n\n\n\n\nPero…\n\n\nSi una subclase necesita un algoritmo completamente distinto, quizá el patrón adecuado no es Template Method, sino Strategy."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-10-cómo-corregirlo",
+    "href": "materials/06-flashcards/index.html#flashcard-10-cómo-corregirlo",
+    "title": "Flashcards",
+    "section": "✅ Flashcard 10 · ¿Cómo corregirlo?",
+    "text": "✅ Flashcard 10 · ¿Cómo corregirlo?\n\n\nPlantilla protegida y un gancho (hook)\nfrom typing import final\n\nclass Informe:\n    @final\n    def generar(self):\n        self.cargar_datos()\n        if self.necesita_analisis():  # gancho\n            self.analizar()\n        self.exportar()\n\n    def necesita_analisis(self):\n        return True                   # por defecto\n\nLa subclase solo ajusta un paso\nclass InformeRapido(Informe):\n    def necesita_analisis(self):\n        return False\nEn Java, el método plantilla se declara final. En Python, @final lo comprueban herramientas como mypy.\n\n\n\n\n\n\n\n\nPara recordar\n\n\nLas subclases rellenan huecos de la plantilla; no la reescriben."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#referencias",
+    "href": "materials/06-flashcards/index.html#referencias",
+    "title": "Flashcards",
+    "section": "Referencias",
+    "text": "Referencias\n\n\nGamma, Erich, Richard Helm, Ralph Johnson, and John Vlissides. 1994. Design Patterns: Elements of Reusable Object-Oriented Software. Addison-Wesley."
   },
   {
     "objectID": "materials/04-architecture-structure/index.html#recuerda-dimensiones-arquitectura",
@@ -124,69 +250,6 @@
     "title": "Fundamentos de arquitectura",
     "section": "Distribuidos - Microservicios (ejemplo)",
     "text": "Distribuidos - Microservicios (ejemplo)\nMicroservicios en Akka para computación de métricas basadas en mensajes (Rodríguez Pupo 2021)"
-  },
-  {
-    "objectID": "materials/05-solid-principle/index.html#section",
-    "href": "materials/05-solid-principle/index.html#section",
-    "title": "Principios SOLID",
-    "section": "",
-    "text": "¿Cómo reconocemos que el aire es de baja calidad? ¿Que síntomas observamos? ¿Cómo lo percibimos?\nPollution collage element, torn paper design Image credits: Rawpixel.com"
-  },
-  {
-    "objectID": "materials/05-solid-principle/index.html#section-2",
-    "href": "materials/05-solid-principle/index.html#section-2",
-    "title": "Principios SOLID",
-    "section": "",
-    "text": "Dependencia\n\n\nFragilidad\n\n\nRigidez\n\n\nFalta de reutilización\n\n\nViscosidad\n\n\n¿Cómo reconocemos que un código es “malo”? ¿Nos sirven los principios básicos de diseño de software para afirmarlo? ¿Qué pasa cuando se modifica o actualiza un código malo?\nSíntomas del código malo: dependencia, fragilidad, rigidez, falta de reutilización o inmobilidad, viscosidad, etc.\nSoftware developer programming code on black background Image credits: Rawpixel.com"
-  },
-  {
-    "objectID": "materials/05-solid-principle/index.html#concepto",
-    "href": "materials/05-solid-principle/index.html#concepto",
-    "title": "Principios SOLID",
-    "section": "Concepto",
-    "text": "Concepto\n5 principios SOLID del diseño OO para que el software sea más comprensible, flexible y fácil de mantener (Martin 2002)\n\nreducen la complejidad de sistemas/aplicaciones a medida que crecen y\nprevienen los síntomas del código malo\n\n\nReceta contra los síntomas del código malo.\nPrincipios SOLID introducidos por Robert Martin (Uncle Bob) en 2000: Design Principles and Design Patterns\nSOLID: The First 5 Principles of Object Oriented Design | DigitalOcean"
-  },
-  {
-    "objectID": "materials/05-solid-principle/index.html#srp",
-    "href": "materials/05-solid-principle/index.html#srp",
-    "title": "Principios SOLID",
-    "section": "Single Responsability Principle",
-    "text": "Single Responsability Principle\nUna clase debería tener:\n\n un único propósito: Reduce complejidad, fácil entender qué hace cada clase\n\n\n una buena razón para cambiar: Si hace demasiadas tareas, hay que modificarla cada vez que una tarea cambia.\n\n\n Principo de diseño encapsulación\n\nTareas que cambian por las mismas razones en una clase\nTareas que cambian por diferentes razones en clases distintas\n\n\nReduce complejidad: Si una clase hace demasiadas cosas, hay que cambiarla cada vez que una de esas cosas cambia\nEasier to understand: Classes, software components and microservices that have only one responsibility are much easier to explain, understand and implement than the ones that provide a solution for everything. This reduces the number of bugs, improves your development speed, and makes your life as a software developer a lot easier\nhttps://stackify.com/solid-design-principles/"
-  },
-  {
-    "objectID": "materials/05-solid-principle/index.html#ocp",
-    "href": "materials/05-solid-principle/index.html#ocp",
-    "title": "Principios SOLID",
-    "section": "Open/Closed Principle",
-    "text": "Open/Closed Principle\n\n Cerrada a la modificación: Si una clase está desarrollada, probada y revisada, no la reescribas para añadir nuevas funcionalidades\n\n\n Abierta a la extensión: Si necesitas nuevo comportamiento, crea subclases\n\n\n Principo de diseño interfaz\n\nExtender una clase permite añadir nuevo comportamiento sin descomponer clientes existentes de la clase original\n\n\nAbierta y cerrada no son mutuamente excluyentes. Una clase puede estar al mismo tiempo abierta (para la extensión) y cerrada (para la modificación). El código simple es tanto abierto y cerrado.\nOf course, the one exception to the rule is when fixing bugs in existing code.\nhttps://stackify.com/solid-design-open-closed-principle/"
-  },
-  {
-    "objectID": "materials/05-solid-principle/index.html#lsp",
-    "href": "materials/05-solid-principle/index.html#lsp",
-    "title": "Principios SOLID",
-    "section": "Liskov Substitution Principle - Principio de sustitución de Liskov",
-    "text": "Liskov Substitution Principle - Principio de sustitución de Liskov\n Si la clase A es un subtipo de la clase B, se podría reemplazar B por A sin alterar el comportamiento del sistema\n\n Principio de diseño del sentido común\n\nEscribe abstracciones claras y bien definidas\nSubclases deben ser compatibles con (el comportamiento) de la clase padre\nAl sobrescribir un método, extiende el comportamiento base en lugar de sustituirlo por algo totalmente distinto\n\n\nEscribe abstracciones nítidas, claras y bien definidas.\nhttps://stackify.com/solid-design-liskov-substitution-principle/"
-  },
-  {
-    "objectID": "materials/05-solid-principle/index.html#isp",
-    "href": "materials/05-solid-principle/index.html#isp",
-    "title": "Principios SOLID",
-    "section": "Interface Segregation Principle",
-    "text": "Interface Segregation Principle\n Interfaces con funcionalidad/comportamiento conciso: Evita interfaces para que los clientes (implementaciones) no dependan de métodos que no necesitan\n\n Divide interfaces: Si una interfaz es demasiado grande, sepárala en varias interfaces más pequeñas\n\nhttps://stackify.com/interface-segregation-principle/"
-  },
-  {
-    "objectID": "materials/05-solid-principle/index.html#dip",
-    "href": "materials/05-solid-principle/index.html#dip",
-    "title": "Principios SOLID",
-    "section": "Dependency Inversion Principle",
-    "text": "Dependency Inversion Principle\n Desacoplamiento de módulos/componentes/clases: clases de alto nivel (componentes, servicios) no deben depender de clases de bajo nivel.\n\n Principo de diseño composición\n\nComponentes/entidades de alto nivel deben depender de abstracciones, no de implementaciones\n\n\nClases de bajo nivel implementan operaciones básicas como transferir datos por la red.\nClases de alto nivel contienen la lógica de negocio que indican a las clases de bajo nivel que hagan algo.\nEl uso del operador new crea dependencias fuertes entre clases.\nhttps://stackify.com/dependency-inversion-principle/"
-  },
-  {
-    "objectID": "materials/05-solid-principle/index.html#solid-en-ejemplos",
-    "href": "materials/05-solid-principle/index.html#solid-en-ejemplos",
-    "title": "Principios SOLID",
-    "section": "SOLID en ejemplos",
-    "text": "SOLID en ejemplos\n\n(Milignton 2022): Ejemplos claros y sencillos en Java para entender los principios SOLID.\n(Oloruntoba 2021) y (Soysal 2022) proporcionan más ejemplos.\n(Martin 2014): Charla de Robert Martín (creador principios) in Yale"
   },
   {
     "objectID": "materials/02-architecture-concepts/index.html#section",
@@ -565,5 +628,68 @@
     "title": "Diseño de Sofware",
     "section": "Resumen",
     "text": "Resumen\n\nSoluciones conceptuales muy probadas y testeadas\nProporcionan un vocabulario común\nNo es siempre obvio qué patrón utilizar\nNo abuses de los patrones si existe una solución más sencilla"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#section",
+    "href": "materials/05-solid-principle/index.html#section",
+    "title": "Principios SOLID",
+    "section": "",
+    "text": "¿Cómo reconocemos que el aire es de baja calidad? ¿Que síntomas observamos? ¿Cómo lo percibimos?\nPollution collage element, torn paper design Image credits: Rawpixel.com"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#section-2",
+    "href": "materials/05-solid-principle/index.html#section-2",
+    "title": "Principios SOLID",
+    "section": "",
+    "text": "Dependencia\n\n\nFragilidad\n\n\nRigidez\n\n\nFalta de reutilización\n\n\nViscosidad\n\n\n¿Cómo reconocemos que un código es “malo”? ¿Nos sirven los principios básicos de diseño de software para afirmarlo? ¿Qué pasa cuando se modifica o actualiza un código malo?\nSíntomas del código malo: dependencia, fragilidad, rigidez, falta de reutilización o inmobilidad, viscosidad, etc.\nSoftware developer programming code on black background Image credits: Rawpixel.com"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#concepto",
+    "href": "materials/05-solid-principle/index.html#concepto",
+    "title": "Principios SOLID",
+    "section": "Concepto",
+    "text": "Concepto\n5 principios SOLID del diseño OO para que el software sea más comprensible, flexible y fácil de mantener (Martin 2002)\n\nreducen la complejidad de sistemas/aplicaciones a medida que crecen y\nprevienen los síntomas del código malo\n\n\nReceta contra los síntomas del código malo.\nPrincipios SOLID introducidos por Robert Martin (Uncle Bob) en 2000: Design Principles and Design Patterns\nSOLID: The First 5 Principles of Object Oriented Design | DigitalOcean"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#srp",
+    "href": "materials/05-solid-principle/index.html#srp",
+    "title": "Principios SOLID",
+    "section": "Single Responsability Principle",
+    "text": "Single Responsability Principle\nUna clase debería tener:\n\n un único propósito: Reduce complejidad, fácil entender qué hace cada clase\n\n\n una buena razón para cambiar: Si hace demasiadas tareas, hay que modificarla cada vez que una tarea cambia.\n\n\n Principo de diseño encapsulación\n\nTareas que cambian por las mismas razones en una clase\nTareas que cambian por diferentes razones en clases distintas\n\n\nReduce complejidad: Si una clase hace demasiadas cosas, hay que cambiarla cada vez que una de esas cosas cambia\nEasier to understand: Classes, software components and microservices that have only one responsibility are much easier to explain, understand and implement than the ones that provide a solution for everything. This reduces the number of bugs, improves your development speed, and makes your life as a software developer a lot easier\nhttps://stackify.com/solid-design-principles/"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#ocp",
+    "href": "materials/05-solid-principle/index.html#ocp",
+    "title": "Principios SOLID",
+    "section": "Open/Closed Principle",
+    "text": "Open/Closed Principle\n\n Cerrada a la modificación: Si una clase está desarrollada, probada y revisada, no la reescribas para añadir nuevas funcionalidades\n\n\n Abierta a la extensión: Si necesitas nuevo comportamiento, crea subclases\n\n\n Principo de diseño interfaz\n\nExtender una clase permite añadir nuevo comportamiento sin descomponer clientes existentes de la clase original\n\n\nAbierta y cerrada no son mutuamente excluyentes. Una clase puede estar al mismo tiempo abierta (para la extensión) y cerrada (para la modificación). El código simple es tanto abierto y cerrado.\nOf course, the one exception to the rule is when fixing bugs in existing code.\nhttps://stackify.com/solid-design-open-closed-principle/"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#lsp",
+    "href": "materials/05-solid-principle/index.html#lsp",
+    "title": "Principios SOLID",
+    "section": "Liskov Substitution Principle - Principio de sustitución de Liskov",
+    "text": "Liskov Substitution Principle - Principio de sustitución de Liskov\n Si la clase A es un subtipo de la clase B, se podría reemplazar B por A sin alterar el comportamiento del sistema\n\n Principio de diseño del sentido común\n\nEscribe abstracciones claras y bien definidas\nSubclases deben ser compatibles con (el comportamiento) de la clase padre\nAl sobrescribir un método, extiende el comportamiento base en lugar de sustituirlo por algo totalmente distinto\n\n\nEscribe abstracciones nítidas, claras y bien definidas.\nhttps://stackify.com/solid-design-liskov-substitution-principle/"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#isp",
+    "href": "materials/05-solid-principle/index.html#isp",
+    "title": "Principios SOLID",
+    "section": "Interface Segregation Principle",
+    "text": "Interface Segregation Principle\n Interfaces con funcionalidad/comportamiento conciso: Evita interfaces para que los clientes (implementaciones) no dependan de métodos que no necesitan\n\n Divide interfaces: Si una interfaz es demasiado grande, sepárala en varias interfaces más pequeñas\n\nhttps://stackify.com/interface-segregation-principle/"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#dip",
+    "href": "materials/05-solid-principle/index.html#dip",
+    "title": "Principios SOLID",
+    "section": "Dependency Inversion Principle",
+    "text": "Dependency Inversion Principle\n Desacoplamiento de módulos/componentes/clases: clases de alto nivel (componentes, servicios) no deben depender de clases de bajo nivel.\n\n Principo de diseño composición\n\nComponentes/entidades de alto nivel deben depender de abstracciones, no de implementaciones\n\n\nClases de bajo nivel implementan operaciones básicas como transferir datos por la red.\nClases de alto nivel contienen la lógica de negocio que indican a las clases de bajo nivel que hagan algo.\nEl uso del operador new crea dependencias fuertes entre clases.\nhttps://stackify.com/dependency-inversion-principle/"
+  },
+  {
+    "objectID": "materials/05-solid-principle/index.html#solid-en-ejemplos",
+    "href": "materials/05-solid-principle/index.html#solid-en-ejemplos",
+    "title": "Principios SOLID",
+    "section": "SOLID en ejemplos",
+    "text": "SOLID en ejemplos\n\n(Milignton 2022): Ejemplos claros y sencillos en Java para entender los principios SOLID.\n(Oloruntoba 2021) y (Soysal 2022) proporcionan más ejemplos.\n(Martin 2014): Charla de Robert Martín (creador principios) in Yale"
   }
 ]

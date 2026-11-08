@@ -2,26 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://cgranell.github.io/ei2639-slides/index.html</loc>
-    <lastmod>2026-09-15T11:14:00.495Z</lastmod>
+    <lastmod>2026-11-08T22:23:29.840Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cgranell.github.io/ei2639-slides/materials/06-flashcards/index.html</loc>
+    <lastmod>2026-11-08T22:23:29.874Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/ei2639-slides/materials/04-architecture-structure/index.html</loc>
-    <lastmod>2026-09-15T11:14:00.523Z</lastmod>
-  </url>
-  <url>
-    <loc>https://cgranell.github.io/ei2639-slides/materials/05-solid-principle/index.html</loc>
-    <lastmod>2026-09-15T11:14:00.526Z</lastmod>
+    <lastmod>2026-11-08T22:23:29.870Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/ei2639-slides/materials/02-architecture-concepts/index.html</loc>
-    <lastmod>2026-09-15T11:14:00.514Z</lastmod>
+    <lastmod>2026-11-08T22:23:29.860Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/ei2639-slides/materials/03-architecture-characteristics/index.html</loc>
-    <lastmod>2026-09-15T11:14:00.519Z</lastmod>
+    <lastmod>2026-11-08T22:23:29.865Z</lastmod>
   </url>
   <url>
     <loc>https://cgranell.github.io/ei2639-slides/materials/01-course-content/index.html</loc>
-    <lastmod>2026-09-15T11:14:00.497Z</lastmod>
+    <lastmod>2026-11-08T22:23:29.842Z</lastmod>
+  </url>
+  <url>
+    <loc>https://cgranell.github.io/ei2639-slides/materials/05-solid-principle/index.html</loc>
+    <lastmod>2026-11-08T22:23:29.874Z</lastmod>
   </url>
 </urlset>
