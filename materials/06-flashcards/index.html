@@ -246,13 +246,20 @@ Carlos Granell
 <h2>Errores comunes con patrones de diseño</h2>
 <p>Conocer un patrón no es solo saber <strong>cuándo</strong> usarlo, sino también reconocer cuándo se está usando <strong>mal</strong>.</p>
 <div class="fragment">
+<p>Un patrón mal usado puede ser peor que no usar ninguno: añade clases, indirección y complejidad sin aportar flexibilidad.</p>
+</div>
+<div class="fragment">
+<p>Los asistentes de IA generan código con patrones con mucha facilidad, pero no siempre los aplican bien. Detectar estos errores y saber corregirlos es parte de lo que hoy significa <em>saber programar</em>.</p>
+</div>
+</section>
+<section id="flashcards" class="slide level2">
+<h2>Flashcards</h2>
 <p>Cada <em>flashcard</em> tiene tres diapositivas:</p>
 <ol type="1">
 <li><span class="emoji" data-emoji="mag">🔍</span> <strong>Síntoma</strong>: un fragmento de código o una situación.</li>
 <li><span class="emoji" data-emoji="x">❌</span> <strong>¿Qué falla?</strong>: el diagnóstico.</li>
 <li><span class="emoji" data-emoji="white_check_mark">✅</span> <strong>¿Cómo corregirlo?</strong>: la solución.</li>
 </ol>
-</div>
 <div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -267,10 +274,28 @@ Carlos Granell
 </div>
 </div>
 </div>
+<aside class="notes">
+<p>Inspira en la sección <a href="https://www.data-to-viz.com/caveats.html"><em>Caveats</em></a> de <em>From Data to Viz</em>, una colección de errores frecuentes en visualización de datos en la que cada tarjeta describe un error y cómo corregirlo.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </div>
 </section>
-<section id="las-flashcards-de-hoy" class="slide level2 smaller">
-<h2>Las flashcards de hoy</h2>
+<section id="recuerda-los-principios" class="slide level2">
+<h2>Recuerda los principios</h2>
+<p>Muchos errores se explican con los principios básicos: - <em>encapsula lo que varía</em>, - <em>programa a una interfaz, no a una implementación</em> y - <em>favorece la composición sobre la herencia</em>.</p>
+<p>También te serán útiles el principio SOLID <em>abierto/cerrado</em> y el de <em>responsabilidad única</em>.</p>
+</section>
+<section id="catálogo-de-flashcards" class="slide level2 smaller">
+<h2>Catálogo de flashcards</h2>
 <table class="caption-top">
 <colgroup>
 <col style="width: 11%">
@@ -288,31 +313,31 @@ Carlos Granell
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">4</td>
+<td style="text-align: center;">1</td>
 <td>La fábrica con un <code>if</code> que no deja de crecer</td>
 <td><em>Factory Method</em></td>
 <td><span style="color:#2b6cb0; font-weight:600;">Creacional</span></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">5</td>
+<td style="text-align: center;">10</td>
 <td>El decorador que cambia la interfaz</td>
 <td><em>Decorator</em></td>
 <td><span style="color:#2f855a; font-weight:600;">Estructural</span></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">6</td>
+<td style="text-align: center;">11</td>
 <td>La fachada que lo hace todo</td>
 <td><em>Facade</em></td>
 <td><span style="color:#2f855a; font-weight:600;">Estructural</span></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">9</td>
+<td style="text-align: center;">20</td>
 <td>La estrategia con el <code>if</code> escondido</td>
 <td><em>Strategy</em></td>
 <td><span style="color:#975a16; font-weight:600;">Comportamiento</span></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">10</td>
+<td style="text-align: center;">21</td>
 <td>La subclase que se salta la plantilla</td>
 <td><em>Template Method</em></td>
 <td><span style="color:#975a16; font-weight:600;">Comportamiento</span></td>
@@ -320,17 +345,17 @@ Carlos Granell
 </tbody>
 </table>
 <!-- ============================================================ -->
-<!-- FLASHCARD 4 · FACTORY METHOD                                 -->
+<!-- FLASHCARD 1 · FACTORY METHOD                                 -->
 <!-- ============================================================ -->
 </section></section>
 <section>
-<section id="flashcard-4" class="title-slide slide level1 center" data-background-color="#2b6cb0">
-<h1>Flashcard 4</h1>
+<section id="flashcard-1" class="title-slide slide level1 center" data-background-color="#2b6cb0">
+<h1>Flashcard 1</h1>
 <p><span style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;">Creacional · <em>Factory Method</em></span></p>
 <p><span style="font-size: 1.3em; font-weight: 600;">La fábrica con un <code>if</code> que no deja de crecer</span></p>
 </section>
-<section id="flashcard-4-síntoma" class="slide level2">
-<h2><span class="emoji" data-emoji="mag">🔍</span> Flashcard 4 · Síntoma</h2>
+<section id="flashcard-1-síntoma" class="slide level2">
+<h2><span class="emoji" data-emoji="mag">🔍</span> Flashcard 1 · Síntoma</h2>
 <p>La aplicación de logística necesita un transporte nuevo: el <strong>tren</strong>. Cada transporte nuevo obliga a modificar esta función.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-code-line-numbers="|2-7|8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a aria-label="1"></a><span class="kw">def</span> crear_transporte(tipo):</span>
 <span id="cb1-2"><a aria-label="2"></a>    <span class="cf">if</span> tipo <span class="op">==</span> <span class="st">"camion"</span>:</span>
@@ -356,10 +381,10 @@ Carlos Granell
 </div>
 </div>
 </section>
-<section id="flashcard-4-qué-falla" class="slide level2 smaller">
-<h2><span class="emoji" data-emoji="x">❌</span> Flashcard 4 · ¿Qué falla?</h2>
+<section id="flashcard-1-qué-falla" class="slide level2 smaller">
+<h2><span class="emoji" data-emoji="x">❌</span> Flashcard 1 · ¿Qué falla?</h2>
 <ul>
-<li class="fragment"><strong>No es <em>Factory Method</em>.</strong> Es una <strong>fábrica simple</strong> (<em>simple factory</em>): centraliza la creación, pero no es el patrón de la <em>Gang of Four</em> <span class="citation" data-cites="gamma1994">(<a href="#/referencias" role="doc-biblioref" onclick="">Gamma et al. 1994</a>)</span>.</li>
+<li class="fragment"><strong>No es <em>Factory Method</em>.</strong> Es una <strong>fábrica simple</strong> (<em>simple factory</em>) poruqe centraliza la creación, pero no es un <em>Factory Method</em> según <span class="citation" data-cites="gamma1994">(<a href="#/referencias" role="doc-biblioref" onclick="">Gamma et al. 1994</a>)</span>.</li>
 <li class="fragment"><strong>Vulnera el principio abierto/cerrado.</strong> Cada tipo nuevo obliga a <strong>modificar</strong> la función, en lugar de <strong>extenderla</strong>.</li>
 <li class="fragment"><strong>Acopla la función a todas las clases concretas.</strong> <code>crear_transporte()</code> debe conocer <code>Camion</code>, <code>Barco</code>, <code>Avion</code>, <code>Tren</code>…</li>
 <li class="fragment"><strong>Tiende a replicarse.</strong> El mismo <code>if tipo == ...</code> acaba apareciendo en otras partes del código (costes, tiempos de entrega…).</li>
@@ -380,8 +405,8 @@ Carlos Granell
 </div>
 </div>
 </section>
-<section id="flashcard-4-cómo-corregirlo" class="slide level2 smaller">
-<h2><span class="emoji" data-emoji="white_check_mark">✅</span> Flashcard 4 · ¿Cómo corregirlo?</h2>
+<section id="flashcard-1-cómo-corregirlo" class="slide level2 smaller">
+<h2><span class="emoji" data-emoji="white_check_mark">✅</span> Flashcard 1 · ¿Cómo corregirlo?</h2>
 <div class="columns">
 <div class="column" style="width:52%;">
 <p><strong>Opción 1: <em>Factory Method</em></strong></p>
@@ -432,18 +457,18 @@ Carlos Granell
 </div>
 </div>
 <!-- ============================================================ -->
-<!-- FLASHCARD 5 · DECORATOR                                      -->
+<!-- FLASHCARD 10 · DECORATOR                                      -->
 <!-- ============================================================ -->
 </div>
 </section></section>
 <section>
-<section id="flashcard-5" class="title-slide slide level1 center" data-background-color="#2f855a">
-<h1>Flashcard 5</h1>
+<section id="flashcard-10" class="title-slide slide level1 center" data-background-color="#2f855a">
+<h1>Flashcard 10</h1>
 <p><span style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;">Estructural · <em>Decorator</em></span></p>
 <p><span style="font-size: 1.3em; font-weight: 600;">El decorador que cambia la interfaz</span></p>
 </section>
-<section id="flashcard-5-síntoma" class="slide level2">
-<h2><span class="emoji" data-emoji="mag">🔍</span> Flashcard 5 · Síntoma</h2>
+<section id="flashcard-10-síntoma" class="slide level2">
+<h2><span class="emoji" data-emoji="mag">🔍</span> Flashcard 10 · Síntoma</h2>
 <p>Tras envolver el notificador de correo con el de SMS, <code>enviar()</code> no manda nada.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" data-code-line-numbers="|1-2|7-8|10-11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a aria-label="1"></a><span class="kw">class</span> Notificador:</span>
 <span id="cb4-2"><a aria-label="2"></a>    <span class="kw">def</span> enviar(<span class="va">self</span>, msg): ...</span>
@@ -472,8 +497,8 @@ Carlos Granell
 </div>
 </div>
 </section>
-<section id="flashcard-5-qué-falla" class="slide level2 smaller">
-<h2><span class="emoji" data-emoji="x">❌</span> Flashcard 5 · ¿Qué falla?</h2>
+<section id="flashcard-10-qué-falla" class="slide level2 smaller">
+<h2><span class="emoji" data-emoji="x">❌</span> Flashcard 10 · ¿Qué falla?</h2>
 <ul>
 <li class="fragment"><strong>No redefine <code>enviar()</code>.</strong> Hereda el método vacío de <code>Notificador</code> y <strong>no delega</strong> en el objeto envuelto: el correo nunca se envía.</li>
 <li class="fragment"><strong>Añade una interfaz nueva.</strong> Para enviar el SMS, el cliente tiene que llamar a <code>enviar_sms()</code>, así que debe conocer la <strong>clase concreta</strong> del decorador.</li>
@@ -496,8 +521,8 @@ Carlos Granell
 </div>
 </div>
 </section>
-<section id="flashcard-5-cómo-corregirlo" class="slide level2 smaller">
-<h2><span class="emoji" data-emoji="white_check_mark">✅</span> Flashcard 5 · ¿Cómo corregirlo?</h2>
+<section id="flashcard-10-cómo-corregirlo" class="slide level2 smaller">
+<h2><span class="emoji" data-emoji="white_check_mark">✅</span> Flashcard 10 · ¿Cómo corregirlo?</h2>
 <div class="columns">
 <div class="column" style="width:55%;">
 <p><strong>Misma interfaz, más comportamiento, y delegación</strong></p>
@@ -534,18 +559,18 @@ Carlos Granell
 </div>
 </div>
 <!-- ============================================================ -->
-<!-- FLASHCARD 6 · FACADE                                         -->
+<!-- FLASHCARD 11 · FACADE                                         -->
 <!-- ============================================================ -->
 </div>
 </section></section>
 <section>
-<section id="flashcard-6" class="title-slide slide level1 center" data-background-color="#2f855a">
-<h1>Flashcard 6</h1>
+<section id="flashcard-11" class="title-slide slide level1 center" data-background-color="#2f855a">
+<h1>Flashcard 11</h1>
 <p><span style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;">Estructural · <em>Facade</em></span></p>
 <p><span style="font-size: 1.3em; font-weight: 600;">La fachada que lo hace todo</span></p>
 </section>
-<section id="flashcard-6-síntoma" class="slide level2">
-<h2><span class="emoji" data-emoji="mag">🔍</span> Flashcard 6 · Síntoma</h2>
+<section id="flashcard-11-síntoma" class="slide level2">
+<h2><span class="emoji" data-emoji="mag">🔍</span> Flashcard 11 · Síntoma</h2>
 <p>Cualquier cambio en la tienda en línea acaba tocando esta clase, y todo el equipo la modifica a la vez.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7" data-code-line-numbers="|2-3|4-5|6-9|10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a aria-label="1"></a><span class="kw">class</span> FachadaTienda:</span>
 <span id="cb7-2"><a aria-label="2"></a>    <span class="kw">def</span> anadir_al_carrito(<span class="va">self</span>, usuario, producto): ...</span>
@@ -573,10 +598,10 @@ Carlos Granell
 </div>
 </div>
 </section>
-<section id="flashcard-6-qué-falla" class="slide level2 smaller">
-<h2><span class="emoji" data-emoji="x">❌</span> Flashcard 6 · ¿Qué falla?</h2>
+<section id="flashcard-11-qué-falla" class="slide level2 smaller">
+<h2><span class="emoji" data-emoji="x">❌</span> Flashcard 11 · ¿Qué falla?</h2>
 <ul>
-<li class="fragment"><strong>Es un objeto dios</strong> (<em>God object</em>). La fachada concentra carritos, pagos, impuestos, envíos, usuarios e informes.</li>
+<li class="fragment"><strong>Es un objeto dios</strong> (<em><a href="https://en.wikipedia.org/wiki/God_object">God object</a></em>). La fachada concentra carritos, pagos, impuestos, envíos, usuarios e informes.</li>
 <li class="fragment"><strong>Vulnera el principio de responsabilidad única.</strong> La clase tiene muchas razones distintas para cambiar.</li>
 <li class="fragment"><strong>Contiene lógica, no solo coordinación.</strong> Métodos como <code>calcular_iva()</code> implementan reglas de negocio que deberían vivir en el subsistema.</li>
 <li class="fragment"><strong>Se convierte en un cuello de botella.</strong> Todo el equipo modifica el mismo archivo, con conflictos constantes al integrar cambios.</li>
@@ -597,8 +622,8 @@ Carlos Granell
 </div>
 </div>
 </section>
-<section id="flashcard-6-cómo-corregirlo" class="slide level2 smaller">
-<h2><span class="emoji" data-emoji="white_check_mark">✅</span> Flashcard 6 · ¿Cómo corregirlo?</h2>
+<section id="flashcard-11-cómo-corregirlo" class="slide level2 smaller">
+<h2><span class="emoji" data-emoji="white_check_mark">✅</span> Flashcard 11 · ¿Cómo corregirlo?</h2>
 <div class="columns">
 <div class="column" style="width:42%;">
 <ul>
@@ -634,19 +659,19 @@ Carlos Granell
 </div>
 </div>
 <!-- ============================================================ -->
-<!-- FLASHCARD 9 · STRATEGY                                       -->
+<!-- FLASHCARD 20 · STRATEGY                                       -->
 <!-- ============================================================ -->
 </div>
 </section></section>
 <section>
-<section id="flashcard-9" class="title-slide slide level1 center" data-background-color="#975a16">
-<h1>Flashcard 9</h1>
+<section id="flashcard-20" class="title-slide slide level1 center" data-background-color="#975a16">
+<h1>Flashcard 20</h1>
 <p><span style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;">Comportamiento · <em>Strategy</em></span></p>
 <p><span style="font-size: 1.3em; font-weight: 600;">La estrategia con el <code>if</code> escondido</span></p>
 </section>
-<section id="flashcard-9-síntoma" class="slide level2">
-<h2><span class="emoji" data-emoji="mag">🔍</span> Flashcard 9 · Síntoma</h2>
-<p>Se han creado clases para cada estrategia, pero añadir el modo «patinete» sigue obligando a modificar <code>Navegador</code>.</p>
+<section id="flashcard-20-síntoma" class="slide level2">
+<h2><span class="emoji" data-emoji="mag">🔍</span> Flashcard 20 · Síntoma</h2>
+<p>Se han creado clases para cada estrategia, pero añadir el modo “patinete” sigue obligando a modificar <code>Navegador</code>.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" data-code-line-numbers="|3-8|9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a aria-label="1"></a><span class="kw">class</span> Navegador:</span>
 <span id="cb9-2"><a aria-label="2"></a>    <span class="kw">def</span> calcular_ruta(<span class="va">self</span>, origen, destino, modo):</span>
 <span id="cb9-3"><a aria-label="3"></a>        <span class="cf">if</span> modo <span class="op">==</span> <span class="st">"coche"</span>:</span>
@@ -672,8 +697,8 @@ Carlos Granell
 </div>
 </div>
 </section>
-<section id="flashcard-9-qué-falla" class="slide level2 smaller">
-<h2><span class="emoji" data-emoji="x">❌</span> Flashcard 9 · ¿Qué falla?</h2>
+<section id="flashcard-20-qué-falla" class="slide level2 smaller">
+<h2><span class="emoji" data-emoji="x">❌</span> Flashcard 20 · ¿Qué falla?</h2>
 <ul>
 <li class="fragment"><strong>El contexto elige la estrategia con condicionales.</strong> <code>Navegador</code> conoce <strong>todas</strong> las estrategias concretas.</li>
 <li class="fragment"><strong>Vulnera el principio abierto/cerrado.</strong> Cada modo nuevo obliga a modificar <code>Navegador</code>.</li>
@@ -696,8 +721,8 @@ Carlos Granell
 </div>
 </div>
 </section>
-<section id="flashcard-9-cómo-corregirlo" class="slide level2 smaller">
-<h2><span class="emoji" data-emoji="white_check_mark">✅</span> Flashcard 9 · ¿Cómo corregirlo?</h2>
+<section id="flashcard-20-cómo-corregirlo" class="slide level2 smaller">
+<h2><span class="emoji" data-emoji="white_check_mark">✅</span> Flashcard 20 · ¿Cómo corregirlo?</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <p><strong>El contexto solo delega</strong></p>
@@ -738,18 +763,18 @@ Carlos Granell
 </div>
 </div>
 <!-- ============================================================ -->
-<!-- FLASHCARD 10 · TEMPLATE METHOD                               -->
+<!-- FLASHCARD 21 · TEMPLATE METHOD                               -->
 <!-- ============================================================ -->
 </div>
 </section></section>
 <section>
-<section id="flashcard-10" class="title-slide slide level1 center" data-background-color="#975a16">
-<h1>Flashcard 10</h1>
+<section id="flashcard-21" class="title-slide slide level1 center" data-background-color="#975a16">
+<h1>Flashcard 21</h1>
 <p><span style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;">Comportamiento · <em>Template Method</em></span></p>
 <p><span style="font-size: 1.3em; font-weight: 600;">La subclase que se salta la plantilla</span></p>
 </section>
-<section id="flashcard-10-síntoma" class="slide level2">
-<h2><span class="emoji" data-emoji="mag">🔍</span> Flashcard 10 · Síntoma</h2>
+<section id="flashcard-21-síntoma" class="slide level2">
+<h2><span class="emoji" data-emoji="mag">🔍</span> Flashcard 21 · Síntoma</h2>
 <p>Los informes rápidos salen vacíos: nunca se cargan los datos.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12" data-code-line-numbers="|2-5|8-9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a aria-label="1"></a><span class="kw">class</span> Informe:</span>
 <span id="cb12-2"><a aria-label="2"></a>    <span class="kw">def</span> generar(<span class="va">self</span>):            <span class="co"># método plantilla</span></span>
@@ -777,12 +802,12 @@ Carlos Granell
 </div>
 </div>
 </section>
-<section id="flashcard-10-qué-falla" class="slide level2 smaller">
-<h2><span class="emoji" data-emoji="x">❌</span> Flashcard 10 · ¿Qué falla?</h2>
+<section id="flashcard-21-qué-falla" class="slide level2 smaller">
+<h2><span class="emoji" data-emoji="x">❌</span> Flashcard 21 · ¿Qué falla?</h2>
 <ul>
 <li class="fragment"><strong>La subclase redefine el método plantilla</strong>, en lugar de redefinir solo alguno de sus <strong>pasos</strong>.</li>
 <li class="fragment"><strong>Rompe el esqueleto del algoritmo.</strong> Desaparecen pasos obligatorios, como <code>cargar_datos()</code>, que la superclase debía garantizar.</li>
-<li class="fragment"><strong>Invierte el control.</strong> En <em>Template Method</em>, la superclase llama a las subclases, y no al revés: es el <em>principio de Hollywood</em> («no nos llames, ya te llamaremos»).</li>
+<li class="fragment"><strong>Invierte el control.</strong> En <em>Template Method</em>, la superclase llama a las subclases, y no al revés: es el <em><a href="https://en.wikipedia.org/wiki/Inversion_of_control">principio de Hollywood</a></em> (“no nos llames, ya te llamaremos”).</li>
 <li class="fragment"><strong>Vulnera el principio abierto/cerrado.</strong> La plantilla debería estar <strong>cerrada</strong> a modificaciones y <strong>abierta</strong> a extensiones a través de sus pasos.</li>
 </ul>
 <div class="fragment">
@@ -801,8 +826,8 @@ Carlos Granell
 </div>
 </div>
 </section>
-<section id="flashcard-10-cómo-corregirlo" class="slide level2 smaller">
-<h2><span class="emoji" data-emoji="white_check_mark">✅</span> Flashcard 10 · ¿Cómo corregirlo?</h2>
+<section id="flashcard-21-cómo-corregirlo" class="slide level2 smaller">
+<h2><span class="emoji" data-emoji="white_check_mark">✅</span> Flashcard 21 · ¿Cómo corregirlo?</h2>
 <div class="columns">
 <div class="column" style="width:55%;">
 <p><strong>Plantilla protegida y un gancho (<em>hook</em>)</strong></p>

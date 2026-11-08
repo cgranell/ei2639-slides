@@ -4,126 +4,140 @@
     "href": "index.html",
     "title": "Presentaciones",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nContenido curso y planificación\n\n\nei1026\n\n\nConcepto y principios de los patrones de diseño y de arquitectura de datos\n\n\n\n\n\n\nFlashcards\n\n\nErrores comunes en patrones de diseño\n\n\nei1026, flashcards\n\n\nErrores comunes en patrones de diseño\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nConceptos y roles\n\n\nei1026, software-architecture\n\n\nConceptos, caracterización y dimensiones de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nCaracterísticas de una arquitectura\n\n\nei1026, software-architecture\n\n\nDimensión de las características de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nEstructura/estilos de una arquitectura\n\n\nei1026, software-architecture\n\n\nDimensión de la estructura o estilo de una arquitectura de software\n\n\n\n\n\n\nPrincipios SOLID\n\n\nGuía rápida\n\n\nei1026, solid-principles\n\n\nDescripción de los principos SOLID para software de calidad\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\nSubtitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nDiseño de Sofware\n\n\nContenido curso y planificación\n\n\nei1039, syllabus\n\n\nConcepto y principios de los patrones de diseño y de arquitectura de datos\n\n\n\n\n\n\nFlashcards\n\n\nErrores comunes en patrones de diseño\n\n\nei1039, flashcards\n\n\nConocer un patrón no es solo saber cuándo usarlo, sino también reconocer cuándo se está usando mal\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nConceptos y roles\n\n\nei1039, software-architecture\n\n\nConceptos, caracterización y dimensiones de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nCaracterísticas de una arquitectura\n\n\nei1039, software-architecture\n\n\nDimensión de las características de una arquitectura de sofware\n\n\n\n\n\n\nFundamentos de arquitectura\n\n\nEstructura/estilos de una arquitectura\n\n\nei1039, software-architecture\n\n\nDimensión de la estructura o estilo de una arquitectura de software\n\n\n\n\n\n\nPrincipios SOLID\n\n\nGuía rápida\n\n\nei1039, solid-principles\n\n\nDescripción de los principos SOLID para software de calidad\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "materials/06-flashcards/index.html#errores-comunes-con-patrones-de-diseño",
     "href": "materials/06-flashcards/index.html#errores-comunes-con-patrones-de-diseño",
     "title": "Flashcards",
     "section": "Errores comunes con patrones de diseño",
-    "text": "Errores comunes con patrones de diseño\nConocer un patrón no es solo saber cuándo usarlo, sino también reconocer cuándo se está usando mal.\n\nCada flashcard tiene tres diapositivas:\n\n🔍 Síntoma: un fragmento de código o una situación.\n❌ ¿Qué falla?: el diagnóstico.\n✅ ¿Cómo corregirlo?: la solución.\n\n\n\n\n\n\n\n\n\nAnte cada síntoma\n\n\n¿Qué patrón se intenta aplicar? ¿Qué falla? ¿Cómo lo corregirías?"
+    "text": "Errores comunes con patrones de diseño\nConocer un patrón no es solo saber cuándo usarlo, sino también reconocer cuándo se está usando mal.\n\nUn patrón mal usado puede ser peor que no usar ninguno: añade clases, indirección y complejidad sin aportar flexibilidad.\n\n\nLos asistentes de IA generan código con patrones con mucha facilidad, pero no siempre los aplican bien. Detectar estos errores y saber corregirlos es parte de lo que hoy significa saber programar."
   },
   {
-    "objectID": "materials/06-flashcards/index.html#las-flashcards-de-hoy",
-    "href": "materials/06-flashcards/index.html#las-flashcards-de-hoy",
+    "objectID": "materials/06-flashcards/index.html#flashcards",
+    "href": "materials/06-flashcards/index.html#flashcards",
     "title": "Flashcards",
-    "section": "Las flashcards de hoy",
-    "text": "Las flashcards de hoy\n\n\n\n\n\n\n\n\n\n#\nError\nPatrón\nFamilia\n\n\n\n\n4\nLa fábrica con un if que no deja de crecer\nFactory Method\nCreacional\n\n\n5\nEl decorador que cambia la interfaz\nDecorator\nEstructural\n\n\n6\nLa fachada que lo hace todo\nFacade\nEstructural\n\n\n9\nLa estrategia con el if escondido\nStrategy\nComportamiento\n\n\n10\nLa subclase que se salta la plantilla\nTemplate Method\nComportamiento"
+    "section": "Flashcards",
+    "text": "Flashcards\nCada flashcard tiene tres diapositivas:\n\n🔍 Síntoma: un fragmento de código o una situación.\n❌ ¿Qué falla?: el diagnóstico.\n✅ ¿Cómo corregirlo?: la solución.\n\n\n\n\n\n\n\n\nAnte cada síntoma\n\n\n¿Qué patrón se intenta aplicar? ¿Qué falla? ¿Cómo lo corregirías?\n\n\n\n\nInspira en la sección Caveats de From Data to Viz, una colección de errores frecuentes en visualización de datos en la que cada tarjeta describe un error y cómo corregirlo."
   },
   {
-    "objectID": "materials/06-flashcards/index.html#flashcard-4-síntoma",
-    "href": "materials/06-flashcards/index.html#flashcard-4-síntoma",
+    "objectID": "materials/06-flashcards/index.html#recuerda-los-principios",
+    "href": "materials/06-flashcards/index.html#recuerda-los-principios",
     "title": "Flashcards",
-    "section": "🔍 Flashcard 4 · Síntoma",
-    "text": "🔍 Flashcard 4 · Síntoma\nLa aplicación de logística necesita un transporte nuevo: el tren. Cada transporte nuevo obliga a modificar esta función.\ndef crear_transporte(tipo):\n    if tipo == \"camion\":\n        return Camion()\n    elif tipo == \"barco\":\n        return Barco()\n    elif tipo == \"avion\":\n        return Avion()\n    # ... y una rama más por cada transporte\n\n\n\n\n\n\n\nPara el grupo\n\n\n¿Qué ocurre al añadir Tren? ¿Y diez transportes más?"
+    "section": "Recuerda los principios",
+    "text": "Recuerda los principios\nMuchos errores se explican con los principios básicos: - encapsula lo que varía, - programa a una interfaz, no a una implementación y - favorece la composición sobre la herencia.\nTambién te serán útiles el principio SOLID abierto/cerrado y el de responsabilidad única."
   },
   {
-    "objectID": "materials/06-flashcards/index.html#flashcard-4-qué-falla",
-    "href": "materials/06-flashcards/index.html#flashcard-4-qué-falla",
+    "objectID": "materials/06-flashcards/index.html#catálogo-de-flashcards",
+    "href": "materials/06-flashcards/index.html#catálogo-de-flashcards",
     "title": "Flashcards",
-    "section": "❌ Flashcard 4 · ¿Qué falla?",
-    "text": "❌ Flashcard 4 · ¿Qué falla?\n\nNo es Factory Method. Es una fábrica simple (simple factory): centraliza la creación, pero no es el patrón de la Gang of Four (Gamma et al. 1994).\nVulnera el principio abierto/cerrado. Cada tipo nuevo obliga a modificar la función, en lugar de extenderla.\nAcopla la función a todas las clases concretas. crear_transporte() debe conocer Camion, Barco, Avion, Tren…\nTiende a replicarse. El mismo if tipo == ... acaba apareciendo en otras partes del código (costes, tiempos de entrega…).\n\n\n\n\n\n\n\n\nPero…\n\n\nUna fábrica simple no es un error en sí misma si los tipos son pocos y casi nunca cambian. El error es confundirla con Factory Method o dejar que crezca sin control."
+    "section": "Catálogo de flashcards",
+    "text": "Catálogo de flashcards\n\n\n\n\n\n\n\n\n\n#\nError\nPatrón\nFamilia\n\n\n\n\n1\nLa fábrica con un if que no deja de crecer\nFactory Method\nCreacional\n\n\n10\nEl decorador que cambia la interfaz\nDecorator\nEstructural\n\n\n11\nLa fachada que lo hace todo\nFacade\nEstructural\n\n\n20\nLa estrategia con el if escondido\nStrategy\nComportamiento\n\n\n21\nLa subclase que se salta la plantilla\nTemplate Method\nComportamiento"
   },
   {
-    "objectID": "materials/06-flashcards/index.html#flashcard-4-cómo-corregirlo",
-    "href": "materials/06-flashcards/index.html#flashcard-4-cómo-corregirlo",
+    "objectID": "materials/06-flashcards/index.html#flashcard-1-síntoma",
+    "href": "materials/06-flashcards/index.html#flashcard-1-síntoma",
     "title": "Flashcards",
-    "section": "✅ Flashcard 4 · ¿Cómo corregirlo?",
-    "text": "✅ Flashcard 4 · ¿Cómo corregirlo?\n\n\nOpción 1: Factory Method\nCada subclase decide qué transporte crear.\nclass Logistica(ABC):\n    @abstractmethod\n    def crear_transporte(self) -&gt; Transporte: ...\n\n    def planificar_entrega(self, carga):\n        t = self.crear_transporte()\n        t.entregar(carga)\n\nclass LogisticaTerrestre(Logistica):\n    def crear_transporte(self):\n        return Camion()\n\nclass LogisticaFerroviaria(Logistica):\n    def crear_transporte(self):\n        return Tren()\n\nOpción 2: registro de tipos\nUn diccionario sustituye a la cadena de if.\nTRANSPORTES = {\n    \"camion\": Camion,\n    \"barco\": Barco,\n    \"avion\": Avion,\n}\n\ndef crear_transporte(tipo):\n    return TRANSPORTES[tipo]()\n\n# Añadir el tren: una línea,\n# sin tocar crear_transporte()\nTRANSPORTES[\"tren\"] = Tren\n\n\n\n\n\n\n\n\nPara recordar\n\n\nAñadir un tipo nuevo debería consistir en añadir código, no en modificar el que ya funciona."
+    "section": "🔍 Flashcard 1 · Síntoma",
+    "text": "🔍 Flashcard 1 · Síntoma\nLa aplicación de logística necesita un transporte nuevo: el tren. Cada transporte nuevo obliga a modificar esta función.\ndef crear_transporte(tipo):\n    if tipo == \"camion\":\n        return Camion()\n    elif tipo == \"barco\":\n        return Barco()\n    elif tipo == \"avion\":\n        return Avion()\n    # ... y una rama más por cada transporte\n\n\n\n\n\n\n\nPara el grupo\n\n\n¿Qué ocurre al añadir Tren? ¿Y diez transportes más?"
   },
   {
-    "objectID": "materials/06-flashcards/index.html#flashcard-5-síntoma",
-    "href": "materials/06-flashcards/index.html#flashcard-5-síntoma",
+    "objectID": "materials/06-flashcards/index.html#flashcard-1-qué-falla",
+    "href": "materials/06-flashcards/index.html#flashcard-1-qué-falla",
     "title": "Flashcards",
-    "section": "🔍 Flashcard 5 · Síntoma",
-    "text": "🔍 Flashcard 5 · Síntoma\nTras envolver el notificador de correo con el de SMS, enviar() no manda nada.\nclass Notificador:\n    def enviar(self, msg): ...\n\nclass NotificadorSMS(Notificador):\n    def __init__(self, envuelto):\n        self.envuelto = envuelto\n    def enviar_sms(self, msg, telefono):   # método nuevo\n        ...\n\nn = NotificadorSMS(NotificadorEmail())\nn.enviar(\"Hola\")                         # ¿qué se envía?\n\n\n\n\n\n\n\nPara el grupo\n\n\n¿Qué método se ejecuta en la última línea?"
+    "section": "❌ Flashcard 1 · ¿Qué falla?",
+    "text": "❌ Flashcard 1 · ¿Qué falla?\n\nNo es Factory Method. Es una fábrica simple (simple factory) poruqe centraliza la creación, pero no es un Factory Method según (Gamma et al. 1994).\nVulnera el principio abierto/cerrado. Cada tipo nuevo obliga a modificar la función, en lugar de extenderla.\nAcopla la función a todas las clases concretas. crear_transporte() debe conocer Camion, Barco, Avion, Tren…\nTiende a replicarse. El mismo if tipo == ... acaba apareciendo en otras partes del código (costes, tiempos de entrega…).\n\n\n\n\n\n\n\n\nPero…\n\n\nUna fábrica simple no es un error en sí misma si los tipos son pocos y casi nunca cambian. El error es confundirla con Factory Method o dejar que crezca sin control."
   },
   {
-    "objectID": "materials/06-flashcards/index.html#flashcard-5-qué-falla",
-    "href": "materials/06-flashcards/index.html#flashcard-5-qué-falla",
+    "objectID": "materials/06-flashcards/index.html#flashcard-1-cómo-corregirlo",
+    "href": "materials/06-flashcards/index.html#flashcard-1-cómo-corregirlo",
     "title": "Flashcards",
-    "section": "❌ Flashcard 5 · ¿Qué falla?",
-    "text": "❌ Flashcard 5 · ¿Qué falla?\n\nNo redefine enviar(). Hereda el método vacío de Notificador y no delega en el objeto envuelto: el correo nunca se envía.\nAñade una interfaz nueva. Para enviar el SMS, el cliente tiene que llamar a enviar_sms(), así que debe conocer la clase concreta del decorador.\nDeja de ser transparente. Un decorador debería poder usarse exactamente igual que el objeto que envuelve.\nNo se pueden apilar decoradores. NotificadorSlack(NotificadorSMS(...)) no sabría que tiene que llamar a enviar_sms().\n\n\n\n\n\n\n\n\nPrincipio vulnerado\n\n\nPrograma a una interfaz, no a una implementación: el cliente acaba dependiendo de NotificadorSMS, no de Notificador."
-  },
-  {
-    "objectID": "materials/06-flashcards/index.html#flashcard-5-cómo-corregirlo",
-    "href": "materials/06-flashcards/index.html#flashcard-5-cómo-corregirlo",
-    "title": "Flashcards",
-    "section": "✅ Flashcard 5 · ¿Cómo corregirlo?",
-    "text": "✅ Flashcard 5 · ¿Cómo corregirlo?\n\n\nMisma interfaz, más comportamiento, y delegación\nclass NotificadorSMS(Notificador):\n    def __init__(self, envuelto, telefono):\n        self.envuelto = envuelto\n        self.telefono = telefono   # dato extra\n\n    def enviar(self, msg):\n        self.envuelto.enviar(msg)  # delega\n        self._enviar_sms(msg)      # añade\n\nAhora sí se pueden apilar\nn = NotificadorSlack(\n        NotificadorSMS(\n            NotificadorEmail(),\n            \"600 000 000\"))\n\nn.enviar(\"Hola\")\n# correo + SMS + Slack\n\n\n\n\n\n\n\n\nPara recordar\n\n\nLos datos extra se pasan en el constructor, no en métodos nuevos. Y si lo que necesitas es cambiar la interfaz, no buscas un Decorator, sino un Adapter."
-  },
-  {
-    "objectID": "materials/06-flashcards/index.html#flashcard-6-síntoma",
-    "href": "materials/06-flashcards/index.html#flashcard-6-síntoma",
-    "title": "Flashcards",
-    "section": "🔍 Flashcard 6 · Síntoma",
-    "text": "🔍 Flashcard 6 · Síntoma\nCualquier cambio en la tienda en línea acaba tocando esta clase, y todo el equipo la modifica a la vez.\nclass FachadaTienda:\n    def anadir_al_carrito(self, usuario, producto): ...\n    def aplicar_descuento(self, carrito, codigo): ...\n    def cobrar(self, pedido, tarjeta): ...\n    def calcular_iva(self, pedido, pais): ...\n    def programar_envio(self, pedido): ...\n    def generar_factura_pdf(self, pedido): ...\n    def registrar_usuario(self, datos): ...\n    def informe_ventas_mensual(self, mes): ...\n    # ... y 52 métodos más\n\n\n\n\n\n\n\nPara el grupo\n\n\n¿Cuántas razones distintas para cambiar tiene esta clase?"
-  },
-  {
-    "objectID": "materials/06-flashcards/index.html#flashcard-6-qué-falla",
-    "href": "materials/06-flashcards/index.html#flashcard-6-qué-falla",
-    "title": "Flashcards",
-    "section": "❌ Flashcard 6 · ¿Qué falla?",
-    "text": "❌ Flashcard 6 · ¿Qué falla?\n\nEs un objeto dios (God object). La fachada concentra carritos, pagos, impuestos, envíos, usuarios e informes.\nVulnera el principio de responsabilidad única. La clase tiene muchas razones distintas para cambiar.\nContiene lógica, no solo coordinación. Métodos como calcular_iva() implementan reglas de negocio que deberían vivir en el subsistema.\nSe convierte en un cuello de botella. Todo el equipo modifica el mismo archivo, con conflictos constantes al integrar cambios.\n\n\n\n\n\n\n\n\nUn riesgo compartido\n\n\nLo mismo le puede ocurrir a un Mediator: un mediador que lo sabe todo y lo hace todo es otro objeto dios."
-  },
-  {
-    "objectID": "materials/06-flashcards/index.html#flashcard-6-cómo-corregirlo",
-    "href": "materials/06-flashcards/index.html#flashcard-6-cómo-corregirlo",
-    "title": "Flashcards",
-    "section": "✅ Flashcard 6 · ¿Cómo corregirlo?",
-    "text": "✅ Flashcard 6 · ¿Cómo corregirlo?\n\n\n\nVarias fachadas pequeñas, una por subsistema o caso de uso: FachadaPedidos, FachadaUsuarios, FachadaInformes…\nLa fachada solo coordina y delega. La lógica de negocio vive en el subsistema.\nUna fachada puede componer otras fachadas si hace falta.\n\n\nclass FachadaPedidos:\n    def __init__(self, carrito, pagos, envios):\n        self.carrito = carrito\n        self.pagos = pagos\n        self.envios = envios\n\n    def comprar(self, usuario):\n        pedido = self.carrito.cerrar(usuario)\n        self.pagos.cobrar(pedido)\n        self.envios.programar(pedido)\n        return pedido\n\n\n\n\n\n\n\n\nPara recordar\n\n\nUna fachada simplifica el acceso a un subsistema; no lo sustituye."
-  },
-  {
-    "objectID": "materials/06-flashcards/index.html#flashcard-9-síntoma",
-    "href": "materials/06-flashcards/index.html#flashcard-9-síntoma",
-    "title": "Flashcards",
-    "section": "🔍 Flashcard 9 · Síntoma",
-    "text": "🔍 Flashcard 9 · Síntoma\nSe han creado clases para cada estrategia, pero añadir el modo «patinete» sigue obligando a modificar Navegador.\nclass Navegador:\n    def calcular_ruta(self, origen, destino, modo):\n        if modo == \"coche\":\n            self.estrategia = RutaCoche()\n        elif modo == \"pie\":\n            self.estrategia = RutaAPie()\n        elif modo == \"bici\":\n            self.estrategia = RutaBici()\n        return self.estrategia.calcular(origen, destino)\n\n\n\n\n\n\n\nPara el grupo\n\n\n¿Qué ha ganado el diseño al crear las clases RutaCoche, RutaAPie y RutaBici?"
-  },
-  {
-    "objectID": "materials/06-flashcards/index.html#flashcard-9-qué-falla",
-    "href": "materials/06-flashcards/index.html#flashcard-9-qué-falla",
-    "title": "Flashcards",
-    "section": "❌ Flashcard 9 · ¿Qué falla?",
-    "text": "❌ Flashcard 9 · ¿Qué falla?\n\nEl contexto elige la estrategia con condicionales. Navegador conoce todas las estrategias concretas.\nVulnera el principio abierto/cerrado. Cada modo nuevo obliga a modificar Navegador.\nVulnera programa a una interfaz. El contexto debería depender solo de la interfaz común de las estrategias, no de sus clases.\nSe pierde el beneficio del patrón. El if sigue ahí, solo que más escondido.\n\n\n\n\n\n\n\n\nPero…\n\n\nElegir una estrategia a partir de un dato (un texto, una opción de configuración) no está prohibido. Lo importante es hacerlo una sola vez y fuera del contexto."
-  },
-  {
-    "objectID": "materials/06-flashcards/index.html#flashcard-9-cómo-corregirlo",
-    "href": "materials/06-flashcards/index.html#flashcard-9-cómo-corregirlo",
-    "title": "Flashcards",
-    "section": "✅ Flashcard 9 · ¿Cómo corregirlo?",
-    "text": "✅ Flashcard 9 · ¿Cómo corregirlo?\n\n\nEl contexto solo delega\nclass Navegador:\n    def __init__(self, estrategia):\n        self.estrategia = estrategia\n\n    def calcular_ruta(self, origen, destino):\n        return self.estrategia.calcular(\n            origen, destino)\n\nEl cliente elige, en un único lugar\nESTRATEGIAS = {\n    \"coche\": RutaCoche,\n    \"pie\": RutaAPie,\n    \"bici\": RutaBici,\n    \"patinete\": RutaPatinete,  # nueva\n}\n\nnav = Navegador(ESTRATEGIAS[modo]())\nnav.calcular_ruta(origen, destino)\n\nnav.estrategia = RutaAPie()  # cambio en\n                             # ejecución\n\n\n\n\n\n\n\n\nPara recordar\n\n\nEl contexto no debe saber qué estrategia usa; solo que tiene una."
+    "section": "✅ Flashcard 1 · ¿Cómo corregirlo?",
+    "text": "✅ Flashcard 1 · ¿Cómo corregirlo?\n\n\nOpción 1: Factory Method\nCada subclase decide qué transporte crear.\nclass Logistica(ABC):\n    @abstractmethod\n    def crear_transporte(self) -&gt; Transporte: ...\n\n    def planificar_entrega(self, carga):\n        t = self.crear_transporte()\n        t.entregar(carga)\n\nclass LogisticaTerrestre(Logistica):\n    def crear_transporte(self):\n        return Camion()\n\nclass LogisticaFerroviaria(Logistica):\n    def crear_transporte(self):\n        return Tren()\n\nOpción 2: registro de tipos\nUn diccionario sustituye a la cadena de if.\nTRANSPORTES = {\n    \"camion\": Camion,\n    \"barco\": Barco,\n    \"avion\": Avion,\n}\n\ndef crear_transporte(tipo):\n    return TRANSPORTES[tipo]()\n\n# Añadir el tren: una línea,\n# sin tocar crear_transporte()\nTRANSPORTES[\"tren\"] = Tren\n\n\n\n\n\n\n\n\nPara recordar\n\n\nAñadir un tipo nuevo debería consistir en añadir código, no en modificar el que ya funciona."
   },
   {
     "objectID": "materials/06-flashcards/index.html#flashcard-10-síntoma",
     "href": "materials/06-flashcards/index.html#flashcard-10-síntoma",
     "title": "Flashcards",
     "section": "🔍 Flashcard 10 · Síntoma",
-    "text": "🔍 Flashcard 10 · Síntoma\nLos informes rápidos salen vacíos: nunca se cargan los datos.\nclass Informe:\n    def generar(self):            # método plantilla\n        self.cargar_datos()\n        self.analizar()\n        self.exportar()\n\n\nclass InformeRapido(Informe):\n    def generar(self):            # redefine la plantilla entera\n        self.exportar()\n\n\n\n\n\n\n\nPara el grupo\n\n\nInformeRapido solo quería saltarse el análisis. ¿Qué ha perdido por el camino?"
+    "text": "🔍 Flashcard 10 · Síntoma\nTras envolver el notificador de correo con el de SMS, enviar() no manda nada.\nclass Notificador:\n    def enviar(self, msg): ...\n\nclass NotificadorSMS(Notificador):\n    def __init__(self, envuelto):\n        self.envuelto = envuelto\n    def enviar_sms(self, msg, telefono):   # método nuevo\n        ...\n\nn = NotificadorSMS(NotificadorEmail())\nn.enviar(\"Hola\")                         # ¿qué se envía?\n\n\n\n\n\n\n\nPara el grupo\n\n\n¿Qué método se ejecuta en la última línea?"
   },
   {
     "objectID": "materials/06-flashcards/index.html#flashcard-10-qué-falla",
     "href": "materials/06-flashcards/index.html#flashcard-10-qué-falla",
     "title": "Flashcards",
     "section": "❌ Flashcard 10 · ¿Qué falla?",
-    "text": "❌ Flashcard 10 · ¿Qué falla?\n\nLa subclase redefine el método plantilla, en lugar de redefinir solo alguno de sus pasos.\nRompe el esqueleto del algoritmo. Desaparecen pasos obligatorios, como cargar_datos(), que la superclase debía garantizar.\nInvierte el control. En Template Method, la superclase llama a las subclases, y no al revés: es el principio de Hollywood («no nos llames, ya te llamaremos»).\nVulnera el principio abierto/cerrado. La plantilla debería estar cerrada a modificaciones y abierta a extensiones a través de sus pasos.\n\n\n\n\n\n\n\n\nPero…\n\n\nSi una subclase necesita un algoritmo completamente distinto, quizá el patrón adecuado no es Template Method, sino Strategy."
+    "text": "❌ Flashcard 10 · ¿Qué falla?\n\nNo redefine enviar(). Hereda el método vacío de Notificador y no delega en el objeto envuelto: el correo nunca se envía.\nAñade una interfaz nueva. Para enviar el SMS, el cliente tiene que llamar a enviar_sms(), así que debe conocer la clase concreta del decorador.\nDeja de ser transparente. Un decorador debería poder usarse exactamente igual que el objeto que envuelve.\nNo se pueden apilar decoradores. NotificadorSlack(NotificadorSMS(...)) no sabría que tiene que llamar a enviar_sms().\n\n\n\n\n\n\n\n\nPrincipio vulnerado\n\n\nPrograma a una interfaz, no a una implementación: el cliente acaba dependiendo de NotificadorSMS, no de Notificador."
   },
   {
     "objectID": "materials/06-flashcards/index.html#flashcard-10-cómo-corregirlo",
     "href": "materials/06-flashcards/index.html#flashcard-10-cómo-corregirlo",
     "title": "Flashcards",
     "section": "✅ Flashcard 10 · ¿Cómo corregirlo?",
-    "text": "✅ Flashcard 10 · ¿Cómo corregirlo?\n\n\nPlantilla protegida y un gancho (hook)\nfrom typing import final\n\nclass Informe:\n    @final\n    def generar(self):\n        self.cargar_datos()\n        if self.necesita_analisis():  # gancho\n            self.analizar()\n        self.exportar()\n\n    def necesita_analisis(self):\n        return True                   # por defecto\n\nLa subclase solo ajusta un paso\nclass InformeRapido(Informe):\n    def necesita_analisis(self):\n        return False\nEn Java, el método plantilla se declara final. En Python, @final lo comprueban herramientas como mypy.\n\n\n\n\n\n\n\n\nPara recordar\n\n\nLas subclases rellenan huecos de la plantilla; no la reescriben."
+    "text": "✅ Flashcard 10 · ¿Cómo corregirlo?\n\n\nMisma interfaz, más comportamiento, y delegación\nclass NotificadorSMS(Notificador):\n    def __init__(self, envuelto, telefono):\n        self.envuelto = envuelto\n        self.telefono = telefono   # dato extra\n\n    def enviar(self, msg):\n        self.envuelto.enviar(msg)  # delega\n        self._enviar_sms(msg)      # añade\n\nAhora sí se pueden apilar\nn = NotificadorSlack(\n        NotificadorSMS(\n            NotificadorEmail(),\n            \"600 000 000\"))\n\nn.enviar(\"Hola\")\n# correo + SMS + Slack\n\n\n\n\n\n\n\n\nPara recordar\n\n\nLos datos extra se pasan en el constructor, no en métodos nuevos. Y si lo que necesitas es cambiar la interfaz, no buscas un Decorator, sino un Adapter."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-11-síntoma",
+    "href": "materials/06-flashcards/index.html#flashcard-11-síntoma",
+    "title": "Flashcards",
+    "section": "🔍 Flashcard 11 · Síntoma",
+    "text": "🔍 Flashcard 11 · Síntoma\nCualquier cambio en la tienda en línea acaba tocando esta clase, y todo el equipo la modifica a la vez.\nclass FachadaTienda:\n    def anadir_al_carrito(self, usuario, producto): ...\n    def aplicar_descuento(self, carrito, codigo): ...\n    def cobrar(self, pedido, tarjeta): ...\n    def calcular_iva(self, pedido, pais): ...\n    def programar_envio(self, pedido): ...\n    def generar_factura_pdf(self, pedido): ...\n    def registrar_usuario(self, datos): ...\n    def informe_ventas_mensual(self, mes): ...\n    # ... y 52 métodos más\n\n\n\n\n\n\n\nPara el grupo\n\n\n¿Cuántas razones distintas para cambiar tiene esta clase?"
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-11-qué-falla",
+    "href": "materials/06-flashcards/index.html#flashcard-11-qué-falla",
+    "title": "Flashcards",
+    "section": "❌ Flashcard 11 · ¿Qué falla?",
+    "text": "❌ Flashcard 11 · ¿Qué falla?\n\nEs un objeto dios (God object). La fachada concentra carritos, pagos, impuestos, envíos, usuarios e informes.\nVulnera el principio de responsabilidad única. La clase tiene muchas razones distintas para cambiar.\nContiene lógica, no solo coordinación. Métodos como calcular_iva() implementan reglas de negocio que deberían vivir en el subsistema.\nSe convierte en un cuello de botella. Todo el equipo modifica el mismo archivo, con conflictos constantes al integrar cambios.\n\n\n\n\n\n\n\n\nUn riesgo compartido\n\n\nLo mismo le puede ocurrir a un Mediator: un mediador que lo sabe todo y lo hace todo es otro objeto dios."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-11-cómo-corregirlo",
+    "href": "materials/06-flashcards/index.html#flashcard-11-cómo-corregirlo",
+    "title": "Flashcards",
+    "section": "✅ Flashcard 11 · ¿Cómo corregirlo?",
+    "text": "✅ Flashcard 11 · ¿Cómo corregirlo?\n\n\n\nVarias fachadas pequeñas, una por subsistema o caso de uso: FachadaPedidos, FachadaUsuarios, FachadaInformes…\nLa fachada solo coordina y delega. La lógica de negocio vive en el subsistema.\nUna fachada puede componer otras fachadas si hace falta.\n\n\nclass FachadaPedidos:\n    def __init__(self, carrito, pagos, envios):\n        self.carrito = carrito\n        self.pagos = pagos\n        self.envios = envios\n\n    def comprar(self, usuario):\n        pedido = self.carrito.cerrar(usuario)\n        self.pagos.cobrar(pedido)\n        self.envios.programar(pedido)\n        return pedido\n\n\n\n\n\n\n\n\nPara recordar\n\n\nUna fachada simplifica el acceso a un subsistema; no lo sustituye."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-20-síntoma",
+    "href": "materials/06-flashcards/index.html#flashcard-20-síntoma",
+    "title": "Flashcards",
+    "section": "🔍 Flashcard 20 · Síntoma",
+    "text": "🔍 Flashcard 20 · Síntoma\nSe han creado clases para cada estrategia, pero añadir el modo “patinete” sigue obligando a modificar Navegador.\nclass Navegador:\n    def calcular_ruta(self, origen, destino, modo):\n        if modo == \"coche\":\n            self.estrategia = RutaCoche()\n        elif modo == \"pie\":\n            self.estrategia = RutaAPie()\n        elif modo == \"bici\":\n            self.estrategia = RutaBici()\n        return self.estrategia.calcular(origen, destino)\n\n\n\n\n\n\n\nPara el grupo\n\n\n¿Qué ha ganado el diseño al crear las clases RutaCoche, RutaAPie y RutaBici?"
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-20-qué-falla",
+    "href": "materials/06-flashcards/index.html#flashcard-20-qué-falla",
+    "title": "Flashcards",
+    "section": "❌ Flashcard 20 · ¿Qué falla?",
+    "text": "❌ Flashcard 20 · ¿Qué falla?\n\nEl contexto elige la estrategia con condicionales. Navegador conoce todas las estrategias concretas.\nVulnera el principio abierto/cerrado. Cada modo nuevo obliga a modificar Navegador.\nVulnera programa a una interfaz. El contexto debería depender solo de la interfaz común de las estrategias, no de sus clases.\nSe pierde el beneficio del patrón. El if sigue ahí, solo que más escondido.\n\n\n\n\n\n\n\n\nPero…\n\n\nElegir una estrategia a partir de un dato (un texto, una opción de configuración) no está prohibido. Lo importante es hacerlo una sola vez y fuera del contexto."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-20-cómo-corregirlo",
+    "href": "materials/06-flashcards/index.html#flashcard-20-cómo-corregirlo",
+    "title": "Flashcards",
+    "section": "✅ Flashcard 20 · ¿Cómo corregirlo?",
+    "text": "✅ Flashcard 20 · ¿Cómo corregirlo?\n\n\nEl contexto solo delega\nclass Navegador:\n    def __init__(self, estrategia):\n        self.estrategia = estrategia\n\n    def calcular_ruta(self, origen, destino):\n        return self.estrategia.calcular(\n            origen, destino)\n\nEl cliente elige, en un único lugar\nESTRATEGIAS = {\n    \"coche\": RutaCoche,\n    \"pie\": RutaAPie,\n    \"bici\": RutaBici,\n    \"patinete\": RutaPatinete,  # nueva\n}\n\nnav = Navegador(ESTRATEGIAS[modo]())\nnav.calcular_ruta(origen, destino)\n\nnav.estrategia = RutaAPie()  # cambio en\n                             # ejecución\n\n\n\n\n\n\n\n\nPara recordar\n\n\nEl contexto no debe saber qué estrategia usa; solo que tiene una."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-21-síntoma",
+    "href": "materials/06-flashcards/index.html#flashcard-21-síntoma",
+    "title": "Flashcards",
+    "section": "🔍 Flashcard 21 · Síntoma",
+    "text": "🔍 Flashcard 21 · Síntoma\nLos informes rápidos salen vacíos: nunca se cargan los datos.\nclass Informe:\n    def generar(self):            # método plantilla\n        self.cargar_datos()\n        self.analizar()\n        self.exportar()\n\n\nclass InformeRapido(Informe):\n    def generar(self):            # redefine la plantilla entera\n        self.exportar()\n\n\n\n\n\n\n\nPara el grupo\n\n\nInformeRapido solo quería saltarse el análisis. ¿Qué ha perdido por el camino?"
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-21-qué-falla",
+    "href": "materials/06-flashcards/index.html#flashcard-21-qué-falla",
+    "title": "Flashcards",
+    "section": "❌ Flashcard 21 · ¿Qué falla?",
+    "text": "❌ Flashcard 21 · ¿Qué falla?\n\nLa subclase redefine el método plantilla, en lugar de redefinir solo alguno de sus pasos.\nRompe el esqueleto del algoritmo. Desaparecen pasos obligatorios, como cargar_datos(), que la superclase debía garantizar.\nInvierte el control. En Template Method, la superclase llama a las subclases, y no al revés: es el principio de Hollywood (“no nos llames, ya te llamaremos”).\nVulnera el principio abierto/cerrado. La plantilla debería estar cerrada a modificaciones y abierta a extensiones a través de sus pasos.\n\n\n\n\n\n\n\n\nPero…\n\n\nSi una subclase necesita un algoritmo completamente distinto, quizá el patrón adecuado no es Template Method, sino Strategy."
+  },
+  {
+    "objectID": "materials/06-flashcards/index.html#flashcard-21-cómo-corregirlo",
+    "href": "materials/06-flashcards/index.html#flashcard-21-cómo-corregirlo",
+    "title": "Flashcards",
+    "section": "✅ Flashcard 21 · ¿Cómo corregirlo?",
+    "text": "✅ Flashcard 21 · ¿Cómo corregirlo?\n\n\nPlantilla protegida y un gancho (hook)\nfrom typing import final\n\nclass Informe:\n    @final\n    def generar(self):\n        self.cargar_datos()\n        if self.necesita_analisis():  # gancho\n            self.analizar()\n        self.exportar()\n\n    def necesita_analisis(self):\n        return True                   # por defecto\n\nLa subclase solo ajusta un paso\nclass InformeRapido(Informe):\n    def necesita_analisis(self):\n        return False\nEn Java, el método plantilla se declara final. En Python, @final lo comprueban herramientas como mypy.\n\n\n\n\n\n\n\n\nPara recordar\n\n\nLas subclases rellenan huecos de la plantilla; no la reescriben."
   },
   {
     "objectID": "materials/06-flashcards/index.html#referencias",
