@@ -42,7 +42,7 @@ Un patrón mal usado puede ser peor que no usar ninguno: añade clases, indirecc
 
 . . .
 
-Los asistentes de IA generan código con patrones con mucha facilidad, pero no siempre los aplican bien. Detectar estos errores y saber corregirlos es parte de lo que hoy significa *saber programar*.
+Los asistentes de IA generan código con patrones con mucha facilidad, pero no siempre los aplican bien. **Detectar estos errores y saber corregirlos** es parte de lo que hoy significa *saber programar*.
 
 
 ## Flashcards
@@ -68,6 +68,7 @@ Inspira en la sección [*Caveats*](https://www.data-to-viz.com/caveats.html) de 
 ## Recuerda los principios
 
 Muchos errores se explican con los principios básicos: 
+
 - *encapsula lo que varía*, 
 - *programa a una interfaz, no a una implementación* y 
 - *favorece la composición sobre la herencia*. 
@@ -112,14 +113,14 @@ def crear_transporte(tipo):
 
 . . .
 
-::: {.callout-note title="Para el grupo"}
+::: {.callout-note title="Para vosotros/as"}
 ¿Qué ocurre al añadir `Tren`? ¿Y diez transportes más?
 :::
 
 ## :x: Flashcard 1 · ¿Qué falla? {.smaller}
 
 ::: {.incremental}
-- **No es *Factory Method*.** Es una **fábrica simple** (*simple factory*) poruqe centraliza la creación, pero no es un *Factory Method* según [@gamma1994].
+- **No es *Factory Method*.** Es una **fábrica simple** (*simple factory*) porque centraliza la creación, pero no es un *Factory Method* según [@gamma1994].
 - **Vulnera el principio abierto/cerrado.** Cada tipo nuevo obliga a **modificar** la función, en lugar de **extenderla**.
 - **Acopla la función a todas las clases concretas.** `crear_transporte()` debe conocer `Camion`, `Barco`, `Avion`, `Tren`…
 - **Tiende a replicarse.** El mismo `if tipo == ...` acaba apareciendo en otras partes del código (costes, tiempos de entrega…).
@@ -218,7 +219,7 @@ n.enviar("Hola")                         # ¿qué se envía?
 
 . . .
 
-::: {.callout-note title="Para el grupo"}
+::: {.callout-note title="Para vosotros/as"}
 ¿Qué método se ejecuta en la última línea?
 :::
 
@@ -307,7 +308,7 @@ class FachadaTienda:
 
 . . .
 
-::: {.callout-note title="Para el grupo"}
+::: {.callout-note title="Para vosotros/as"}
 ¿Cuántas razones distintas para cambiar tiene esta clase?
 :::
 
@@ -388,7 +389,7 @@ class Navegador:
 
 . . .
 
-::: {.callout-note title="Para el grupo"}
+::: {.callout-note title="Para vosotros/as"}
 ¿Qué ha ganado el diseño al crear las clases `RutaCoche`, `RutaAPie` y `RutaBici`?
 :::
 
@@ -481,7 +482,7 @@ class InformeRapido(Informe):
 
 . . .
 
-::: {.callout-note title="Para el grupo"}
+::: {.callout-note title="Para vosotros/as"}
 `InformeRapido` solo quería saltarse el análisis. ¿Qué ha perdido por el camino?
 :::
 
