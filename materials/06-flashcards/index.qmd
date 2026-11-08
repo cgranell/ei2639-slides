@@ -1,0 +1,524 @@
+---
+title: "Flashcards"
+subtitle: "Errores comunes en patrones de diseño"
+description: "Errores comunes en patrones de diseño"
+author: "Carlos Granell"
+institute: "[GEOTEC](https://geotec.uji.es/), Universitat Jaume I"
+date: last-modified
+date-format: "MMM D, YYYY"
+categories: [ei1026, flashcards]
+
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: all
+    progress: true
+    logo: ../../images/marca-uji-negre.png
+    footer: "[https://cgranell.github.io/ei2639/](https://cgranell.github.io/ei2639/)"
+    theme: [default]
+    transition: fade
+    preview-links: true
+    author-meta: "Carlos Granell"
+    date-meta: "08/11/2026"
+    chalkboard:
+      theme: whiteboard
+      buttons: false
+      boardmarker-width: 3
+from: markdown+emoji
+execute:
+  echo: true
+bibliography: ../../references.bib
+---
+
+# Intro
+
+## Errores comunes con patrones de diseño {.smaller}
+
+Conocer un patrón no es solo saber **cuándo** usarlo, sino también reconocer cuándo se está usando **mal**.
+
+. . .
+
+Cada *flashcard* tiene tres diapositivas:
+
+1. :mag: **Síntoma**: un fragmento de código o una situación.
+2. :x: **¿Qué falla?**: el diagnóstico.
+3. :white_check_mark: **¿Cómo corregirlo?**: la solución.
+
+. . .
+
+::: {.callout-tip title="Ante cada síntoma"}
+¿Qué patrón se intenta aplicar? ¿Qué falla? ¿Cómo lo corregirías?
+:::
+
+## Las flashcards de hoy {.smaller}
+
+| # | Error | Patrón | Familia |
+|:-:|-------|--------|---------|
+| 4 | La fábrica con un `if` que no deja de crecer | *Factory Method* | [Creacional]{style="color:#2b6cb0; font-weight:600;"} |
+| 5 | El decorador que cambia la interfaz | *Decorator* | [Estructural]{style="color:#2f855a; font-weight:600;"} |
+| 6 | La fachada que lo hace todo | *Facade* | [Estructural]{style="color:#2f855a; font-weight:600;"} |
+| 9 | La estrategia con el `if` escondido | *Strategy* | [Comportamiento]{style="color:#975a16; font-weight:600;"} |
+| 10 | La subclase que se salta la plantilla | *Template Method* | [Comportamiento]{style="color:#975a16; font-weight:600;"} |
+
+<!-- ============================================================ -->
+<!-- FLASHCARD 4 · FACTORY METHOD                                 -->
+<!-- ============================================================ -->
+
+# Flashcard 4 {background-color="#2b6cb0"}
+
+[Creacional · *Factory Method*]{style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;"}
+
+[La fábrica con un `if` que no deja de crecer]{style="font-size: 1.3em; font-weight: 600;"}
+
+## :mag: Flashcard 4 · Síntoma
+
+La aplicación de logística necesita un transporte nuevo: el **tren**. Cada transporte nuevo obliga a modificar esta función.
+
+```{.python code-line-numbers="|2-7|8"}
+def crear_transporte(tipo):
+    if tipo == "camion":
+        return Camion()
+    elif tipo == "barco":
+        return Barco()
+    elif tipo == "avion":
+        return Avion()
+    # ... y una rama más por cada transporte
+```
+
+. . .
+
+::: {.callout-note title="Para el grupo"}
+¿Qué ocurre al añadir `Tren`? ¿Y diez transportes más?
+:::
+
+## :x: Flashcard 4 · ¿Qué falla? {.smaller}
+
+::: {.incremental}
+- **No es *Factory Method*.** Es una **fábrica simple** (*simple factory*): centraliza la creación, pero no es el patrón de la *Gang of Four* [@gamma1994].
+- **Vulnera el principio abierto/cerrado.** Cada tipo nuevo obliga a **modificar** la función, en lugar de **extenderla**.
+- **Acopla la función a todas las clases concretas.** `crear_transporte()` debe conocer `Camion`, `Barco`, `Avion`, `Tren`…
+- **Tiende a replicarse.** El mismo `if tipo == ...` acaba apareciendo en otras partes del código (costes, tiempos de entrega…).
+:::
+
+. . .
+
+::: {.callout-warning title="Pero…"}
+Una fábrica simple **no es un error en sí misma** si los tipos son pocos y casi nunca cambian. El error es confundirla con *Factory Method* o dejar que crezca sin control.
+:::
+
+## :white_check_mark: Flashcard 4 · ¿Cómo corregirlo? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="52%"}
+**Opción 1: *Factory Method***
+
+Cada subclase decide qué transporte crear.
+
+```python
+class Logistica(ABC):
+    @abstractmethod
+    def crear_transporte(self) -> Transporte: ...
+
+    def planificar_entrega(self, carga):
+        t = self.crear_transporte()
+        t.entregar(carga)
+
+class LogisticaTerrestre(Logistica):
+    def crear_transporte(self):
+        return Camion()
+
+class LogisticaFerroviaria(Logistica):
+    def crear_transporte(self):
+        return Tren()
+```
+:::
+
+::: {.column width="48%"}
+**Opción 2: registro de tipos**
+
+Un diccionario sustituye a la cadena de `if`.
+
+```python
+TRANSPORTES = {
+    "camion": Camion,
+    "barco": Barco,
+    "avion": Avion,
+}
+
+def crear_transporte(tipo):
+    return TRANSPORTES[tipo]()
+
+# Añadir el tren: una línea,
+# sin tocar crear_transporte()
+TRANSPORTES["tren"] = Tren
+```
+:::
+
+::::
+
+. . .
+
+::: {.callout-tip title="Para recordar"}
+Añadir un tipo nuevo debería consistir en **añadir código**, no en **modificar** el que ya funciona.
+:::
+
+<!-- ============================================================ -->
+<!-- FLASHCARD 5 · DECORATOR                                      -->
+<!-- ============================================================ -->
+
+# Flashcard 5 {background-color="#2f855a"}
+
+[Estructural · *Decorator*]{style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;"}
+
+[El decorador que cambia la interfaz]{style="font-size: 1.3em; font-weight: 600;"}
+
+## :mag: Flashcard 5 · Síntoma
+
+Tras envolver el notificador de correo con el de SMS, `enviar()` no manda nada.
+
+```{.python code-line-numbers="|1-2|7-8|10-11"}
+class Notificador:
+    def enviar(self, msg): ...
+
+class NotificadorSMS(Notificador):
+    def __init__(self, envuelto):
+        self.envuelto = envuelto
+    def enviar_sms(self, msg, telefono):   # método nuevo
+        ...
+
+n = NotificadorSMS(NotificadorEmail())
+n.enviar("Hola")                         # ¿qué se envía?
+```
+
+. . .
+
+::: {.callout-note title="Para el grupo"}
+¿Qué método se ejecuta en la última línea?
+:::
+
+## :x: Flashcard 5 · ¿Qué falla? {.smaller}
+
+::: {.incremental}
+- **No redefine `enviar()`.** Hereda el método vacío de `Notificador` y **no delega** en el objeto envuelto: el correo nunca se envía.
+- **Añade una interfaz nueva.** Para enviar el SMS, el cliente tiene que llamar a `enviar_sms()`, así que debe conocer la **clase concreta** del decorador.
+- **Deja de ser transparente.** Un decorador debería poder usarse exactamente igual que el objeto que envuelve.
+- **No se pueden apilar decoradores.** `NotificadorSlack(NotificadorSMS(...))` no sabría que tiene que llamar a `enviar_sms()`.
+:::
+
+. . .
+
+::: {.callout-warning title="Principio vulnerado"}
+*Programa a una interfaz, no a una implementación*: el cliente acaba dependiendo de `NotificadorSMS`, no de `Notificador`.
+:::
+
+## :white_check_mark: Flashcard 5 · ¿Cómo corregirlo? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="55%"}
+**Misma interfaz, más comportamiento, y delegación**
+
+```python
+class NotificadorSMS(Notificador):
+    def __init__(self, envuelto, telefono):
+        self.envuelto = envuelto
+        self.telefono = telefono   # dato extra
+
+    def enviar(self, msg):
+        self.envuelto.enviar(msg)  # delega
+        self._enviar_sms(msg)      # añade
+```
+:::
+
+::: {.column width="45%"}
+**Ahora sí se pueden apilar**
+
+```python
+n = NotificadorSlack(
+        NotificadorSMS(
+            NotificadorEmail(),
+            "600 000 000"))
+
+n.enviar("Hola")
+# correo + SMS + Slack
+```
+:::
+
+::::
+
+. . .
+
+::: {.callout-tip title="Para recordar"}
+Los datos extra se pasan en el **constructor**, no en métodos nuevos. Y si lo que necesitas es **cambiar** la interfaz, no buscas un *Decorator*, sino un *Adapter*.
+:::
+
+<!-- ============================================================ -->
+<!-- FLASHCARD 6 · FACADE                                         -->
+<!-- ============================================================ -->
+
+# Flashcard 6 {background-color="#2f855a"}
+
+[Estructural · *Facade*]{style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;"}
+
+[La fachada que lo hace todo]{style="font-size: 1.3em; font-weight: 600;"}
+
+## :mag: Flashcard 6 · Síntoma
+
+Cualquier cambio en la tienda en línea acaba tocando esta clase, y todo el equipo la modifica a la vez.
+
+```{.python code-line-numbers="|2-3|4-5|6-9|10"}
+class FachadaTienda:
+    def anadir_al_carrito(self, usuario, producto): ...
+    def aplicar_descuento(self, carrito, codigo): ...
+    def cobrar(self, pedido, tarjeta): ...
+    def calcular_iva(self, pedido, pais): ...
+    def programar_envio(self, pedido): ...
+    def generar_factura_pdf(self, pedido): ...
+    def registrar_usuario(self, datos): ...
+    def informe_ventas_mensual(self, mes): ...
+    # ... y 52 métodos más
+```
+
+. . .
+
+::: {.callout-note title="Para el grupo"}
+¿Cuántas razones distintas para cambiar tiene esta clase?
+:::
+
+## :x: Flashcard 6 · ¿Qué falla? {.smaller}
+
+::: {.incremental}
+- **Es un objeto dios** (*God object*). La fachada concentra carritos, pagos, impuestos, envíos, usuarios e informes.
+- **Vulnera el principio de responsabilidad única.** La clase tiene muchas razones distintas para cambiar.
+- **Contiene lógica, no solo coordinación.** Métodos como `calcular_iva()` implementan reglas de negocio que deberían vivir en el subsistema.
+- **Se convierte en un cuello de botella.** Todo el equipo modifica el mismo archivo, con conflictos constantes al integrar cambios.
+:::
+
+. . .
+
+::: {.callout-warning title="Un riesgo compartido"}
+Lo mismo le puede ocurrir a un *Mediator*: un mediador que lo sabe todo y lo hace todo es otro objeto dios.
+:::
+
+## :white_check_mark: Flashcard 6 · ¿Cómo corregirlo? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="42%"}
+- **Varias fachadas pequeñas**, una por subsistema o caso de uso: `FachadaPedidos`, `FachadaUsuarios`, `FachadaInformes`…
+- **La fachada solo coordina y delega.** La lógica de negocio vive en el subsistema.
+- Una fachada puede **componer** otras fachadas si hace falta.
+:::
+
+::: {.column width="58%"}
+```python
+class FachadaPedidos:
+    def __init__(self, carrito, pagos, envios):
+        self.carrito = carrito
+        self.pagos = pagos
+        self.envios = envios
+
+    def comprar(self, usuario):
+        pedido = self.carrito.cerrar(usuario)
+        self.pagos.cobrar(pedido)
+        self.envios.programar(pedido)
+        return pedido
+```
+:::
+
+::::
+
+. . .
+
+::: {.callout-tip title="Para recordar"}
+Una fachada **simplifica** el acceso a un subsistema; no lo **sustituye**.
+:::
+
+<!-- ============================================================ -->
+<!-- FLASHCARD 9 · STRATEGY                                       -->
+<!-- ============================================================ -->
+
+# Flashcard 9 {background-color="#975a16"}
+
+[Comportamiento · *Strategy*]{style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;"}
+
+[La estrategia con el `if` escondido]{style="font-size: 1.3em; font-weight: 600;"}
+
+## :mag: Flashcard 9 · Síntoma
+
+Se han creado clases para cada estrategia, pero añadir el modo «patinete» sigue obligando a modificar `Navegador`.
+
+```{.python code-line-numbers="|3-8|9"}
+class Navegador:
+    def calcular_ruta(self, origen, destino, modo):
+        if modo == "coche":
+            self.estrategia = RutaCoche()
+        elif modo == "pie":
+            self.estrategia = RutaAPie()
+        elif modo == "bici":
+            self.estrategia = RutaBici()
+        return self.estrategia.calcular(origen, destino)
+```
+
+. . .
+
+::: {.callout-note title="Para el grupo"}
+¿Qué ha ganado el diseño al crear las clases `RutaCoche`, `RutaAPie` y `RutaBici`?
+:::
+
+## :x: Flashcard 9 · ¿Qué falla? {.smaller}
+
+::: {.incremental}
+- **El contexto elige la estrategia con condicionales.** `Navegador` conoce **todas** las estrategias concretas.
+- **Vulnera el principio abierto/cerrado.** Cada modo nuevo obliga a modificar `Navegador`.
+- **Vulnera *programa a una interfaz*.** El contexto debería depender solo de la interfaz común de las estrategias, no de sus clases.
+- **Se pierde el beneficio del patrón.** El `if` sigue ahí, solo que más escondido.
+:::
+
+. . .
+
+::: {.callout-warning title="Pero…"}
+Elegir una estrategia a partir de un dato (un texto, una opción de configuración) **no está prohibido**. Lo importante es hacerlo **una sola vez** y **fuera** del contexto.
+:::
+
+## :white_check_mark: Flashcard 9 · ¿Cómo corregirlo? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**El contexto solo delega**
+
+```python
+class Navegador:
+    def __init__(self, estrategia):
+        self.estrategia = estrategia
+
+    def calcular_ruta(self, origen, destino):
+        return self.estrategia.calcular(
+            origen, destino)
+```
+:::
+
+::: {.column width="50%"}
+**El cliente elige, en un único lugar**
+
+```python
+ESTRATEGIAS = {
+    "coche": RutaCoche,
+    "pie": RutaAPie,
+    "bici": RutaBici,
+    "patinete": RutaPatinete,  # nueva
+}
+
+nav = Navegador(ESTRATEGIAS[modo]())
+nav.calcular_ruta(origen, destino)
+
+nav.estrategia = RutaAPie()  # cambio en
+                             # ejecución
+```
+:::
+
+::::
+
+. . .
+
+::: {.callout-tip title="Para recordar"}
+El contexto no debe saber **qué** estrategia usa; solo que **tiene** una.
+:::
+
+<!-- ============================================================ -->
+<!-- FLASHCARD 10 · TEMPLATE METHOD                               -->
+<!-- ============================================================ -->
+
+# Flashcard 10 {background-color="#975a16"}
+
+[Comportamiento · *Template Method*]{style="font-size: 0.7em; letter-spacing: 0.05em; text-transform: uppercase;"}
+
+[La subclase que se salta la plantilla]{style="font-size: 1.3em; font-weight: 600;"}
+
+## :mag: Flashcard 10 · Síntoma
+
+Los informes rápidos salen vacíos: nunca se cargan los datos.
+
+```{.python code-line-numbers="|2-5|8-9"}
+class Informe:
+    def generar(self):            # método plantilla
+        self.cargar_datos()
+        self.analizar()
+        self.exportar()
+
+
+class InformeRapido(Informe):
+    def generar(self):            # redefine la plantilla entera
+        self.exportar()
+```
+
+. . .
+
+::: {.callout-note title="Para el grupo"}
+`InformeRapido` solo quería saltarse el análisis. ¿Qué ha perdido por el camino?
+:::
+
+## :x: Flashcard 10 · ¿Qué falla? {.smaller}
+
+::: {.incremental}
+- **La subclase redefine el método plantilla**, en lugar de redefinir solo alguno de sus **pasos**.
+- **Rompe el esqueleto del algoritmo.** Desaparecen pasos obligatorios, como `cargar_datos()`, que la superclase debía garantizar.
+- **Invierte el control.** En *Template Method*, la superclase llama a las subclases, y no al revés: es el *principio de Hollywood* («no nos llames, ya te llamaremos»).
+- **Vulnera el principio abierto/cerrado.** La plantilla debería estar **cerrada** a modificaciones y **abierta** a extensiones a través de sus pasos.
+:::
+
+. . .
+
+::: {.callout-warning title="Pero…"}
+Si una subclase necesita un algoritmo **completamente distinto**, quizá el patrón adecuado no es *Template Method*, sino *Strategy*.
+:::
+
+## :white_check_mark: Flashcard 10 · ¿Cómo corregirlo? {.smaller}
+
+:::: {.columns}
+
+::: {.column width="55%"}
+**Plantilla protegida y un gancho (*hook*)**
+
+```python
+from typing import final
+
+class Informe:
+    @final
+    def generar(self):
+        self.cargar_datos()
+        if self.necesita_analisis():  # gancho
+            self.analizar()
+        self.exportar()
+
+    def necesita_analisis(self):
+        return True                   # por defecto
+```
+:::
+
+::: {.column width="45%"}
+**La subclase solo ajusta un paso**
+
+```python
+class InformeRapido(Informe):
+    def necesita_analisis(self):
+        return False
+```
+
+En Java, el método plantilla se declara `final`. En Python, `@final` lo comprueban herramientas como `mypy`.
+:::
+
+::::
+
+. . .
+
+::: {.callout-tip title="Para recordar"}
+Las subclases rellenan **huecos** de la plantilla; no la reescriben.
+:::
+
+## Referencias
+
+::: {#refs}
+:::
