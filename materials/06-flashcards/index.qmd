@@ -42,13 +42,17 @@ Un patrón mal usado puede ser peor que no usar ninguno: añade clases, indirecc
 
 . . .
 
-Los asistentes de IA generan código con patrones con mucha facilidad, pero no siempre los aplican bien. **Detectar estos errores y saber corregirlos** es parte de lo que hoy significa *saber programar*.
+Los asistentes de IA generan código con patrones con mucha facilidad, pero no siempre los aplican bien. 
+
+. . .
+
+**Detectar** estos errores y **saber corregirlos** es parte de lo que hoy significa *saber programar*.
 
 
 ## Flashcards
 
 
-Cada *flashcard* tiene tres diapositivas:
+Cada *flashcard* tiene tres partes:
 
 1. :mag: **Síntoma**: un fragmento de código o una situación.
 2. :x: **¿Qué falla?**: el diagnóstico.
@@ -67,13 +71,13 @@ Inspira en la sección [*Caveats*](https://www.data-to-viz.com/caveats.html) de 
 
 ## Recuerda los principios
 
-Muchos errores se explican con los principios básicos: 
+Muchos errores se explican simplemente con los principios básicos: 
 
 - *encapsula lo que varía*, 
 - *programa a una interfaz, no a una implementación* y 
 - *favorece la composición sobre la herencia*. 
 
-También te serán útiles el principio SOLID *abierto/cerrado* y el de *responsabilidad única*.
+Son útiles también los principios SOLID: *abierto/cerrado* y *responsabilidad única*.
 
 
 ## Catálogo de flashcards {.smaller}
@@ -113,7 +117,7 @@ def crear_transporte(tipo):
 
 . . .
 
-::: {.callout-note title="Para vosotros/as"}
+::: {.callout-note title="Para reflexionar"}
 ¿Qué ocurre al añadir `Tren`? ¿Y diez transportes más?
 :::
 
@@ -219,7 +223,7 @@ n.enviar("Hola")                         # ¿qué se envía?
 
 . . .
 
-::: {.callout-note title="Para vosotros/as"}
+::: {.callout-note title="Para reflexionar"}
 ¿Qué método se ejecuta en la última línea?
 :::
 
@@ -308,7 +312,7 @@ class FachadaTienda:
 
 . . .
 
-::: {.callout-note title="Para vosotros/as"}
+::: {.callout-note title="Para reflexionar"}
 ¿Cuántas razones distintas para cambiar tiene esta clase?
 :::
 
@@ -389,7 +393,7 @@ class Navegador:
 
 . . .
 
-::: {.callout-note title="Para vosotros/as"}
+::: {.callout-note title="Para reflexionar"}
 ¿Qué ha ganado el diseño al crear las clases `RutaCoche`, `RutaAPie` y `RutaBici`?
 :::
 
@@ -482,7 +486,7 @@ class InformeRapido(Informe):
 
 . . .
 
-::: {.callout-note title="Para vosotros/as"}
+::: {.callout-note title="Para reflexionar"}
 `InformeRapido` solo quería saltarse el análisis. ¿Qué ha perdido por el camino?
 :::
 
